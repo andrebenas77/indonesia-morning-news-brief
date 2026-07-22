@@ -1,9 +1,21 @@
 [
   {
+    "date": "2026-07-23",
+    "date_display": "Thursday, 23 July 2026",
+    "generated_at": "08:30 WIB",
+    "top_headline": "Bank Indonesia holds BI-Rate at 5.75% to strengthen stability and support growth",
+    "counts": {
+      "top": 10,
+      "corporate": 7,
+      "bank_indonesia": 5,
+      "global": 5
+    }
+  },
+  {
     "date": "2026-07-22",
     "date_display": "Wednesday, 22 July 2026",
-    "generated_at": "08:35 WIB",
-    "top_headline": "Bank Indonesia holds BI-Rate at 5.75%; rupiah firms to 17,875/USD",
+    "generated_at": "21:45 WIB (intraday refresh)",
+    "top_headline": "Bank Indonesia holds BI-Rate at 5.75% to strengthen stability and support growth",
     "counts": {
       "top": 10,
       "corporate": 6,
