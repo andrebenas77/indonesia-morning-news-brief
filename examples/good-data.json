@@ -1,0 +1,210 @@
+{
+  "date": "2026-07-22",
+  "date_display": "Wednesday, 22 July 2026",
+  "generated_at": "08:35 WIB",
+  "sources_scanned": [
+    {"outlet": "Kontan", "status": "ok"},
+    {"outlet": "CNBC Indonesia", "status": "ok"},
+    {"outlet": "Emitennews", "status": "ok"},
+    {"outlet": "Bloomberg Technoz", "status": "ok"},
+    {"outlet": "Bank Indonesia", "status": "ok"}
+  ],
+  "top_news": [
+    {
+      "rank": 1,
+      "headline": "Bank Indonesia holds BI-Rate at 5.75%; rupiah firms to 17,875/USD",
+      "headline_original": "BI Tahan Suku Bunga, Rupiah Justru Menguat Tipis ke Rp17.875/US$",
+      "summary": "Bank Indonesia kept its policy rate unchanged at 5.75%, and the rupiah strengthened slightly to Rp17,875 per US dollar.",
+      "outlet": "CNBC Indonesia",
+      "url": "https://www.cnbcindonesia.com/market/20260722135020-17-752912/",
+      "tags": ["bank-indonesia", "rates", "rupiah"]
+    },
+    {
+      "rank": 2,
+      "headline": "IHSG snaps nine-day winning streak as foreign investors turn net sellers",
+      "headline_original": "IHSG Turun Hari Ini (22/7), Menyetop Reli 9 Hari Diiringi Net Sell Asing",
+      "summary": "The Jakarta Composite Index fell, ending a nine-session rally, accompanied by net foreign selling.",
+      "outlet": "Kontan",
+      "url": "https://pusatdata.kontan.co.id/news/ihsg-turun-hari-ini-227-menyetop-reli-9-hari-diiringi-net-sell-asing",
+      "tags": ["market", "flows"]
+    },
+    {
+      "rank": 3,
+      "headline": "Foreign funds pour US$8.5 billion into Indonesia",
+      "headline_original": "Investor Berbondong-bondong ke RI, Dana Asing Masuk US$ 8,5 M ke RI",
+      "summary": "CNBC Indonesia reports foreign investors channeled about US$8.5 billion into Indonesian assets.",
+      "outlet": "CNBC Indonesia",
+      "url": "https://www.cnbcindonesia.com/market/20260722142013-17-752927/",
+      "tags": ["flows"]
+    },
+    {
+      "rank": 4,
+      "headline": "BEI flags 59 issuers at risk of forced delisting, including two SOEs",
+      "headline_original": "BEI Umumkan 59 Emiten Berpotensi Delisting Paksa, Dua BUMN Masuk Daftar",
+      "summary": "The Indonesia Stock Exchange named 59 listed companies that could face forced delisting, two of them state-owned.",
+      "outlet": "Kontan",
+      "url": "https://investasi.kontan.co.id/news/bei-umumkan-59-emiten-berpotensi-delisting-paksa-dua-bumn-masuk-daftar",
+      "tags": ["regulator", "popular"]
+    },
+    {
+      "rank": 5,
+      "headline": "BI to safeguard liquidity via repo and Rp188.68 trillion of bond purchases",
+      "headline_original": "Jaga Likuiditas, BI Andalkan Repo dan Beli SBN Rp188,68 T",
+      "summary": "Bank Indonesia said it will rely on repo operations and buy Rp188.68 trillion of government securities to maintain liquidity.",
+      "outlet": "Bloomberg Technoz",
+      "url": "https://www.bloombergtechnoz.com/detail-news/115926/jaga-likuiditas-bi-andalkan-repo-dan-beli-sbn-rp188-68-t",
+      "tags": ["bank-indonesia", "liquidity"]
+    },
+    {
+      "rank": 6,
+      "headline": "Bank lending growth accelerates to 12.67% in June",
+      "headline_original": "Lebih Laju, Kredit Perbankan Juni Tumbuh 12,67%",
+      "summary": "Indonesian banking credit grew 12.67% year-on-year in June, a faster pace than the prior month.",
+      "outlet": "Bloomberg Technoz",
+      "url": "https://www.bloombergtechnoz.com/detail-news/115909/lebih-laju-kredit-perbankan-juni-tumbuh-12-67",
+      "tags": ["macro", "banks"]
+    },
+    {
+      "rank": 7,
+      "headline": "Alexander Ramlie buys 1.47 million Amman Mineral (AMMN) shares",
+      "headline_original": "Alexander Ramlie Borong 1,47 Juta Saham Amman Mineral (AMMN)",
+      "summary": "Alexander Ramlie purchased 1.47 million shares of Amman Mineral Internasional (AMMN).",
+      "outlet": "CNBC Indonesia",
+      "url": "https://www.cnbcindonesia.com/market/20260722162224-17-752981/",
+      "tags": ["insider", "AMMN"]
+    },
+    {
+      "rank": 8,
+      "headline": "Tower Bersama (TBIG) issues Rp1.25 trillion of bonds and sukuk to repay UOB loan",
+      "headline_original": "Bayar Utang ke Bank UOB, TBIG Terbitkan Obligasi dan Sukuk Rp1,25T",
+      "summary": "Tower Bersama Infrastructure (TBIG) will issue Rp1.25 trillion in bonds and sukuk to repay a UOB bank loan.",
+      "outlet": "Emitennews",
+      "url": "https://emitennews.com/news/bayar-utang-ke-bank-uob-tbig-terbitkan-obligasi-dan-sukuk-rp125t",
+      "tags": ["corporate", "TBIG"]
+    },
+    {
+      "rank": 9,
+      "headline": "Fitch upgrades KBank Indonesia to AA+",
+      "headline_original": "Fitch Naikkan Rating KBank Indonesia ke AA+",
+      "summary": "Fitch raised the national rating of KBank Indonesia to AA+.",
+      "outlet": "Kontan",
+      "url": "https://investasi.kontan.co.id/news/fitch-naikkan-rating-kbank-indonesia-ke-aa",
+      "tags": ["rating", "banks"]
+    },
+    {
+      "rank": 10,
+      "headline": "Weak loan demand leaves idle bank liquidity piling up",
+      "headline_original": "Permintaan Kredit Belum Pulih, Kredit Menganggur Perbankan Masih Menumpuk",
+      "summary": "Sluggish credit demand has left banks with a growing pool of undeployed liquidity.",
+      "outlet": "Kontan",
+      "url": "https://keuangan.kontan.co.id/news/permintaan-kredit-belum-pulih-kredit-menganggur-perbankan-masih-menumpuk",
+      "tags": ["macro", "banks"]
+    }
+  ],
+  "corporate": [
+    {
+      "headline": "Controlling shareholder adds further to REAL stake",
+      "summary": "REAL's controller increased its ownership in the company.",
+      "outlet": "Emitennews",
+      "url": "https://emitennews.com/news/pengendali-tambah-lagi-saham-real-porsi-jadi-segini",
+      "tags": ["REAL", "insider"]
+    },
+    {
+      "headline": "FUTR president director buys 1% stake worth Rp15.3 billion",
+      "summary": "FUTR's CEO purchased a 1% stake in the company worth Rp15.3 billion.",
+      "outlet": "Emitennews",
+      "url": "https://emitennews.com/news/dirut-futr-borong-1-persen-saham-rp153-miliar",
+      "tags": ["FUTR", "insider"]
+    },
+    {
+      "headline": "Property developer BBSS still posts a loss in Q1 2026",
+      "summary": "Real-estate issuer BBSS remained loss-making in the first quarter of 2026.",
+      "outlet": "Emitennews",
+      "url": "https://emitennews.com/news/emiten-real-estate-bbss-masih-catat-rugi-di-q1-2026",
+      "tags": ["BBSS", "earnings"]
+    },
+    {
+      "headline": "Elnusa (ELSA) lifts Adera field oil & gas output beyond target",
+      "summary": "Elnusa said production at its Adera field exceeded the company's target.",
+      "outlet": "Emitennews",
+      "url": "https://emitennews.com/news/teknologi-elnusa-elsa-pacu-produksi-migas-adera-field-lewati-target",
+      "tags": ["ELSA", "energy"]
+    },
+    {
+      "headline": "Taro snack maker (AISA) opens the door to a dividend",
+      "summary": "AISA signaled the possibility of distributing a dividend.",
+      "outlet": "Emitennews",
+      "url": "https://emitennews.com/news/emiten-snack-taro-aisa-buka-peluang-bagi-dividen-ini-pemicunya",
+      "tags": ["AISA", "dividend"]
+    },
+    {
+      "headline": "Two banks aim to build a large sharia bank to rival BSI",
+      "summary": "Two banks plan to form a larger Islamic bank to compete with market leader BSI.",
+      "outlet": "Kontan",
+      "url": "https://keuangan.kontan.co.id/news/dua-bank-ini-ingin-jadi-bank-syariah-besar-pesaing-bsi",
+      "tags": ["banks", "sharia"]
+    }
+  ],
+  "bank_indonesia": [
+    {
+      "headline": "BI-Rate held at 5.75%: strengthening stability, supporting economic growth",
+      "summary": "Bank Indonesia kept the BI-Rate at 5.75% and maintained the Deposit Facility rate.",
+      "date": "22 July 2026",
+      "url": "https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/sp_2814226.aspx"
+    },
+    {
+      "headline": "Banking Survey Q2 2026: new loan disbursements increase",
+      "summary": "BI's quarterly banking survey showed new loan disbursements rose in Q2 2026.",
+      "date": "20 July 2026",
+      "url": "https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/sp_2814126.aspx"
+    },
+    {
+      "headline": "Prompt Manufacturing Index Q2 2026: manufacturing performance maintained",
+      "summary": "BI's PMI indicated manufacturing-sector performance held up in the second quarter.",
+      "date": "17 July 2026",
+      "url": "https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/sp_2813926.aspx"
+    },
+    {
+      "headline": "Business Survey Q2 2026: business activity increased",
+      "summary": "BI's business survey reported an increase in overall business activity in Q2 2026.",
+      "date": "17 July 2026",
+      "url": "https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/sp_2813826.aspx"
+    },
+    {
+      "headline": "Indonesia's external debt maintained in May 2026",
+      "summary": "BI reported that Indonesia's external debt remained contained in May 2026.",
+      "date": "15 July 2026",
+      "url": "https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/sp_2813726.aspx"
+    }
+  ],
+  "global": [
+    {
+      "headline": "Fed seen holding rates at 3.50–3.75% at July 28–29 FOMC",
+      "summary": "Markets expect the Federal Reserve to keep its target range at 3.50–3.75% at the 28–29 July meeting; no new economic projections are due.",
+      "outlet": "Forbes",
+      "url": "https://www.forbes.com/sites/investor-hub/article/fed-meeting-tracker-interest-rate-strategy/",
+      "tags": ["fed", "rates"]
+    },
+    {
+      "headline": "US to impose new tariffs on dozens of economies by Friday as stopgap duties lapse",
+      "summary": "The Trump administration is preparing fresh tariffs on many trading partners before temporary 10% global duties expire on 24 July.",
+      "outlet": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/economy/policy/articles/trump-prepares-fresh-tariffs-dozens-101724793.html",
+      "tags": ["trump", "tariffs"]
+    },
+    {
+      "headline": "Dollar index (DXY) little changed near 101.15",
+      "summary": "The US dollar index traded around 101.15, down 0.02%, after a three-session climb as US–Iran tensions lifted oil prices.",
+      "outlet": "Trading Economics",
+      "url": "https://tradingeconomics.com/united-states/currency",
+      "tags": ["dxy", "dollar"]
+    },
+    {
+      "headline": "US 10-year Treasury yield rises above 4.6% to about 4.63%",
+      "summary": "The 10-year Treasury yield climbed roughly 3 basis points to 4.63% amid higher oil prices and inflation concerns.",
+      "outlet": "Trading Economics",
+      "url": "https://tradingeconomics.com/united-states/government-bond-yield",
+      "tags": ["ust", "rates"]
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Indonesia Market Morning Brief — Wednesday, 22 July 2026</title>
+<meta name="description" content="Daily ranked morning news brief for the Jakarta Stock Exchange (IHSG/JCI): top Indonesia market stories, corporate/emiten news, Bank Indonesia, and global markets.">
+<style>
+  :root{
+    --bg:#0d1117; --panel:#161b22; --panel-2:#1c2129; --border:#2a313c;
+    --text:#e6edf3; --muted:#9aa4b2; --faint:#6b7481;
+    --accent:#f2a900;        /* amber brand */
+    --accent-2:#4ea1ff;      /* link/interactive blue */
+    --danger:#f2545b; --ok:#3fb950;
+    --radius:12px; --maxw:1080px;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme: light){
+    :root{
+      --bg:#f5f6f8; --panel:#ffffff; --panel-2:#f0f2f5; --border:#e2e6eb;
+      --text:#12161c; --muted:#59616d; --faint:#8a929d;
+      --accent:#b8790a; --accent-2:#1565d8;
+    }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.5;
+    -webkit-font-smoothing:antialiased;font-size:15px}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+
+  /* Top bar */
+  header.topbar{position:sticky;top:0;z-index:20;background:rgba(13,17,23,.86);
+    backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--border)}
+  @media (prefers-color-scheme: light){header.topbar{background:rgba(245,246,248,.9)}}
+  .topbar .wrap{display:flex;align-items:center;gap:14px;height:56px}
+  .brand{display:flex;align-items:center;gap:9px;font-weight:700;letter-spacing:.2px}
+  .brand .dot{width:11px;height:11px;border-radius:50%;background:var(--accent);
+    box-shadow:0 0 0 3px rgba(242,169,0,.18)}
+  .brand small{font-weight:500;color:var(--muted)}
+  .nav{margin-left:auto;display:flex;gap:6px}
+  .nav a{padding:7px 12px;border-radius:8px;color:var(--muted);font-size:13.5px;font-weight:600}
+  .nav a:hover{background:var(--panel-2);color:var(--text)}
+
+  /* Masthead */
+  .masthead{padding:30px 0 8px}
+  .masthead h1{margin:0;font-size:27px;letter-spacing:-.4px;font-weight:800}
+  .masthead .sub{color:var(--muted);margin-top:6px;font-size:14px}
+  .meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .chip{font-size:12px;padding:4px 10px;border:1px solid var(--border);border-radius:999px;
+    color:var(--muted);background:var(--panel);display:inline-flex;align-items:center;gap:6px}
+  .chip .s-ok{color:var(--ok)} .chip .s-failed{color:var(--danger)}
+  .chip.dim{opacity:.75}
+
+  /* Sections */
+  main{padding:22px 0 8px}
+  section.block{margin:26px 0}
+  .block > h2{display:flex;align-items:center;gap:10px;margin:0 0 14px;font-size:13px;
+    text-transform:uppercase;letter-spacing:1.4px;color:var(--accent);font-weight:800}
+  .block > h2::after{content:"";flex:1;height:1px;background:var(--border)}
+  .block > h2 .count{color:var(--faint);font-weight:700;letter-spacing:.5px}
+
+  /* Story list */
+  .stories{display:flex;flex-direction:column;gap:1px;background:var(--border);
+    border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+  .story{display:flex;gap:14px;padding:14px 16px;background:var(--panel);transition:background .12s}
+  .story:hover{background:var(--panel-2)}
+  .rank{flex:0 0 auto;width:26px;height:26px;border-radius:7px;background:var(--panel-2);
+    border:1px solid var(--border);color:var(--accent);font-weight:800;font-size:13px;
+    display:flex;align-items:center;justify-content:center;margin-top:1px}
+  .story .body{min-width:0;flex:1}
+  .story .hl{font-weight:650;font-size:15.5px;line-height:1.35}
+  .story .hl a:hover{color:var(--accent-2);text-decoration:underline}
+  .story .sum{color:var(--muted);font-size:13.5px;margin-top:3px}
+  .story .foot{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:8px;font-size:12px;color:var(--faint)}
+  .story .outlet{color:var(--text);font-weight:650}
+  .tag{font-size:11px;padding:2px 7px;border-radius:6px;background:var(--panel-2);
+    border:1px solid var(--border);color:var(--muted);text-transform:lowercase}
+  .empty{padding:16px;background:var(--panel);border:1px dashed var(--border);border-radius:var(--radius);
+    color:var(--faint);font-size:13.5px}
+
+  /* Two-column on wide screens for the lower sections */
+  .cols{display:grid;grid-template-columns:1fr;gap:26px}
+  @media (min-width:820px){.cols{grid-template-columns:1fr 1fr}}
+
+  footer{border-top:1px solid var(--border);margin-top:34px;padding:22px 0 44px;color:var(--faint);font-size:12.5px}
+  footer .disc{max-width:760px}
+  footer a{color:var(--accent-2)}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="dot"></span>IDX Morning Brief <small>· Jakarta markets</small></a>
+    <nav class="nav">
+      <a href="index.html">Today</a>
+      <a href="archive.html">Archive</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="masthead">
+    <h1>Indonesia Market Morning Brief</h1>
+    <div class="sub">Wednesday, 22 July 2026 · generated 08:35 WIB</div>
+    <div class="meta"><span class="chip"><span class="s-ok">&#9679;</span> Kontan</span><span class="chip"><span class="s-ok">&#9679;</span> CNBC Indonesia</span><span class="chip"><span class="s-ok">&#9679;</span> Emitennews</span><span class="chip"><span class="s-ok">&#9679;</span> Bloomberg Technoz</span><span class="chip"><span class="s-ok">&#9679;</span> Bank Indonesia</span></div>
+  </div>
+
+  <main>
+    <section class="block">
+      <h2>Top News <span class="count">10</span></h2>
+      <div class="stories"><article class="story"><div class="rank">1</div><div class="body"><div class="hl"><a href="https://www.cnbcindonesia.com/market/20260722135020-17-752912/" target="_blank" rel="noopener">Bank Indonesia holds BI-Rate at 5.75%; rupiah firms to 17,875/USD</a></div><div class="sum">Bank Indonesia kept its policy rate unchanged at 5.75%, and the rupiah strengthened slightly to Rp17,875 per US dollar.</div><div class="foot"><span class="outlet">CNBC Indonesia</span><span class="tag">bank-indonesia</span><span class="tag">rates</span><span class="tag">rupiah</span></div></div></article><article class="story"><div class="rank">2</div><div class="body"><div class="hl"><a href="https://pusatdata.kontan.co.id/news/ihsg-turun-hari-ini-227-menyetop-reli-9-hari-diiringi-net-sell-asing" target="_blank" rel="noopener">IHSG snaps nine-day winning streak as foreign investors turn net sellers</a></div><div class="sum">The Jakarta Composite Index fell, ending a nine-session rally, accompanied by net foreign selling.</div><div class="foot"><span class="outlet">Kontan</span><span class="tag">market</span><span class="tag">flows</span></div></div></article><article class="story"><div class="rank">3</div><div class="body"><div class="hl"><a href="https://www.cnbcindonesia.com/market/20260722142013-17-752927/" target="_blank" rel="noopener">Foreign funds pour US$8.5 billion into Indonesia</a></div><div class="sum">CNBC Indonesia reports foreign investors channeled about US$8.5 billion into Indonesian assets.</div><div class="foot"><span class="outlet">CNBC Indonesia</span><span class="tag">flows</span></div></div></article><article class="story"><div class="rank">4</div><div class="body"><div class="hl"><a href="https://investasi.kontan.co.id/news/bei-umumkan-59-emiten-berpotensi-delisting-paksa-dua-bumn-masuk-daftar" target="_blank" rel="noopener">BEI flags 59 issuers at risk of forced delisting, including two SOEs</a></div><div class="sum">The Indonesia Stock Exchange named 59 listed companies that could face forced delisting, two of them state-owned.</div><div class="foot"><span class="outlet">Kontan</span><span class="tag">regulator</span><span class="tag">popular</span></div></div></article><article class="story"><div class="rank">5</div><div class="body"><div class="hl"><a href="https://www.bloombergtechnoz.com/detail-news/115926/jaga-likuiditas-bi-andalkan-repo-dan-beli-sbn-rp188-68-t" target="_blank" rel="noopener">BI to safeguard liquidity via repo and Rp188.68 trillion of bond purchases</a></div><div class="sum">Bank Indonesia said it will rely on repo operations and buy Rp188.68 trillion of government securities to maintain liquidity.</div><div class="foot"><span class="outlet">Bloomberg Technoz</span><span class="tag">bank-indonesia</span><span class="tag">liquidity</span></div></div></article><article class="story"><div class="rank">6</div><div class="body"><div class="hl"><a href="https://www.bloombergtechnoz.com/detail-news/115909/lebih-laju-kredit-perbankan-juni-tumbuh-12-67" target="_blank" rel="noopener">Bank lending growth accelerates to 12.67% in June</a></div><div class="sum">Indonesian banking credit grew 12.67% year-on-year in June, a faster pace than the prior month.</div><div class="foot"><span class="outlet">Bloomberg Technoz</span><span class="tag">macro</span><span class="tag">banks</span></div></div></article><article class="story"><div class="rank">7</div><div class="body"><div class="hl"><a href="https://www.cnbcindonesia.com/market/20260722162224-17-752981/" target="_blank" rel="noopener">Alexander Ramlie buys 1.47 million Amman Mineral (AMMN) shares</a></div><div class="sum">Alexander Ramlie purchased 1.47 million shares of Amman Mineral Internasional (AMMN).</div><div class="foot"><span class="outlet">CNBC Indonesia</span><span class="tag">insider</span><span class="tag">AMMN</span></div></div></article><article class="story"><div class="rank">8</div><div class="body"><div class="hl"><a href="https://emitennews.com/news/bayar-utang-ke-bank-uob-tbig-terbitkan-obligasi-dan-sukuk-rp125t" target="_blank" rel="noopener">Tower Bersama (TBIG) issues Rp1.25 trillion of bonds and sukuk to repay UOB loan</a></div><div class="sum">Tower Bersama Infrastructure (TBIG) will issue Rp1.25 trillion in bonds and sukuk to repay a UOB bank loan.</div><div class="foot"><span class="outlet">Emitennews</span><span class="tag">corporate</span><span class="tag">TBIG</span></div></div></article><article class="story"><div class="rank">9</div><div class="body"><div class="hl"><a href="https://investasi.kontan.co.id/news/fitch-naikkan-rating-kbank-indonesia-ke-aa" target="_blank" rel="noopener">Fitch upgrades KBank Indonesia to AA+</a></div><div class="sum">Fitch raised the national rating of KBank Indonesia to AA+.</div><div class="foot"><span class="outlet">Kontan</span><span class="tag">rating</span><span class="tag">banks</span></div></div></article><article class="story"><div class="rank">10</div><div class="body"><div class="hl"><a href="https://keuangan.kontan.co.id/news/permintaan-kredit-belum-pulih-kredit-menganggur-perbankan-masih-menumpuk" target="_blank" rel="noopener">Weak loan demand leaves idle bank liquidity piling up</a></div><div class="sum">Sluggish credit demand has left banks with a growing pool of undeployed liquidity.</div><div class="foot"><span class="outlet">Kontan</span><span class="tag">macro</span><span class="tag">banks</span></div></div></article></div>
+    </section>
+
+    <div class="cols">
+      <section class="block">
+        <h2>Corporate / Emiten <span class="count">6</span></h2>
+        <div class="stories"><article class="story"><div class="body"><div class="hl"><a href="https://emitennews.com/news/pengendali-tambah-lagi-saham-real-porsi-jadi-segini" target="_blank" rel="noopener">Controlling shareholder adds further to REAL stake</a></div><div class="sum">REAL&#x27;s controller increased its ownership in the company.</div><div class="foot"><span class="outlet">Emitennews</span><span class="tag">REAL</span><span class="tag">insider</span></div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://emitennews.com/news/dirut-futr-borong-1-persen-saham-rp153-miliar" target="_blank" rel="noopener">FUTR president director buys 1% stake worth Rp15.3 billion</a></div><div class="sum">FUTR&#x27;s CEO purchased a 1% stake in the company worth Rp15.3 billion.</div><div class="foot"><span class="outlet">Emitennews</span><span class="tag">FUTR</span><span class="tag">insider</span></div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://emitennews.com/news/emiten-real-estate-bbss-masih-catat-rugi-di-q1-2026" target="_blank" rel="noopener">Property developer BBSS still posts a loss in Q1 2026</a></div><div class="sum">Real-estate issuer BBSS remained loss-making in the first quarter of 2026.</div><div class="foot"><span class="outlet">Emitennews</span><span class="tag">BBSS</span><span class="tag">earnings</span></div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://emitennews.com/news/teknologi-elnusa-elsa-pacu-produksi-migas-adera-field-lewati-target" target="_blank" rel="noopener">Elnusa (ELSA) lifts Adera field oil &amp; gas output beyond target</a></div><div class="sum">Elnusa said production at its Adera field exceeded the company&#x27;s target.</div><div class="foot"><span class="outlet">Emitennews</span><span class="tag">ELSA</span><span class="tag">energy</span></div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://emitennews.com/news/emiten-snack-taro-aisa-buka-peluang-bagi-dividen-ini-pemicunya" target="_blank" rel="noopener">Taro snack maker (AISA) opens the door to a dividend</a></div><div class="sum">AISA signaled the possibility of distributing a dividend.</div><div class="foot"><span class="outlet">Emitennews</span><span class="tag">AISA</span><span class="tag">dividend</span></div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://keuangan.kontan.co.id/news/dua-bank-ini-ingin-jadi-bank-syariah-besar-pesaing-bsi" target="_blank" rel="noopener">Two banks aim to build a large sharia bank to rival BSI</a></div><div class="sum">Two banks plan to form a larger Islamic bank to compete with market leader BSI.</div><div class="foot"><span class="outlet">Kontan</span><span class="tag">banks</span><span class="tag">sharia</span></div></div></article></div>
+      </section>
+      <section class="block">
+        <h2>Bank Indonesia Watch <span class="count">5</span></h2>
+        <div class="stories"><article class="story"><div class="body"><div class="hl"><a href="https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/sp_2814226.aspx" target="_blank" rel="noopener">BI-Rate held at 5.75%: strengthening stability, supporting economic growth</a></div><div class="sum">Bank Indonesia kept the BI-Rate at 5.75% and maintained the Deposit Facility rate.</div><div class="foot">22 July 2026</div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/sp_2814126.aspx" target="_blank" rel="noopener">Banking Survey Q2 2026: new loan disbursements increase</a></div><div class="sum">BI&#x27;s quarterly banking survey showed new loan disbursements rose in Q2 2026.</div><div class="foot">20 July 2026</div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/sp_2813926.aspx" target="_blank" rel="noopener">Prompt Manufacturing Index Q2 2026: manufacturing performance maintained</a></div><div class="sum">BI&#x27;s PMI indicated manufacturing-sector performance held up in the second quarter.</div><div class="foot">17 July 2026</div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/sp_2813826.aspx" target="_blank" rel="noopener">Business Survey Q2 2026: business activity increased</a></div><div class="sum">BI&#x27;s business survey reported an increase in overall business activity in Q2 2026.</div><div class="foot">17 July 2026</div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/sp_2813726.aspx" target="_blank" rel="noopener">Indonesia&#x27;s external debt maintained in May 2026</a></div><div class="sum">BI reported that Indonesia&#x27;s external debt remained contained in May 2026.</div><div class="foot">15 July 2026</div></div></article></div>
+      </section>
+    </div>
+
+    <section class="block">
+      <h2>Global Markets <span class="count">4</span></h2>
+      <div class="stories"><article class="story"><div class="body"><div class="hl"><a href="https://www.forbes.com/sites/investor-hub/article/fed-meeting-tracker-interest-rate-strategy/" target="_blank" rel="noopener">Fed seen holding rates at 3.50–3.75% at July 28–29 FOMC</a></div><div class="sum">Markets expect the Federal Reserve to keep its target range at 3.50–3.75% at the 28–29 July meeting; no new economic projections are due.</div><div class="foot"><span class="outlet">Forbes</span><span class="tag">fed</span><span class="tag">rates</span></div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://finance.yahoo.com/economy/policy/articles/trump-prepares-fresh-tariffs-dozens-101724793.html" target="_blank" rel="noopener">US to impose new tariffs on dozens of economies by Friday as stopgap duties lapse</a></div><div class="sum">The Trump administration is preparing fresh tariffs on many trading partners before temporary 10% global duties expire on 24 July.</div><div class="foot"><span class="outlet">Yahoo Finance</span><span class="tag">trump</span><span class="tag">tariffs</span></div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://tradingeconomics.com/united-states/currency" target="_blank" rel="noopener">Dollar index (DXY) little changed near 101.15</a></div><div class="sum">The US dollar index traded around 101.15, down 0.02%, after a three-session climb as US–Iran tensions lifted oil prices.</div><div class="foot"><span class="outlet">Trading Economics</span><span class="tag">dxy</span><span class="tag">dollar</span></div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://tradingeconomics.com/united-states/government-bond-yield" target="_blank" rel="noopener">US 10-year Treasury yield rises above 4.6% to about 4.63%</a></div><div class="sum">The 10-year Treasury yield climbed roughly 3 basis points to 4.63% amid higher oil prices and inflation concerns.</div><div class="foot"><span class="outlet">Trading Economics</span><span class="tag">ust</span><span class="tag">rates</span></div></div></article></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="disc">Compiled from public sources for internal research use; not investment advice. Ranking is a transparent heuristic (most-read rails + cross-outlet coverage + Bank Indonesia priority), not view counts. Headlines link to the original publishers.</div>
+    <div style="margin-top:10px">IDX Morning Brief · Wednesday, 22 July 2026 · <a href="archive.html">browse the archive</a></div>
+  </footer>
+</div>
+</body>
+</html>

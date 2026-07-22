@@ -1,0 +1,12 @@
+# Working intermediate — regenerated every run (the published output lives in docs/)
+build/
+
+# Python
+__pycache__/
+*.pyc
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
