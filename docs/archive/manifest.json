@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-07-24",
+    "date_display": "Friday, 24 July 2026",
+    "generated_at": "00:35 WIB",
+    "top_headline": "IHSG reverses a 1.5% intraday gain to close down 0.30% at 6,315",
+    "counts": {
+      "top": 10,
+      "corporate": 6,
+      "bank_indonesia": 1,
+      "global": 5
+    }
+  },
+  {
     "date": "2026-07-23",
     "date_display": "Thursday, 23 July 2026",
     "generated_at": "08:30 WIB",
