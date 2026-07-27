@@ -1,14 +1,37 @@
 # Sources
 
 ## Contents
-- Indonesia outlets (primary)
-- Bank Indonesia (always)
-- Global scan (search terms)
+- Sectors API (primary for corporate news)
+- Indonesia outlets (fallback only)
+- Bank Indonesia (always, WebFetch)
+- Global scan (always, WebSearch)
 - Fetch notes & fallbacks
 
-## Indonesia outlets (primary)
+## Sectors API (primary for corporate news)
 
-Fetch these every run. Prefer each site's most-read/popular rail plus its latest market items.
+```bash
+py scripts/fetch_sectors_news.py --days 1
+```
+
+Writes `build/sectors-news-<date>.json` from `/v2/news/`, `/v2/filings/` and `/v2/suspensions/`.
+Sectors already aggregates and **summarizes the Indonesian outlets in English**, attaching
+`symbols[]`, `sector`, `sub_sector[]`, normalized `tags[]` and an 8-axis `dimension` vector — so it
+replaces the per-outlet scrape for corporate news at ~3 credits a run.
+
+What it gives you that scraping did not:
+- **`filings`** — insider and institutional transactions with holder name, before/after holdings and
+  the individual fills. `holder_type` `institution` and `insider` both work; `corporate-investor`
+  returns nothing and should not be used.
+- **`suspensions`** — trading halts with the official reason and the IDX PDF.
+- **`tickers`** — the ticker union that feeds `fetch_flows.py --tickers`.
+
+**Scope limit — this is why the scrape below still exists.** Sectors carries **no Bank Indonesia
+releases and no global macro**. Those two scans stay on WebFetch/WebSearch every single run.
+
+## Indonesia outlets (fallback only)
+
+Only fetch these when `fetch_sectors_news.py` fails or returns very few items (note it in
+`sources_scanned`). Prefer each site's most-read/popular rail plus its latest market items.
 
 | Outlet | URL(s) | Read this | Best for |
 |---|---|---|---|

@@ -19,6 +19,15 @@ then candidates are ordered by total score. Take the **Top 10**.
 | **Bank Indonesia** — BI release or BI-policy story | Standing benchmark | +6 (and always include, see below) |
 | **Market impact category** (see list) | Direct relevance to positioning | +4 |
 | **Freshness** — published today / overnight | Morning brief is about what's new | +1 |
+| **Dimension breadth** — Sectors' 8-axis `dimension` vector on the article | Touches many analytical angles (valuation, financials, ownership…) | +2 if `dim_score` ≥ 4; +1 if 2–3 |
+| **Flow confirmation** — a ticker in the story appears in today's `radar-<date>.json` buckets | Money actually moved on it | +3 if in **Flow contradicts the news**; +2 if in **Flow confirms the news** |
+
+**On `dimension`:** it is a *relevance breadth* score, not a direction. A high `dim_score` means the
+article touches several analytical axes — never read it as bullish or bearish.
+
+**On flow confirmation:** *contradicts* scores higher than *confirms* on purpose. A stock rising on
+good press while foreigners sell is more decision-relevant than one where price, story and flow all
+agree.
 
 **Market impact categories:** index/IHSG moves, foreign fund flows, major emiten corporate action
 (M&A, rights issue, delisting, tender, buyback, earnings surprise, dividend), regulator action

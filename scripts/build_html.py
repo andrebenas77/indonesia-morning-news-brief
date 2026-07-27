@@ -21,6 +21,7 @@ from datetime import datetime, date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+BUILD = ROOT / "build"
 DATA_DEFAULT = ROOT / "build" / "data.json"
 TEMPLATE = ROOT / "assets" / "template.html"
 DOCS = ROOT / "docs"
@@ -117,6 +118,90 @@ def render_sources(sources) -> str:
     return "".join(chips)
 
 
+def load_radar(date: str):
+    """Radar JSON is named for the TRADING SESSION, which lags the run date on Mondays
+    and after holidays — so fall back to the newest radar file rather than assuming."""
+    exact = BUILD / f"radar-{date}.json"
+    candidates = [exact] if exact.exists() else sorted(
+        BUILD.glob("radar-*.json"), reverse=True)
+    for p in candidates:
+        try:
+            return json.loads(p.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+    return None
+
+
+def render_buckets(radar) -> str:
+    if not radar or not radar.get("buckets"):
+        return ('<div class="empty">No flow data today. Run '
+                '<code>scripts/fetch_flows.py</code> then <code>scripts/build_radar.py</code>.'
+                '</div>' + render_warnings(radar))
+    cards = []
+    for b in radar["buckets"]:
+        rows = []
+        for r in b.get("rows") or []:
+            cls = "pos" if (r.get("net_idr") or 0) > 0 else "neg"
+            rows.append(
+                f'<div class="bk-row"><span class="tk">{esc(r.get("symbol"))}</span>'
+                f'<span class="val {cls}">{esc(r.get("net_display", "-"))}</span>'
+                f'<span class="why">{esc(r.get("note", ""))}</span></div>')
+        body = (f'<div class="bk-rows">{"".join(rows)}</div>' if rows
+                else '<div class="bk-empty">Nothing in this bucket today.</div>')
+        shown, total = len(b.get("rows") or []), b.get("count", 0)
+        more = f'<span class="n">{shown} of {total}</span>' if total > shown else ""
+        cards.append(
+            f'<div class="bucket"><div class="bk-title">{esc(b.get("title"))}{more}</div>'
+            f'<div class="bk-desc">{esc(b.get("desc"))}</div>{body}</div>')
+    return f'<div class="buckets">{"".join(cards)}</div>{render_warnings(radar)}'
+
+
+def render_warnings(radar) -> str:
+    if not radar:
+        return ""
+    return "".join(f'<div class="warn">{esc(w)}</div>' for w in radar.get("warnings") or [])
+
+
+def render_flow_board(radar) -> str:
+    market = (radar or {}).get("market") or {}
+    inflow, outflow = market.get("top_inflow") or [], market.get("top_outflow") or []
+    if not inflow and not outflow:
+        return '<div class="empty">No foreign-flow data for this session.</div>'
+
+    def col(title, rows, cls):
+        trs = []
+        for r in rows:
+            sign = "pos" if (r.get("net_idr") or 0) > 0 else "neg"
+            meta = []
+            run, direction = r.get("run_sessions"), r.get("run_direction")
+            if run and direction in ("in", "out"):
+                meta.append(f'{run} session{"s" if run != 1 else ""} {direction}')
+            if r.get("in_priority"):
+                meta.append("in the news")
+            trs.append(
+                f'<tr><td class="tk">{esc(r.get("symbol"))}</td>'
+                f'<td class="num {sign}">{esc(r.get("net_display", "-"))}</td>'
+                f'<td class="meta">{esc(" · ".join(meta))}</td></tr>')
+        body = (f'<table class="flow">{"".join(trs)}</table>' if trs
+                else '<div class="bk-empty" style="margin:12px">None this session.</div>')
+        return f'<div class="flowcol"><div class="fh {cls}">{esc(title)}</div>{body}</div>'
+
+    grid = (f'<div class="flowgrid">'
+            f'{col("Top net foreign inflow", inflow, "in")}'
+            f'{col("Top net foreign outflow", outflow, "out")}</div>')
+
+    notes = list(market.get("notes") or [])
+    if market.get("method"):
+        notes.insert(0, market["method"])
+    unverified = market.get("unverified_candidates") or []
+    if unverified:
+        names = ", ".join(esc(u.get("symbol", "")) for u in unverified[:8])
+        notes.append(f"Unverified candidates (derived only, not measured): {names}.")
+    method = ("<div class=\"method\">" + "<br>".join(esc(n) for n in notes) + "</div>"
+              if notes else "")
+    return grid + method
+
+
 def display_date(data) -> str:
     if data.get("date_display"):
         return esc(data["date_display"])
@@ -134,12 +219,17 @@ def fill(template: str, mapping: dict) -> str:
     return out
 
 
-def build_page(data, template, home_href, archive_href) -> str:
+def build_page(data, template, home_href, archive_href, radar=None) -> str:
     top = data.get("top_news") or []
     corp = data.get("corporate") or []
     bi = data.get("bank_indonesia") or []
     glob = data.get("global") or []
+    where_count = sum(len(b.get("rows") or []) for b in (radar or {}).get("buckets") or [])
     return fill(template, {
+        "WHERE_TO_LOOK": render_buckets(radar),
+        "WHERE_COUNT": str(where_count),
+        "FLOW_BOARD": render_flow_board(radar),
+        "FLOW_DATE": esc((radar or {}).get("date", "")),
         "DATE_DISPLAY": display_date(data),
         "GENERATED_AT": esc(data.get("generated_at", "")),
         "SOURCES_SCANNED": render_sources(data.get("sources_scanned")),
@@ -249,13 +339,17 @@ def main() -> None:
     template = TEMPLATE.read_text(encoding="utf-8")
     ARCHIVE.mkdir(parents=True, exist_ok=True)
 
+    radar = load_radar(data["date"])
+
     # dated archive page (lives in docs/archive/, so links go up one level)
-    dated_html = build_page(data, template, home_href="../index.html", archive_href="../archive.html")
+    dated_html = build_page(data, template, home_href="../index.html",
+                            archive_href="../archive.html", radar=radar)
     dated_file = ARCHIVE / f"{data['date']}.html"
     dated_file.write_text(dated_html, encoding="utf-8")
 
     # today's index (lives in docs/)
-    index_html = build_page(data, template, home_href="index.html", archive_href="archive.html")
+    index_html = build_page(data, template, home_href="index.html",
+                            archive_href="archive.html", radar=radar)
     (DOCS / "index.html").write_text(index_html, encoding="utf-8")
 
     # archive index
