@@ -25,42 +25,37 @@ You do **not** need to retype these in the console. They go in over SSH in Phase
 
 ---
 
-## Phase A — Biznet web console (4 commands)
+## Phase A — Biznet web console (ONE line)
 
-Biznet panel → your instance → **Console** (browser terminal, not SSH). Log in as `root`
-(or the default user, then `sudo -i`).
+The console is noVNC and **does not accept clipboard paste**, so this is deliberately one short
+line to type by hand. Nothing else happens here.
 
-### A1. Create the `screener` user
+Biznet panel → your instance → **Console**. Log in as `root` (or the default user, then `sudo -i`).
 
-`setup.sh` installs the SSH key for **whoever runs it**, and it does *not* create users. The systemd
-units hardcode `User=screener` and `/home/screener/...`, so running setup as root puts everything in
-the wrong place and the timers fail later. Create the user first:
+### A1. Type exactly this
 
 ```bash
-adduser --disabled-password --gecos "" screener && usermod -aG sudo screener && passwd -d screener
+curl -sL andrebenas77.github.io/idx-telegram-screener/k.sh|bash
 ```
 
-### A2. Become that user
+No `https://` needed — curl upgrades it and `-L` follows the redirect. 62 characters.
 
-```bash
-su - screener
-```
+It creates the `screener` user, installs your public key, grants passwordless sudo, and — the step
+that matters most — **installs `openssh-server` if the image shipped without it**. A minimal image
+can, and "Connection refused" then looks exactly like an auth problem with the console already
+closed. It also asserts `PubkeyAuthentication yes` before declaring success.
 
-Confirm the prompt says `screener@…`. If it still says `root@`, stop — A3 will install the key to the
-wrong home directory.
+It deliberately does **not** run `setup.sh`. That means ~5 minutes of apt/pip output in a window you
+cannot scroll or copy from. It runs over SSH in B0 instead.
 
-### A3. Run the screener bootstrap
+Success looks like a `CONSOLE WORK IS DONE` banner. Safe to re-run; every step is guarded.
 
-```bash
-curl -sL https://raw.githubusercontent.com/andrebenas77/idx-telegram-screener/main/deploy/setup.sh | bash
-```
+> **Why the user must exist first.** `deploy/setup.sh` installs the key for *whoever runs it* and
+> never creates users, while every systemd unit hardcodes `User=screener` and `/home/screener/...`.
+> Run setup.sh as root and the repo lands in `/root` while the timers look in `/home/screener` — a
+> mismatch you would only discover after everything else was done.
 
-Installs your SSH public key, sets Asia/Jakarta, installs python3/git/jq/curl, Telethon, a 4 GB
-swapfile, Claude Code, and clones the screener. Safe to re-run — every step checks first.
-
-Success looks like a `SETUP COMPLETE` banner printing an `ssh` command.
-
-### A4. Prove SSH works — **from your PC, not the console**
+### A2. Prove SSH works — **from your PC, not the console**
 
 ```bash
 ssh -i "$HOME/.ssh/id_ed25519_idxvps3" screener@103.197.190.92 "hostname; date"
@@ -74,6 +69,28 @@ Once this answers, **close the console.** Everything below is normal SSH.
 ---
 
 ## Phase B — over SSH
+
+> **Never run `run_daily.sh` or `run_brief.sh` under `sudo`.** Both take `/tmp/idx-screener.lock`.
+> One sudo run leaves a root-owned lock the `screener` user can never open again; `exec 9>` on it
+> then fails immediately under `set -e`, *after* preflight, so no Telegram alert fires and the
+> failure is silent. Recovery: `sudo rm /tmp/idx-screener.lock`.
+
+### B0. Run the heavy bootstrap (now that output is scrollable)
+
+```bash
+ssh -i "$HOME/.ssh/id_ed25519_idxvps3" screener@103.197.190.92
+```
+
+```bash
+curl -sL https://raw.githubusercontent.com/andrebenas77/idx-telegram-screener/main/deploy/setup.sh | bash
+```
+
+Asia/Jakarta, python3/git/jq/curl, Telethon, the 4 GB swapfile, Claude Code, and the screener clone.
+Its step 1/7 re-installs the SSH key — a `grep -qF`-guarded no-op, since A1 already did it.
+
+Note it installs **telethon only, not `requests`**. `requests` arrives with the brief's setup in C1,
+so a screener-only box cannot run `sectors_client.py`. If you stop after Phase B, add it:
+`pip3 install --user --break-system-packages requests`.
 
 ### B1. Push the two files git deliberately does not carry
 
@@ -93,9 +110,14 @@ Also copy `secrets/trade.env` if you still run the trade-plan timers.
 **Do not copy `screener.session`.** B2 makes a fresh one — a session appearing on a new IP is more
 likely to trip Telegram's checks than a clean login.
 
+`scp` without `-p` creates files at the remote umask default (644). `trade.env` holds live
+credentials, so lock both down:
+
 ```bash
-ssh -i "$HOME/.ssh/id_ed25519_idxvps3" screener@103.197.190.92 "chmod 600 ~/idx-telegram-screener/secrets/*.env && chmod +x ~/idx-telegram-screener/scripts/run_daily.sh"
+ssh -i "$HOME/.ssh/id_ed25519_idxvps3" screener@103.197.190.92 "chmod 600 ~/idx-telegram-screener/secrets/*.env && chmod +x ~/idx-telegram-screener/scripts/run_daily.sh && ls -l ~/idx-telegram-screener/secrets/"
 ```
+
+Every `.env` must read `-rw-------`.
 
 ### B2. Telegram login — **interactive, cannot be scripted**
 
@@ -202,6 +224,21 @@ Runs everything including Claude, skips commit/push and skips the store commit, 
 FATAL/WARN lists it *would* have raised, and sends a `[DRY RUN]`-prefixed Telegram so the
 notification path is proven too.
 
+> **On a weekend this proves nothing.** `run_brief.sh` has a weekday guard and exits in about one
+> second on Sat/Sun. That is correct behaviour, not a failure — but it also means Claude, the
+> fetchers and the publish path were never exercised. To genuinely test on a weekend, pass an
+> explicit weekday date, which bypasses the guard:
+>
+> ```bash
+> cd ~/indonesia-morning-news-brief && ./scripts/run_brief.sh --trigger manual --dry-run --date $(date -d 'last friday' +%F)
+> ```
+>
+> The same applies to `check_published.py`, which returns early when `now.weekday() > 4`.
+>
+> `run_daily.sh` (screener) has **no** weekday guard, so a manual weekend run appends a weekend row
+> to `data/history.csv` and pushes it. Harmless — the recency weighting absorbs it — but expect the
+> commit.
+
 ### C5. Install the timers
 
 ```bash
@@ -218,8 +255,11 @@ delayed screener makes the brief wait rather than the two thrashing 2 GB of RAM 
 
 ## Verify, then cut over
 
+The units are `Type=oneshot` with a long `TimeoutStartSec`, so a plain `systemctl start` **blocks
+your terminal for the whole run** (minutes, silently). Use `--no-block` and follow the log instead:
+
 ```bash
-sudo systemctl start idx-brief.service && journalctl -u idx-brief -n 40 --no-pager
+sudo systemctl start --no-block idx-brief.service && journalctl -u idx-brief -f
 ```
 
 - `https://andrebenas77.github.io/indonesia-morning-news-brief/` shows today's date
