@@ -6,37 +6,41 @@ Wants=network-online.target
 
 [Service]
 Type=oneshot
-User=screener
-Group=screener
-WorkingDirectory=/home/screener/indonesia-morning-news-brief
+# The account really in use on the VPS is andrebenas77, not a dedicated
+# "screener" user. VPS-SETUP.md describes creating one, but the box was built
+# with the Biznet default account and root's authorized_keys carries the stock
+# forced-command banner redirecting to it. Matching reality here rather than
+# the doc: a User= that does not exist fails the unit at start with a bare
+# 217/USER and no useful message.
+User=andrebenas77
+Group=andrebenas77
+WorkingDirectory=/home/andrebenas77/indonesia-morning-news-brief
 
-# Two files: the screener's (shared — Claude token, Sectors key, Telegram creds) and
-# this brief's own. Neither is prefixed with '-', so a missing file fails the unit
-# loudly instead of starting a run that cannot possibly work.
+# Two files: the screener's carries the Claude token, Sectors key and Telegram
+# credentials; the brief's adds DeepSeek and the shared-cache pointers.
 EnvironmentFile=/etc/idx-screener.env
 EnvironmentFile=/etc/idx-brief.env
 
 # The native installer puts claude in ~/.local/bin, which is not on systemd's PATH.
-Environment=PATH=/home/screener/.local/bin:/usr/local/bin:/usr/bin:/bin
+Environment=PATH=/home/andrebenas77/.local/bin:/usr/local/bin:/usr/bin:/bin
 Environment=TZ=Asia/Jakarta
 Environment=PYTHONIOENCODING=utf-8
+# Standing authorisation for the unattended run: publish without asking.
 Environment=BRIEF_UNATTENDED=1
 
-ExecStart=/bin/bash /home/screener/indonesia-morning-news-brief/scripts/run_brief.sh --trigger timer
+ExecStart=/bin/bash /home/andrebenas77/indonesia-morning-news-brief/scripts/run_brief.sh --trigger timer
 
-# Generous: the script may wait up to 20 min on the screener's lock before its own
-# work even starts.
-TimeoutStartSec=45min
+TimeoutStartSec=25min
 
 NoNewPrivileges=true
-# MUST stay false — run_brief.sh and run_daily.sh coordinate through the shared
-# /tmp/idx-screener.lock, and a private /tmp would give each its own, defeating it.
+# Must stay false: run_brief.sh and the screener's run_daily.sh serialise on a
+# shared /tmp/idx-screener.lock, and PrivateTmp would give each its own /tmp so
+# the lock would never be seen. Two Claude Code processes on a 2 GB box thrash.
 PrivateTmp=false
 ProtectSystem=full
 ProtectHome=false
-
-# Deliberately NO MemoryMax. On a 2 GB box with 4 GB swap a cap converts a merely
-# slow run into an OOM kill. Measure with `free -m` under load first.
+# Deliberately no MemoryMax: on 2 GB + 4 GB swap a cap turns a slow run into an
+# OOM kill. Measure first.
 OOMPolicy=stop
 
 [Install]

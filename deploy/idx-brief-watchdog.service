@@ -1,25 +1,27 @@
 [Unit]
-Description=Indonesia Morning News Brief — did it actually publish?
+Description=Indonesia Morning News Brief — published-check watchdog
 Documentation=https://github.com/andrebenas77/indonesia-morning-news-brief
 After=network-online.target
 Wants=network-online.target
 
 [Service]
 Type=oneshot
-User=screener
-Group=screener
-WorkingDirectory=/home/screener/indonesia-morning-news-brief
+User=andrebenas77
+Group=andrebenas77
+WorkingDirectory=/home/andrebenas77/indonesia-morning-news-brief
+
+# Needs only the Telegram credentials to raise the alarm.
 EnvironmentFile=/etc/idx-screener.env
-Environment=PATH=/home/screener/.local/bin:/usr/local/bin:/usr/bin:/bin
+Environment=PATH=/home/andrebenas77/.local/bin:/usr/local/bin:/usr/bin:/bin
 Environment=TZ=Asia/Jakarta
 
-# Deliberately a SEPARATE unit from idx-brief.service. It asks the live site, not
-# the server, so it still fires when idx-brief.service never ran at all — the one
-# failure mode no in-run check can possibly catch.
-ExecStart=/usr/bin/python3 /home/screener/indonesia-morning-news-brief/scripts/check_published.py --notify
+# The only check that catches "the timer never fired at all" — an in-run
+# verification cannot detect a run that never started, by construction.
+ExecStart=/usr/bin/python3 /home/andrebenas77/indonesia-morning-news-brief/scripts/check_published.py --notify
 
-TimeoutStartSec=3min
+TimeoutStartSec=5min
 NoNewPrivileges=true
+PrivateTmp=false
 ProtectSystem=full
 ProtectHome=false
 
