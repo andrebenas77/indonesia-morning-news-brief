@@ -49,10 +49,16 @@ Biznet panel → your instance → **Console**. Log in as `root` (or the default
 ### A1. Type exactly this
 
 ```bash
-curl -sL andrebenas77.github.io/idx-telegram-screener/k.sh|bash
+curl -fsSL andrebenas77.github.io/idx-telegram-screener/k.sh -o k.sh && bash k.sh
 ```
 
-No `https://` needed — curl upgrades it and `-L` follows the redirect. 62 characters.
+**Download and run as two steps, never `curl … | bash`.** If curl fails — no outbound network yet,
+DNS not up, a 404 — the pipe form feeds an *empty stream* into bash, which exits **0 with no
+output**. It is indistinguishable from success, and you find out only when SSH still refuses you
+with the console already closed. `-f` fails on HTTP errors, `-S` prints the reason, and `&&` stops
+before running anything.
+
+If curl reports nothing at all, the box has no outbound network — see the offline fallback below.
 
 It creates the `screener` user, installs your public key, grants passwordless sudo, and — the step
 that matters most — **installs `openssh-server` if the image shipped without it**. A minimal image
@@ -68,6 +74,38 @@ Success looks like a `CONSOLE WORK IS DONE` banner. Safe to re-run; every step i
 > never creates users, while every systemd unit hardcodes `User=screener` and `/home/screener/...`.
 > Run setup.sh as root and the repo lands in `/root` while the timers look in `/home/screener` — a
 > mismatch you would only discover after everything else was done.
+
+### A1b. If SSH still says `Permission denied (publickey)`
+
+That error means `authorized_keys` is empty — the key never landed. Diagnose **in the console**:
+
+```bash
+cat /home/screener/.ssh/authorized_keys; curl -sI https://andrebenas77.github.io | head -1
+```
+
+- **Key line present + `HTTP/2 200`** → the key is there; the problem is elsewhere. Check
+  `ls -ld /home/screener/.ssh` is `700 screener screener` and the file is `600` — sshd silently
+  ignores `authorized_keys` on a group- or world-writable path, which is the one failure that
+  produces this error with a correct key in place.
+- **Empty output from curl** → no outbound network. Use the offline fallback.
+- **No key line but curl works** → A1 never ran, or ran as a non-root user and exited at its
+  `EUID` check. Re-run it as root.
+
+#### Offline fallback — no network needed
+
+Type the key literally. It is 95 characters of base64 and must be exact:
+
+```bash
+install -d -m700 -o screener -g screener /home/screener/.ssh && echo 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICMJtd3jr09Nub42vrhRJRY0A3lUBpZIZXIFj5uiGqGV idx-screener-3' > /home/screener/.ssh/authorized_keys && chown screener:screener /home/screener/.ssh/authorized_keys && chmod 600 /home/screener/.ssh/authorized_keys && cat /home/screener/.ssh/authorized_keys
+```
+
+Prerequisite if the user does not exist yet: `useradd -m -s /bin/bash screener`.
+
+Then confirm sshd is actually installed and running — a minimal image may lack it entirely:
+
+```bash
+systemctl is-active ssh || (apt-get install -y openssh-server; systemctl enable --now ssh)
+```
 
 ### A2. Prove SSH works — **from your PC, not the console**
 
