@@ -79,6 +79,17 @@ def render_story(item, rank=None) -> str:
     when = item.get("time") or item.get("date")
     if when:
         bits.append(esc(when))
+    # Dedup chips. All three are optional: an item without them renders exactly as
+    # before, so older data.json files are unaffected.
+    n = item.get("cross_outlet_count")
+    if isinstance(n, int) and not isinstance(n, bool) and n > 1:
+        bits.append(f'<span class="xo">{esc(n)} outlets</span>')
+    r = item.get("rail_rank")
+    if isinstance(r, int) and not isinstance(r, bool) and 1 <= r <= 20:
+        bits.append(f'<span class="pop">#{esc(r)} most-read</span>')
+    d = item.get("repeat_days")
+    if isinstance(d, int) and not isinstance(d, bool) and d >= 1:
+        bits.append(f'<span class="rep">day {esc(d + 1)}</span>')
     meta = ' <span aria-hidden="true">·</span> '.join(bits)
     tags = render_tags(item.get("tags"))
     foot = ""
@@ -212,6 +223,25 @@ def display_date(data) -> str:
         return esc(data.get("date", ""))
 
 
+def render_dedup_note(dedup) -> str:
+    """One-line provenance for the clustering pass. Empty when absent."""
+    if not isinstance(dedup, dict):
+        return ""
+    inp, out = dedup.get("input"), dedup.get("clusters")
+    if not isinstance(inp, int) or not isinstance(out, int) or inp <= 0:
+        return ""
+    parts = [f"{inp} headlines merged into {out} stories"]
+    if dedup.get("merged"):
+        parts.append(f"{dedup['merged']} duplicates collapsed")
+    if dedup.get("repeats"):
+        parts.append(f"{dedup['repeats']} carried over from earlier this week")
+    # Be explicit when the model was unavailable — the clustering is weaker and the
+    # reader should not have to guess.
+    if dedup.get("engine") == "lexical-fallback":
+        parts.append("semantic clustering unavailable this run")
+    return esc("; ".join(parts) + ".")
+
+
 def fill(template: str, mapping: dict) -> str:
     out = template
     for k, v in mapping.items():
@@ -231,8 +261,10 @@ def build_page(data, template, home_href, archive_href, radar=None) -> str:
         "FLOW_BOARD": render_flow_board(radar),
         "FLOW_DATE": esc((radar or {}).get("date", "")),
         "DATE_DISPLAY": display_date(data),
+        "DATE_ISO": esc(data.get("date", "")),
         "GENERATED_AT": esc(data.get("generated_at", "")),
         "SOURCES_SCANNED": render_sources(data.get("sources_scanned")),
+        "DEDUP_NOTE": render_dedup_note(data.get("dedup")),
         "TOP_NEWS": render_section(top, ranked=True),
         "CORPORATE": render_section(corp),
         "BANK_INDONESIA": render_section(bi),
@@ -263,6 +295,12 @@ def update_manifest(data) -> list:
             "corporate": len(data.get("corporate") or []),
             "bank_indonesia": len(data.get("bank_indonesia") or []),
             "global": len(data.get("global") or []),
+            # Tracked over time so dedup effectiveness is visible in the archive
+            # rather than only in a build/ file that gets thrown away.
+            "merged": (data.get("dedup") or {}).get("merged", 0),
+            "cross_outlet_max": max(
+                (i.get("cross_outlet_count") or 0
+                 for i in (data.get("top_news") or [])), default=0),
         },
     }
     items = []

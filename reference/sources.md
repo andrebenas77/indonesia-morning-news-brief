@@ -28,20 +28,49 @@ What it gives you that scraping did not:
 **Scope limit — this is why the scrape below still exists.** Sectors carries **no Bank Indonesia
 releases and no global macro**. Those two scans stay on WebFetch/WebSearch every single run.
 
-## Indonesia outlets (fallback only)
+## Indonesia outlets (always — fetched by script, not WebFetch)
 
-Only fetch these when `fetch_sectors_news.py` fails or returns very few items (note it in
-`sources_scanned`). Prefer each site's most-read/popular rail plus its latest market items.
+```bash
+py scripts/fetch_outlets.py --hours 30
+```
 
-| Outlet | URL(s) | Read this | Best for |
+Runs **every morning alongside Sectors**, not as a fallback. Sectors aggregates each story
+into one article, which is precisely what destroys `cross_outlet_count` — on the Sectors-only
+path it was always 1. The raw feeds restore that signal and add the most-read rails, which
+Sectors does not carry at all.
+
+All six endpoints verified live 2026-08-16:
+
+| Outlet | Method | Endpoint | Gives |
 |---|---|---|---|
-| Kontan | `https://www.kontan.co.id/` · `https://investasi.kontan.co.id/` | **Terpopuler** rail (ranked most-read) + latest market | Market, macro, popularity ranking |
-| CNBC Indonesia | `https://www.cnbcindonesia.com/market` | Latest `/market` headlines (Most-Popular rail is JS-rendered, usually not in static HTML) | Market, macro, flows |
-| Emitennews | `https://emitennews.com/` | Latest headlines | Emiten / corporate actions |
-| Bloomberg Technoz | `https://www.bloombergtechnoz.com/` · `https://www.bloombergtechnoz.com/ekonomi` | Latest market/economy headlines | Market, economy |
+| Kontan | RSS | `https://investasi.kontan.co.id/rss` | Latest market (~25) |
+| Kontan | HTML | `https://www.kontan.co.id/` → `#berita-terpopuler` | **Terpopuler rail** (ranked most-read) |
+| CNBC Indonesia | RSS | `https://www.cnbcindonesia.com/market/rss` | Latest market (~100) |
+| CNBC Indonesia | JSON | `https://www.cnbcindonesia.com/widget/wp_terpopuler?param=10` | Most-Popular rail |
+| Emitennews | HTML | `https://emitennews.com/` | Latest + trending (`data-label="home_*_tap"`) |
+| Bloomberg Technoz | RSS | `https://www.bloombergtechnoz.com/rss` | Latest market/economy (~100) |
 
-Capture per story: `headline`, absolute `url`, `outlet`, `time` (if shown), `category`,
-and the **Terpopuler rail position** when present (1 = most read).
+**Traps, all found the hard way:**
+
+- `www.kontan.co.id/rss` returns an HTML feed-directory page, not XML. Use the `investasi.`
+  subdomain.
+- Kontan emits **two** elements with `id="berita-terpopuler"`. The first is *Terpopuler*
+  (real most-read); the second is *Jangan Lewatkan* — editorial picks that restart numbering
+  at 1 and carry non-market content (a live sample had an esports result at rank 1). The
+  parser matches on the heading text for this reason.
+- Emitennews `/feed` and `/rss` both return **HTTP 500** — no RSS exists. The homepage is
+  parsed instead.
+- Bloomberg Technoz `/feed` and `/ekonomi/rss` return the HTML page, not XML. Only `/rss` works.
+- CNBC's Most-Popular rail is JS-rendered on the page, but the widget endpoint above returns
+  it as JSON. It is **undocumented** and may vanish without notice — treat it as best-effort.
+
+**The two rails are not equivalent.** Kontan's Terpopuler is genuinely market-relevant; CNBC's
+Most Popular is site-wide (a live sample: flag ceremony, toll road, train tickets, a death, an
+earthquake — 0/5 market). A CNBC rail hit therefore only earns a `rail_rank` when the story
+also appears in CNBC's `/market` feed. See `ranking-rubric.md`.
+
+WebFetch on these outlets is no longer part of the workflow. Bank Indonesia and the global
+scan below still use WebFetch/WebSearch every run — Sectors carries neither.
 
 ## Bank Indonesia (always)
 

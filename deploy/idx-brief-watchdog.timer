@@ -1,0 +1,20 @@
+[Unit]
+Description=Indonesia Morning News Brief — publish check, 09:30 WIB weekdays
+Documentation=https://github.com/andrebenas77/indonesia-morning-news-brief
+
+[Timer]
+# 09:30 — well after the 07:45 run and its worst-case 20-minute lock wait, and
+# after the 09:00 open so a missing brief is still actionable.
+OnCalendar=Mon..Fri *-*-* 09:30:00 Asia/Jakarta
+
+# Persistent=false on purpose. A catch-up watchdog firing days later would alert
+# about a brief nobody is waiting for any more. If it did not run at 09:30, the
+# question it asks has expired.
+Persistent=false
+
+RandomizedDelaySec=60
+
+Unit=idx-brief-watchdog.service
+
+[Install]
+WantedBy=timers.target

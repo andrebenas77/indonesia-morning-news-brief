@@ -47,7 +47,16 @@ for _stream in (sys.stdout, sys.stderr):
 BASE = "https://api.sectors.app/v2"
 
 # Lives outside both skill repos so neither publishes it to GitHub Pages.
-DEFAULT_CACHE = Path(r"C:\Users\ASUS\Documents\claude code\.sectors-cache")
+#
+# Platform-aware: a bare Windows path used on Linux is not an absolute path at all —
+# it becomes a *relative* directory literally named "C:\Users\ASUS\..." created inside
+# the CWD, i.e. in the repo, where it can end up committed. Silent, and ugly.
+# The Linux default MUST match the screener's copy of this file
+# (idx-telegram-screener/scripts/sectors_client.py) — the two skills share one day-cache
+# and whichever runs second is supposed to pay nothing. Diverge here and both pay full
+# credits, with nothing to show that anything is wrong.
+DEFAULT_CACHE = (Path(r"C:\Users\ASUS\Documents\claude code\.sectors-cache")
+                 if os.name == "nt" else Path.home() / ".cache" / "sectors")
 CACHE_DIR = Path(os.environ.get("SECTORS_CACHE_DIR", str(DEFAULT_CACHE)))
 
 TIMEOUT = 30

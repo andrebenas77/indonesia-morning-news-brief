@@ -33,17 +33,19 @@ Copy this checklist into your reply and check items off as you go:
 
 ```
 Indonesia Morning Brief — progress
-- [ ] 1. Set date (Asia/Jakarta) and read reference files
-- [ ] 2. Sectors news:   py scripts/fetch_sectors_news.py --days 1
-- [ ] 3. Foreign flow:   py scripts/fetch_flows.py --tickers <tickers from step 2>
-- [ ] 4. Radar join:     py scripts/build_radar.py
-- [ ] 5. Fetch Bank Indonesia latest releases (always, WebFetch)
-- [ ] 6. Global scan (Fed/FOMC, DXY, Trump/tariffs, UST 10Y) — last ~24h
-- [ ] 7. Score & rank -> Top 10; bucket Corporate/Emiten, BI Watch, Global
-- [ ] 8. Translate/summarize each to a 1-line English summary
-- [ ] 9. Write build/data.json; run scripts/build_html.py
-- [ ] 10. Verify docs/index.html in the browser preview
-- [ ] 11. Commit & push (ask first); confirm Pages URL
+- [ ] 1.  Set date (Asia/Jakarta) and read reference files
+- [ ] 2.  Sectors news:   py scripts/fetch_sectors_news.py --days 1 --date <date>
+- [ ] 3.  Raw outlets:    py scripts/fetch_outlets.py --hours 30 --date <date>
+- [ ] 4.  Dedup/classify: py scripts/dedup_news.py --date <date>
+- [ ] 5.  Foreign flow:   py scripts/fetch_flows.py --tickers <tickers from step 4>
+- [ ] 6.  Radar join:     py scripts/build_radar.py
+- [ ] 7.  Fetch Bank Indonesia latest releases (always, WebFetch)
+- [ ] 8.  Global scan (Fed/FOMC, DXY, Trump/tariffs, UST 10Y) — last ~24h
+- [ ] 9.  Score & rank from build/dedup-<date>.json -> Top 10 + buckets
+- [ ] 10. Translate/summarize each to a 1-line English summary
+- [ ] 11. Write build/data.json; run python3 scripts/build_html.py
+- [ ] 12. Verify docs/index.html in the browser preview
+- [ ] 13. Commit & push; confirm Pages URL
 ```
 
 ### Step 1 — Setup
@@ -51,20 +53,54 @@ Determine today's date in Asia/Jakarta (WIB, UTC+7). Read [reference/sources.md]
 [reference/ranking-rubric.md](reference/ranking-rubric.md), and
 [reference/output-format.md](reference/output-format.md).
 
+> **Steps 2–6 may already be done.** On the VPS, `scripts/run_brief.sh` runs the
+> deterministic fetch/dedup pipeline itself before invoking this skill, so one date is
+> used everywhere and a model failure does not cost the fetches. If
+> `build/dedup-<date>.json` already exists for today, **skip to step 7** — re-running
+> step 2 burns Sectors credits for nothing. The unattended prompt says so explicitly.
+
 ### Step 2 — Sectors news (primary for corporate news)
 ```bash
 py scripts/fetch_sectors_news.py --days 1
 ```
 Writes `build/sectors-news-<date>.json` — English summaries of the Indonesian outlets with
 `symbols[]`, normalized `tags[]`, and an 8-axis `dimension` vector, plus insider/institutional
-filings and any suspensions. The script prints the ticker union; **copy it for step 3**.
+filings and any suspensions.
 
-Only fall back to the per-outlet WebFetch scrape in `reference/sources.md` if this fails or returns
-very few items — and record that in `sources_scanned`.
-
-### Step 3 — Foreign flow
+### Step 3 — Raw outlets (always — this is not a fallback)
 ```bash
-py scripts/fetch_flows.py --tickers BBCA,BMRI,ASII        # tickers from step 2
+py scripts/fetch_outlets.py --hours 30
+```
+Writes `build/outlets-<date>.json` from Kontan, CNBC Indonesia, Emitennews and Bloomberg
+Technoz — RSS where it exists, the homepage where it does not, plus the **most-read rails**.
+
+This runs *alongside* Sectors, not instead of it, because the two carry different things.
+Sectors aggregates each story into one English-summarised article with `symbols[]` and
+`dimension`. That aggregation is exactly what destroys the raw signal the rubric needs: on
+the Sectors-only path `cross_outlet_count` was always 1 and the "+3 per additional outlet"
+rule had no input at all. The raw feeds restore it, and supply the rail positions Sectors
+never had.
+
+Per-outlet failures are recorded in `sources[]` and never raise — a dead outlet costs one
+signal, not the run. Copy the failed ones into `sources_scanned`.
+
+### Step 4 — Dedup & classify
+```bash
+py scripts/dedup_news.py
+```
+Merges both files into `build/dedup-<date>.json`: exact-URL matches first, then lexical
+clustering, then `deepseek-v4-flash` on the survivors for the semantic cases. Attaches
+`cross_outlet_count`, `best_rail_rank`, `category` and `repeat_days` to every cluster.
+
+**This is the file you rank from in step 9.** The script prints the ticker union — that is
+what feeds step 5, not the Sectors list, because it now spans both sources.
+
+If `engine` comes back `lexical-fallback` the model was unreachable; the brief still builds
+with weaker clustering, and you should say so in your step-13 summary. Check `warnings[]`.
+
+### Step 5 — Foreign flow
+```bash
+py scripts/fetch_flows.py --tickers BBCA,BMRI,ASII        # tickers from step 4
 ```
 Ranks foreign brokers, derives candidate tickers, then **measures the shortlist exactly** via
 `/v2/foreign-flow/` and pulls the retail/institutional cohort split on the top names. ~50 credits at
@@ -75,7 +111,7 @@ whichever runs second pays only for tickers the first did not fetch.
 > Only exactly-measured tickers reach the published board. The broker-derived ranking is a
 > *candidate generator* — on 2026-07-24 it pointed the wrong way on 5 of 12 measured names.
 
-### Step 4 — Radar join
+### Step 6 — Radar join
 ```bash
 py scripts/build_radar.py
 ```
@@ -83,48 +119,70 @@ Joins flow + news + the screener's `data/history.csv` (if it has run) into
 `build/radar-<date>.json` — the four "Where to Look Today" buckets plus the flow board. Missing
 inputs degrade to warnings on the page, never a crash.
 
-### Step 5 — Bank Indonesia (always)
+### Step 7 — Bank Indonesia (always)
 WebFetch the BI news-release page in `reference/sources.md`. Capture the latest releases with
 titles, dates, and links. These feed the **Bank Indonesia Watch** section; a fresh, market-moving
 BI item (e.g. a rate decision) should also be scored into **Top News**.
 
-### Step 6 — Global scan
+### Step 8 — Global scan
 WebSearch for the last ~24h on: Fed / FOMC / Fed speakers; DXY / US dollar; Trump / tariffs /
 US policy affecting markets; US 10-year Treasury yield. Prefer Reuters / Bloomberg / CNBC.
 Keep 3–6 items with real links for the **Global Markets** section.
 
-### Step 7 — Score & rank
-Apply [reference/ranking-rubric.md](reference/ranking-rubric.md). Take the **Top 10** for Top News.
-Route stock/corporate items to Corporate/Emiten, BI items to Bank Indonesia Watch, and global
-items to Global Markets. De-duplicate the same story across outlets (keep the best source; the
-duplication itself raises its rank). Tickers surfacing in the radar buckets get a ranking boost —
-see the rubric.
+### Step 9 — Score & rank
+Rank **from `build/dedup-<date>.json`**, applying
+[reference/ranking-rubric.md](reference/ranking-rubric.md). Take the **Top 10** for Top News,
+then route stock/corporate items to Corporate/Emiten, BI items to Bank Indonesia Watch, and
+global items to Global Markets.
 
-### Step 8 — Summarize
+`cross_outlet_count`, `best_rail_rank`, `repeat_days` and `category` are already computed on
+each cluster. **Read them; do not re-derive them by eye** — counting outlets from the raw
+lists by hand is the error this step exists to prevent. Two rules that are easy to get wrong:
+
+- `best_rail_rank: null` means *no rail carried the story*, not that readers ignored it.
+  Never score it as unpopular.
+- Clusters with `category == "noise"` are excluded from Top News. The classification is
+  advisory — if one is obviously a real market story, overrule it and say so.
+
+Duplicates are already merged, so you should not see the same story twice. If you do, the
+clustering missed it: merge by hand and raise the outlet count.
+
+### Step 10 — Summarize
 Write a **one-line English factual summary** for every item. Sectors items already arrive
 summarized in English; condense to one line rather than rewriting. Keep the original Bahasa
 headline in `headline_original` if useful.
 
-### Step 9 — Build
+### Step 11 — Build
 Write `build/data.json` following the schema in [reference/output-format.md](reference/output-format.md),
 then run:
 
 ```bash
-python scripts/build_html.py
+python3 scripts/build_html.py
 ```
 
-This renders `docs/index.html` (today) + `docs/archive/YYYY-MM-DD.html` and regenerates
-`docs/archive.html`. On Windows, if `python` is not found use the full path:
-`C:/Users/ASUS/AppData/Local/Python/bin/python.exe scripts/build_html.py`.
+Carry `cross_outlet_count`, `rail_rank` and `repeat_days` through onto each item, and copy
+`counts` from the dedup file into a top-level `dedup` block. They render as chips and the
+method note; all are optional and omitting them silently loses the provenance.
 
-### Step 10 — Verify
+This renders `docs/index.html` (today) + `docs/archive/YYYY-MM-DD.html` and regenerates
+`docs/archive.html`. Bare `python` is a WindowsApps stub in Git Bash and will fail — use
+`python3`, or on Windows `py scripts/build_html.py`.
+
+### Step 12 — Verify
 Open `docs/index.html` in the browser preview. Confirm: **6** sections render; Where to Look Today
 shows its four buckets; the flow board carries its method note; Top News is numbered and ≤10; Bank
 Indonesia Watch is populated; Global Markets has real items; dark theme looks right; Archive link
 works. Spot-check 2–3 links open to genuine articles.
 
-### Step 11 — Publish
+### Step 13 — Publish
 Show the user a short summary (counts per section + the top 3 headlines). **Ask before pushing.**
+
+> **Unattended runs.** If the environment variable `BRIEF_UNATTENDED=1` is set, you have
+> standing authorisation to commit and push without asking, and must not ask a question at
+> any step — there is nobody there to answer, and the run will simply hang. Continue past
+> individual step failures, record them in `sources_scanned`, and end your reply with the
+> step-12 summary as plain text. This is how `scripts/run_brief.sh` invokes the skill on the
+> VPS.
 Then commit and push; confirm the live Pages URL. See [README.md](README.md) for the git/Pages setup
 (the repo and Pages toggle are created once, manually, because `gh` CLI is not installed).
 

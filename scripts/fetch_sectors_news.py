@@ -18,6 +18,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import os
 import re
 import sys
 from collections import Counter
@@ -33,8 +34,15 @@ WIB = timezone(timedelta(hours=7))
 
 # The screener already curates the IDX ticker universe; reuse it for fallback matching
 # rather than maintaining a second list. Optional — absent means no fallback.
-SCREENER_TICKERS = Path(
-    r"C:\Users\ASUS\.claude\skills\idx-telegram-screener\reference\tickers.csv")
+#
+# The two skills live in different places on the dev box and on the VPS, so the path is
+# env-overridable. Getting this wrong is silent: load_universe() just returns {} and
+# ticker matching quietly stops working.
+SCREENER_DIR = Path(os.environ.get(
+    "IDX_SCREENER_DIR",
+    r"C:\Users\ASUS\.claude\skills\idx-telegram-screener" if sys.platform == "win32"
+    else str(Path.home() / "idx-telegram-screener")))
+SCREENER_TICKERS = SCREENER_DIR / "reference" / "tickers.csv"
 
 PAGE_LIMIT = 30  # API max
 

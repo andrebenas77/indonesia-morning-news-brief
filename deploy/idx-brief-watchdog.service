@@ -1,0 +1,27 @@
+[Unit]
+Description=Indonesia Morning News Brief — did it actually publish?
+Documentation=https://github.com/andrebenas77/indonesia-morning-news-brief
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=screener
+Group=screener
+WorkingDirectory=/home/screener/indonesia-morning-news-brief
+EnvironmentFile=/etc/idx-screener.env
+Environment=PATH=/home/screener/.local/bin:/usr/local/bin:/usr/bin:/bin
+Environment=TZ=Asia/Jakarta
+
+# Deliberately a SEPARATE unit from idx-brief.service. It asks the live site, not
+# the server, so it still fires when idx-brief.service never ran at all — the one
+# failure mode no in-run check can possibly catch.
+ExecStart=/usr/bin/python3 /home/screener/indonesia-morning-news-brief/scripts/check_published.py --notify
+
+TimeoutStartSec=3min
+NoNewPrivileges=true
+ProtectSystem=full
+ProtectHome=false
+
+[Install]
+WantedBy=multi-user.target

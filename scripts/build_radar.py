@@ -19,6 +19,7 @@ import argparse
 import csv
 import json
 import math
+import os
 import sys
 from collections import defaultdict
 from datetime import datetime, timedelta, timezone
@@ -34,8 +35,14 @@ ROOT = Path(__file__).resolve().parents[1]
 BUILD = ROOT / "build"
 WIB = timezone(timedelta(hours=7))
 
-SCREENER_HISTORY = Path(
-    r"C:\Users\ASUS\.claude\skills\idx-telegram-screener\data\history.csv")
+# Env-overridable: the screener sits elsewhere on the VPS. A wrong path here is
+# silent — load_chatter() returns {} and the crowded/quiet radar buckets are simply
+# always empty.
+SCREENER_DIR = Path(os.environ.get(
+    "IDX_SCREENER_DIR",
+    r"C:\Users\ASUS\.claude\skills\idx-telegram-screener" if sys.platform == "win32"
+    else str(Path.home() / "idx-telegram-screener")))
+SCREENER_HISTORY = SCREENER_DIR / "data" / "history.csv"
 
 # Thresholds
 CHATTER_WINDOW = 5      # sessions of history to weigh

@@ -1,0 +1,25 @@
+[Unit]
+Description=Indonesia Morning News Brief — 07:45 WIB on weekdays
+Documentation=https://github.com/andrebenas77/indonesia-morning-news-brief
+
+[Timer]
+# 07:45, after the screener (07:00) and the trade plan (07:15), before the 09:00 open.
+# Two free wins from running last: the Sectors day-cache is already warm so the news
+# and flow fetches cost almost nothing, and the screener's data/history.csv is fresh
+# so build_radar.py's chatter buckets actually populate.
+#
+# Timezone is explicit so this stays correct even if the host clock is ever moved
+# off Asia/Jakarta.
+OnCalendar=Mon..Fri *-*-* 07:45:00 Asia/Jakarta
+
+# Run a missed weekday as soon as the box is back. Safe ONLY because run_brief.sh
+# refuses to publish when `date +%u > 5` — without that guard a Saturday catch-up
+# would overwrite docs/index.html with a weekend brief.
+Persistent=true
+
+RandomizedDelaySec=90
+
+Unit=idx-brief.service
+
+[Install]
+WantedBy=timers.target

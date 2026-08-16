@@ -4,6 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Indonesia Market Morning Brief — {{DATE_DISPLAY}}</title>
+<!-- Machine-readable run date. The visible date is human-formatted ("Sunday, 16 August
+     2026") and the only ISO date elsewhere on the page belongs to the FLOW BOARD, which
+     is keyed to the trading session and legitimately lags the run date. Both the in-run
+     check in run_brief.sh and the remote watchdog in check_published.py read THIS tag —
+     without it they compare against the radar's date and cry wolf every single day. -->
+<meta name="brief-date" content="{{DATE_ISO}}">
 <meta name="description" content="Daily ranked morning news brief for the Jakarta Stock Exchange (IHSG/JCI): top Indonesia market stories, corporate/emiten news, Bank Indonesia, and global markets.">
 <style>
   :root{
@@ -76,6 +82,14 @@
   .story .outlet{color:var(--text);font-weight:650}
   .tag{font-size:11px;padding:2px 7px;border-radius:6px;background:var(--panel-2);
     border:1px solid var(--border);color:var(--muted);text-transform:lowercase}
+  /* Dedup chips. Accent = a signal that lifted the story's rank; faint = one that
+     lowered it. Same geometry as .tag so the meta line stays visually even. */
+  .xo{font-size:11px;padding:2px 7px;border-radius:6px;background:var(--panel-2);
+    border:1px solid var(--border);color:var(--accent);font-weight:650}
+  .pop{font-size:11px;padding:2px 7px;border-radius:6px;background:var(--panel-2);
+    border:1px solid var(--border);color:var(--accent)}
+  .rep{font-size:11px;padding:2px 7px;border-radius:6px;background:var(--panel-2);
+    border:1px solid var(--border);color:var(--faint)}
   .empty{padding:16px;background:var(--panel);border:1px dashed var(--border);border-radius:var(--radius);
     color:var(--faint);font-size:13.5px}
 
@@ -140,6 +154,7 @@
     <h1>Indonesia Market Morning Brief</h1>
     <div class="sub">{{DATE_DISPLAY}} · generated {{GENERATED_AT}}</div>
     <div class="meta">{{SOURCES_SCANNED}}</div>
+    <div class="meta">{{DEDUP_NOTE}}</div>
   </div>
 
   <main>
