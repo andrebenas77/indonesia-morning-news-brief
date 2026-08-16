@@ -1,7 +1,21 @@
 # Bare-box recovery — Biznet web console
 
-Recovering a **rebuilt** Biznet VPS (`103.197.190.92`, Ubuntu 24.04) from nothing: no SSH key,
+Recovering a **rebuilt** Biznet VPS (`103.58.101.93`, Ubuntu 24.04) from nothing: no SSH key,
 no users, no repos, no secrets. Restores the screener first, then the morning brief.
+
+> **There are two Biznet instances, and both currently reject the key.** Verified 2026-08-16:
+>
+> | IP | rDNS | State |
+> |---|---|---|
+> | `103.58.101.93` | `ip-93-101-58-103.wjv-1.biznetg.io` | target of this runbook |
+> | `103.197.190.92` | `ip-92-190-197-103.wjv-1.biznetg.io` | same Jakarta zone, also bare |
+>
+> Both run Ubuntu with OpenSSH 9.6p1 and refuse `id_ed25519_idxvps3`. Neither is the dev PC —
+> that is `118.99.76.66`. **Confirm which instance you actually intend to keep before spending
+> console time**, and check the Biznet portal in case you are paying for both.
+>
+> The Phase A command is IP-agnostic: it fetches from GitHub and installs the key locally, so it
+> works unchanged on either box. Only the `ssh`/`scp` targets below assume `.93`.
 
 > **Why the console at all.** SSH is publickey-only and `authorized_keys` is empty, so SSH cannot
 > bootstrap itself. The screener's `deploy/setup.sh` step 1 installs the key — that one step has to
@@ -58,7 +72,7 @@ Success looks like a `CONSOLE WORK IS DONE` banner. Safe to re-run; every step i
 ### A2. Prove SSH works — **from your PC, not the console**
 
 ```bash
-ssh -i "$HOME/.ssh/id_ed25519_idxvps3" screener@103.197.190.92 "hostname; date"
+ssh -i "$HOME/.ssh/id_ed25519_idxvps3" screener@103.58.101.93 "hostname; date"
 ```
 
 Once this answers, **close the console.** Everything below is normal SSH.
@@ -78,7 +92,7 @@ Once this answers, **close the console.** Everything below is normal SSH.
 ### B0. Run the heavy bootstrap (now that output is scrollable)
 
 ```bash
-ssh -i "$HOME/.ssh/id_ed25519_idxvps3" screener@103.197.190.92
+ssh -i "$HOME/.ssh/id_ed25519_idxvps3" screener@103.58.101.93
 ```
 
 ```bash
@@ -98,11 +112,11 @@ so a screener-only box cannot run `sectors_client.py`. If you stop after Phase B
 not runnable without them. From **PowerShell on your PC**:
 
 ```bash
-scp -i "$HOME/.ssh/id_ed25519_idxvps3" "$HOME/.claude/skills/idx-telegram-screener/secrets/.env" screener@103.197.190.92:~/idx-telegram-screener/secrets/.env
+scp -i "$HOME/.ssh/id_ed25519_idxvps3" "$HOME/.claude/skills/idx-telegram-screener/secrets/.env" screener@103.58.101.93:~/idx-telegram-screener/secrets/.env
 ```
 
 ```bash
-scp -i "$HOME/.ssh/id_ed25519_idxvps3" "$HOME/.claude/skills/idx-telegram-screener/reference/channels.txt" screener@103.197.190.92:~/idx-telegram-screener/reference/channels.txt
+scp -i "$HOME/.ssh/id_ed25519_idxvps3" "$HOME/.claude/skills/idx-telegram-screener/reference/channels.txt" screener@103.58.101.93:~/idx-telegram-screener/reference/channels.txt
 ```
 
 Also copy `secrets/trade.env` if you still run the trade-plan timers.
@@ -114,7 +128,7 @@ likely to trip Telegram's checks than a clean login.
 credentials, so lock both down:
 
 ```bash
-ssh -i "$HOME/.ssh/id_ed25519_idxvps3" screener@103.197.190.92 "chmod 600 ~/idx-telegram-screener/secrets/*.env && chmod +x ~/idx-telegram-screener/scripts/run_daily.sh && ls -l ~/idx-telegram-screener/secrets/"
+ssh -i "$HOME/.ssh/id_ed25519_idxvps3" screener@103.58.101.93 "chmod 600 ~/idx-telegram-screener/secrets/*.env && chmod +x ~/idx-telegram-screener/scripts/run_daily.sh && ls -l ~/idx-telegram-screener/secrets/"
 ```
 
 Every `.env` must read `-rw-------`.
