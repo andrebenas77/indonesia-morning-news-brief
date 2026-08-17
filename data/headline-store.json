@@ -199,6 +199,8 @@
       "url": "https://investasi.kontan.co.id/news/pasar-respons-positif-nota-keuangan-dan-rapbn-2027-tanda-ihsg-bakal-bullish",
       "outlets": [
         "Bisnis",
+        "Bloomberg Technoz",
+        "CNBC Indonesia",
         "Kontan"
       ],
       "tickers": [
@@ -1005,6 +1007,127 @@
       "url": "https://investasi.kontan.co.id/news/selamat-hut-ke-81-ri-apakah-bursa-saham-buka-ini-jadwal-transaksi-di-bei-agustus",
       "outlets": [
         "Kontan"
+      ],
+      "tickers": []
+    },
+    "2027|antm|bmri|boost|bumn|expected|picks|rapbn|samuel|sekuritas|stocks|tins": {
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "seen_dates": [
+        "2026-08-17"
+      ],
+      "title": "RAPBN 2027 Expected to Boost BUMN Stocks, Samuel Sekuritas Picks BMRI, TINS, and ANTM",
+      "url": "https://market.bisnis.com/read/20260816/189/1996664/rapbn-2027-jadi-katalis-saham-bumn-bmri-hingga-antm-jadi-pilihan",
+      "outlets": [
+        "Bisnis"
+      ],
+      "tickers": [
+        "ANTM",
+        "BMRI",
+        "TINS"
+      ]
+    },
+    "2027|dipangkas|kuota|menkeu|penjelasan|purbaya|subsidi": {
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "seen_dates": [
+        "2026-08-17"
+      ],
+      "title": "Kuota BBM Subsidi 2027 Dipangkas 58%, Ini Penjelasan Menkeu Purbaya",
+      "url": "https://nasional.kontan.co.id/news/kuota-bbm-subsidi-2027-dipangkas-58-ini-penjelasan-menkeu-purbaya?source=home_popular",
+      "outlets": [
+        "Kontan"
+      ],
+      "tickers": []
+    },
+    "bpjs|cair|caranya|ketenagakerjaan|resign|saldo|tanpa": {
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "seen_dates": [
+        "2026-08-17"
+      ],
+      "title": "Saldo JHT BPJS Ketenagakerjaan Bisa Cair Tanpa Resign, Begini Caranya",
+      "url": "https://www.cnbcindonesia.com/tech/20260816165834-37-759820/saldo-jht-bpjs-ketenagakerjaan-bisa-cair-tanpa-resign-begini-caranya",
+      "outlets": [
+        "CNBC Indonesia"
+      ],
+      "tickers": []
+    },
+    "gaji|gawat|naikkan|negara|presiden|sedang|september|tentara": {
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "seen_dates": [
+        "2026-08-17"
+      ],
+      "title": "Negara sedang Gawat, Presiden Naikkan Gaji Tentara 80% per 1 September",
+      "url": "https://www.cnbcindonesia.com/news/20260816083849-4-759766/negara-sedang-gawat-presiden-naikkan-gaji-tentara-80-per-1-september",
+      "outlets": [
+        "CNBC Indonesia"
+      ],
+      "tickers": []
+    },
+    "bakal|gratiskan|pemerintah|syaratnya": {
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "seen_dates": [
+        "2026-08-17"
+      ],
+      "title": "Pemerintah Bakal Gratiskan SHM, Ini Syaratnya",
+      "url": "https://www.cnbcindonesia.com/news/20260816154923-4-759813/pemerintah-bakal-gratiskan-shm-ini-syaratnya",
+      "outlets": [
+        "CNBC Indonesia"
+      ],
+      "tickers": []
+    },
+    "agustus|bendera|diturunkan|hilang|jelang|panglima|pusaka|upacara": {
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "seen_dates": [
+        "2026-08-17"
+      ],
+      "title": "Jelang Upacara 17 Agustus, Bendera Pusaka Hilang-Panglima Diturunkan",
+      "url": "https://www.cnbcindonesia.com/entrepreneur/20260811142716-25-758293/jelang-upacara-17-agustus-bendera-pusaka-hilang-panglima-diturunkan",
+      "outlets": [
+        "CNBC Indonesia"
+      ],
+      "tickers": []
+    },
+    "bunga|ekonomi|kalender|rapat|risalah|suku": {
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "seen_dates": [
+        "2026-08-17"
+      ],
+      "title": "Kalender Ekonomi: Risalah Rapat The Fed hingga Suku Bunga BI",
+      "url": "https://www.bloombergtechnoz.com/detail-news/118552/kalender-ekonomi-risalah-rapat-the-fed-hingga-suku-bunga-bi",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "2026|awal|lanjut|menguat|minyak|pekan|perdagangan|senin": {
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "seen_dates": [
+        "2026-08-17"
+      ],
+      "title": "Harga Minyak Lanjut Menguat pada Perdagangan Awal Pekan Ini, Senin (17/8/2026)",
+      "url": "https://investasi.kontan.co.id/news/harga-minyak-lanjut-menguat-pada-perdagangan-awal-pekan-ini-senin-1782026",
+      "outlets": [
+        "Kontan"
+      ],
+      "tickers": []
+    },
+    "gempur|iran|israel|lebanon|rencana|sanksi|tengah": {
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "seen_dates": [
+        "2026-08-17"
+      ],
+      "title": "Israel Gempur Lebanon di Tengah Rencana Sanksi AS ke Iran",
+      "url": "https://www.bloombergtechnoz.com/detail-news/118558/israel-gempur-lebanon-di-tengah-rencana-sanksi-as-ke-iran",
+      "outlets": [
+        "Bloomberg Technoz"
       ],
       "tickers": []
     }
