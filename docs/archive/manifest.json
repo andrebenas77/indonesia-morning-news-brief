@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-08-24",
+    "date_display": "Monday, 24 August 2026",
+    "generated_at": "08:15 WIB",
+    "top_headline": "Bank Indonesia holds BI-Rate at 5.75%",
+    "counts": {
+      "top": 10,
+      "corporate": 8,
+      "bank_indonesia": 4,
+      "global": 5,
+      "merged": 28,
+      "cross_outlet_max": 3
+    }
+  },
+  {
     "date": "2026-08-21",
     "date_display": "Friday, 21 August 2026",
     "generated_at": "08:15 WIB",
