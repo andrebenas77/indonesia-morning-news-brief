@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-09-01",
+    "date_display": "Tuesday, 1 September 2026",
+    "generated_at": "08:15 WIB",
+    "top_headline": "Bank Indonesia and Singapore's MAS operationalize local-currency trade settlement framework",
+    "counts": {
+      "top": 10,
+      "corporate": 8,
+      "bank_indonesia": 1,
+      "global": 4,
+      "merged": 59,
+      "cross_outlet_max": 7
+    }
+  },
+  {
     "date": "2026-08-31",
     "date_display": "Monday, 31 August 2026",
     "generated_at": "08:10 WIB",
