@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-09-11",
+    "date_display": "Friday, 11 September 2026",
+    "generated_at": "07:50 WIB",
+    "top_headline": "IHSG tumbles 1.33% to 6,589, rupiah weakens to Rp17,547/USD as oil surge on US-Iran tensions hits markets",
+    "counts": {
+      "top": 10,
+      "corporate": 8,
+      "bank_indonesia": 5,
+      "global": 4,
+      "merged": 59,
+      "cross_outlet_max": 4
+    }
+  },
+  {
     "date": "2026-09-10",
     "date_display": "Thursday, 10 September 2026",
     "generated_at": "08:30 WIB",
