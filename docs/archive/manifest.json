@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-09-17",
+    "date_display": "Thursday, 17 September 2026",
+    "generated_at": "08:30 WIB",
+    "top_headline": "Fed hikes rates 25bps to 3.75-4%, first increase since 2023; Trump pushes back",
+    "counts": {
+      "top": 10,
+      "corporate": 8,
+      "bank_indonesia": 5,
+      "global": 4,
+      "merged": 57,
+      "cross_outlet_max": 2
+    }
+  },
+  {
     "date": "2026-09-16",
     "date_display": "Wednesday, 16 September 2026",
     "generated_at": "07:30 WIB",
