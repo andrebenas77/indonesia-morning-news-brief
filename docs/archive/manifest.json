@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-09-21",
+    "date_display": "Monday, 21 September 2026",
+    "generated_at": "09:15 WIB",
+    "top_headline": "Telkom (TLKM) takes 100% control of Telkomsigma's data-center unit",
+    "counts": {
+      "top": 10,
+      "corporate": 5,
+      "bank_indonesia": 6,
+      "global": 4,
+      "merged": 18,
+      "cross_outlet_max": 2
+    }
+  },
+  {
     "date": "2026-09-18",
     "date_display": "Friday, 18 September 2026",
     "generated_at": "07:51 WIB",
