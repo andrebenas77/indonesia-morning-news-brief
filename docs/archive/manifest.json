@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-09-22",
+    "date_display": "Tuesday, 22 September 2026",
+    "generated_at": "08:15 WIB",
+    "top_headline": "IDX cuts minimum stock price floor to Rp1, resets auto-rejection bands",
+    "counts": {
+      "top": 10,
+      "corporate": 7,
+      "bank_indonesia": 6,
+      "global": 4,
+      "merged": 32,
+      "cross_outlet_max": 3
+    }
+  },
+  {
     "date": "2026-09-21",
     "date_display": "Monday, 21 September 2026",
     "generated_at": "09:15 WIB",
