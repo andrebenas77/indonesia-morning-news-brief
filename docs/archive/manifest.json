@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-09-23",
+    "date_display": "Wednesday, 23 September 2026",
+    "generated_at": "08:15 WIB",
+    "top_headline": "IHSG closes down 1.68% to 6,277 on heavy foreign selling",
+    "counts": {
+      "top": 10,
+      "corporate": 7,
+      "bank_indonesia": 6,
+      "global": 5,
+      "merged": 57,
+      "cross_outlet_max": 3
+    }
+  },
+  {
     "date": "2026-09-22",
     "date_display": "Tuesday, 22 September 2026",
     "generated_at": "08:15 WIB",
