@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-10-05",
+    "date_display": "Monday, 5 October 2026",
+    "generated_at": "08:15 WIB",
+    "top_headline": "OJK orders Indonesian banks to cut dividend payouts to fund IT security upgrades",
+    "counts": {
+      "top": 10,
+      "corporate": 8,
+      "bank_indonesia": 6,
+      "global": 4,
+      "merged": 15,
+      "cross_outlet_max": 2
+    }
+  },
+  {
     "date": "2026-10-02",
     "date_display": "Friday, 2 October 2026",
     "generated_at": "08:30 WIB",
