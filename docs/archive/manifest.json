@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-10-12",
+    "date_display": "Monday, 12 October 2026",
+    "generated_at": "08:15 WIB",
+    "top_headline": "Foreign Investors Pull Rp84.99 Trillion from IDX in 2026, Surpassing Covid-Era Outflows",
+    "counts": {
+      "top": 10,
+      "corporate": 8,
+      "bank_indonesia": 6,
+      "global": 5,
+      "merged": 22,
+      "cross_outlet_max": 3
+    }
+  },
+  {
     "date": "2026-10-09",
     "date_display": "Friday, 9 October 2026",
     "generated_at": "07:51 WIB",
