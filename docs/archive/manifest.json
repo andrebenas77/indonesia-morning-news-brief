@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-10-14",
+    "date_display": "Wednesday, 14 October 2026",
+    "generated_at": "08:10 WIB",
+    "top_headline": "Rumors of Price-Manipulation Sanctions Weigh on IHSG Ahead of MSCI/FTSE Review",
+    "counts": {
+      "top": 10,
+      "corporate": 8,
+      "bank_indonesia": 5,
+      "global": 4,
+      "merged": 64,
+      "cross_outlet_max": 4
+    }
+  },
+  {
     "date": "2026-10-13",
     "date_display": "Tuesday, 13 October 2026",
     "generated_at": "08:10 WIB",
