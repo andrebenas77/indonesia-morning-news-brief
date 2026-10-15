@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Indonesia Market Morning Brief — Thursday, 15 October 2026</title>
+<!-- Machine-readable run date. The visible date is human-formatted ("Sunday, 16 August
+     2026") and the only ISO date elsewhere on the page belongs to the FLOW BOARD, which
+     is keyed to the trading session and legitimately lags the run date. Both the in-run
+     check in run_brief.sh and the remote watchdog in check_published.py read THIS tag —
+     without it they compare against the radar's date and cry wolf every single day. -->
+<meta name="brief-date" content="2026-10-15">
+<meta name="description" content="Daily ranked morning news brief for the Jakarta Stock Exchange (IHSG/JCI): top Indonesia market stories, corporate/emiten news, Bank Indonesia, and global markets.">
+<style>
+  :root{
+    --bg:#0d1117; --panel:#161b22; --panel-2:#1c2129; --border:#2a313c;
+    --text:#e6edf3; --muted:#9aa4b2; --faint:#6b7481;
+    --accent:#f2a900;        /* amber brand */
+    --accent-2:#4ea1ff;      /* link/interactive blue */
+    --danger:#f2545b; --ok:#3fb950;
+    --radius:12px; --maxw:1080px;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme: light){
+    :root{
+      --bg:#f5f6f8; --panel:#ffffff; --panel-2:#f0f2f5; --border:#e2e6eb;
+      --text:#12161c; --muted:#59616d; --faint:#8a929d;
+      --accent:#b8790a; --accent-2:#1565d8;
+    }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.5;
+    -webkit-font-smoothing:antialiased;font-size:15px}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+
+  /* Top bar */
+  header.topbar{position:sticky;top:0;z-index:20;background:rgba(13,17,23,.86);
+    backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--border)}
+  @media (prefers-color-scheme: light){header.topbar{background:rgba(245,246,248,.9)}}
+  .topbar .wrap{display:flex;align-items:center;gap:14px;height:56px}
+  .brand{display:flex;align-items:center;gap:9px;font-weight:700;letter-spacing:.2px}
+  .brand .dot{width:11px;height:11px;border-radius:50%;background:var(--accent);
+    box-shadow:0 0 0 3px rgba(242,169,0,.18)}
+  .brand small{font-weight:500;color:var(--muted)}
+  .nav{margin-left:auto;display:flex;gap:6px}
+  .nav a{padding:7px 12px;border-radius:8px;color:var(--muted);font-size:13.5px;font-weight:600}
+  .nav a:hover{background:var(--panel-2);color:var(--text)}
+
+  /* Masthead */
+  .masthead{padding:30px 0 8px}
+  .masthead h1{margin:0;font-size:27px;letter-spacing:-.4px;font-weight:800}
+  .masthead .sub{color:var(--muted);margin-top:6px;font-size:14px}
+  .meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .chip{font-size:12px;padding:4px 10px;border:1px solid var(--border);border-radius:999px;
+    color:var(--muted);background:var(--panel);display:inline-flex;align-items:center;gap:6px}
+  .chip .s-ok{color:var(--ok)} .chip .s-failed{color:var(--danger)}
+  .chip.dim{opacity:.75}
+
+  /* Sections */
+  main{padding:22px 0 8px}
+  section.block{margin:26px 0}
+  .block > h2{display:flex;align-items:center;gap:10px;margin:0 0 14px;font-size:13px;
+    text-transform:uppercase;letter-spacing:1.4px;color:var(--accent);font-weight:800}
+  .block > h2::after{content:"";flex:1;height:1px;background:var(--border)}
+  .block > h2 .count{color:var(--faint);font-weight:700;letter-spacing:.5px}
+
+  /* Story list */
+  .stories{display:flex;flex-direction:column;gap:1px;background:var(--border);
+    border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+  .story{display:flex;gap:14px;padding:14px 16px;background:var(--panel);transition:background .12s}
+  .story:hover{background:var(--panel-2)}
+  .rank{flex:0 0 auto;width:26px;height:26px;border-radius:7px;background:var(--panel-2);
+    border:1px solid var(--border);color:var(--accent);font-weight:800;font-size:13px;
+    display:flex;align-items:center;justify-content:center;margin-top:1px}
+  .story .body{min-width:0;flex:1}
+  .story .hl{font-weight:650;font-size:15.5px;line-height:1.35}
+  .story .hl a:hover{color:var(--accent-2);text-decoration:underline}
+  .story .sum{color:var(--muted);font-size:13.5px;margin-top:3px}
+  .story .foot{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:8px;font-size:12px;color:var(--faint)}
+  .story .outlet{color:var(--text);font-weight:650}
+  .tag{font-size:11px;padding:2px 7px;border-radius:6px;background:var(--panel-2);
+    border:1px solid var(--border);color:var(--muted);text-transform:lowercase}
+  /* Dedup chips. Accent = a signal that lifted the story's rank; faint = one that
+     lowered it. Same geometry as .tag so the meta line stays visually even. */
+  .xo{font-size:11px;padding:2px 7px;border-radius:6px;background:var(--panel-2);
+    border:1px solid var(--border);color:var(--accent);font-weight:650}
+  .pop{font-size:11px;padding:2px 7px;border-radius:6px;background:var(--panel-2);
+    border:1px solid var(--border);color:var(--accent)}
+  .rep{font-size:11px;padding:2px 7px;border-radius:6px;background:var(--panel-2);
+    border:1px solid var(--border);color:var(--faint)}
+  .empty{padding:16px;background:var(--panel);border:1px dashed var(--border);border-radius:var(--radius);
+    color:var(--faint);font-size:13.5px}
+
+  /* Two-column on wide screens for the lower sections */
+  .cols{display:grid;grid-template-columns:1fr;gap:26px}
+  @media (min-width:820px){.cols{grid-template-columns:1fr 1fr}}
+
+  /* Where to Look Today — bucket cards */
+  .buckets{display:grid;grid-template-columns:1fr;gap:14px}
+  @media (min-width:820px){.buckets{grid-template-columns:1fr 1fr}}
+  .bucket{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px}
+  .bucket .bk-title{font-weight:750;font-size:14.5px;display:flex;align-items:center;gap:8px}
+  .bucket .bk-title .n{font-size:11px;color:var(--faint);font-weight:700}
+  .bucket .bk-desc{color:var(--muted);font-size:12.5px;margin-top:3px}
+  .bk-rows{margin-top:10px;display:flex;flex-direction:column;gap:1px;background:var(--border);
+    border:1px solid var(--border);border-radius:9px;overflow:hidden}
+  .bk-row{display:flex;align-items:baseline;gap:10px;padding:8px 10px;background:var(--panel-2);font-size:13px}
+  .bk-row .tk{font-weight:800;letter-spacing:.4px;min-width:54px}
+  .bk-row .val{font-variant-numeric:tabular-nums;font-weight:700;min-width:80px;text-align:right}
+  .val.pos{color:var(--ok)} .val.neg{color:var(--danger)}
+  .bk-row .why{color:var(--muted);font-size:12px;min-width:0}
+  .bk-empty{margin-top:10px;color:var(--faint);font-size:12.5px;padding:8px 10px;
+    border:1px dashed var(--border);border-radius:9px}
+
+  /* Net foreign flow board */
+  .flowgrid{display:grid;grid-template-columns:1fr;gap:14px}
+  @media (min-width:820px){.flowgrid{grid-template-columns:1fr 1fr}}
+  .flowcol{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+  .flowcol .fh{padding:10px 14px;font-size:12px;font-weight:800;text-transform:uppercase;
+    letter-spacing:1px;border-bottom:1px solid var(--border)}
+  .flowcol .fh.in{color:var(--ok)} .flowcol .fh.out{color:var(--danger)}
+  table.flow{width:100%;border-collapse:collapse;font-size:13px}
+  table.flow td{padding:7px 14px;border-top:1px solid var(--border);vertical-align:baseline}
+  table.flow tr:first-child td{border-top:none}
+  table.flow .tk{font-weight:800;letter-spacing:.4px;width:64px}
+  table.flow .num{text-align:right;font-variant-numeric:tabular-nums;font-weight:700;width:92px}
+  table.flow .meta{color:var(--faint);font-size:11.5px}
+  .method{margin-top:12px;color:var(--faint);font-size:12px;line-height:1.55;
+    border-left:2px solid var(--border);padding-left:10px}
+  .warn{margin-top:10px;padding:9px 12px;border:1px solid var(--border);
+    border-left:3px solid var(--accent);border-radius:8px;background:var(--panel);
+    color:var(--muted);font-size:12.5px}
+
+  footer{border-top:1px solid var(--border);margin-top:34px;padding:22px 0 44px;color:var(--faint);font-size:12.5px}
+  footer .disc{max-width:760px}
+  footer a{color:var(--accent-2)}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="../index.html"><span class="dot"></span>IDX Morning Brief <small>· Jakarta markets</small></a>
+    <nav class="nav">
+      <a href="../index.html">Today</a>
+      <a href="../archive.html">Archive</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="masthead">
+    <h1>Indonesia Market Morning Brief</h1>
+    <div class="sub">Thursday, 15 October 2026 · generated 08:06 WIB</div>
+    <div class="meta"><span class="chip"><span class="s-ok">&#9679;</span> Sectors API</span><span class="chip"><span class="s-ok">&#9679;</span> Kontan</span><span class="chip"><span class="s-ok">&#9679;</span> CNBC Indonesia</span><span class="chip"><span class="s-ok">&#9679;</span> Emitennews</span><span class="chip"><span class="s-ok">&#9679;</span> Bloomberg Technoz</span><span class="chip"><span class="s-ok">&#9679;</span> Bank Indonesia</span><span class="chip dim"><span class="s-failed">&#10005;</span> Foreign flow (Sectors)</span><span class="chip dim"><span class="s-failed">&#10005;</span> Radar join</span></div>
+    <div class="meta">259 headlines merged into 250 stories; 9 duplicates collapsed; 6 carried over from earlier this week; semantic clustering unavailable this run.</div>
+  </div>
+
+  <main>
+    <section class="block">
+      <h2>Where to Look Today <span class="count">0</span></h2>
+      <div class="empty">No flow data today. Run <code>scripts/fetch_flows.py</code> then <code>scripts/build_radar.py</code>.</div><div class="warn">Foreign-flow data unavailable — radar cannot be built. Run scripts/fetch_flows.py, or check SECTORS_API_KEY.</div>
+    </section>
+
+    <section class="block">
+      <h2>Net Foreign Flow <span class="count">2026-10-15</span></h2>
+      <div class="empty">No foreign-flow data for this session.</div>
+    </section>
+
+    <section class="block">
+      <h2>Top News <span class="count">10</span></h2>
+      <div class="stories"><article class="story"><div class="rank">1</div><div class="body"><div class="hl"><a href="https://investasi.kontan.co.id/news/samudra-investment-pte-ltd-borong-18744-juta-saham-mitra-adiperkasa-mapi" target="_blank" rel="noopener">Singapore investor Samudra buys Rp285bn stake increase in Mitra Adiperkasa</a></div><div class="sum">Singapore-based Samudra Investment Pte Ltd bought 187.44 million PT Mitra Adiperkasa (MAPI) shares at Rp1,523 each (Rp285.28bn total) on 9 October, raising its stake, per a disclosure filed 14 October.</div><div class="foot"><span class="outlet">Kontan</span> <span aria-hidden="true">·</span> 13:44 <span aria-hidden="true">·</span> <span class="xo">3 outlets</span> <span aria-hidden="true">·</span> <span class="pop">#18 most-read</span><span class="tag">mapi</span><span class="tag">ownership</span></div></div></article><article class="story"><div class="rank">2</div><div class="body"><div class="hl"><a href="https://www.bloombergtechnoz.com/detail-news/124597/mengukur-dana-himpunan-private-placement-hartadinata-hrta" target="_blank" rel="noopener">Hartadinata Abadi plans Rp939bn private placement for gold working capital</a></div><div class="sum">PT Hartadinata Abadi (HRTA) plans a private placement of up to 460.53 million new shares (10% of paid-up capital) to raise about Rp939.47 billion, to be used entirely for gold raw-material working capital.</div><div class="foot"><span class="outlet">Bloomberg Technoz</span> <span aria-hidden="true">·</span> 16:50 <span aria-hidden="true">·</span> <span class="xo">3 outlets</span><span class="tag">hrta</span><span class="tag">capital-raise</span></div></div></article><article class="story"><div class="rank">3</div><div class="body"><div class="hl"><a href="https://www.idnfinancials.com/id/news/70274/gmfi-bidik-tambahan-modal-lewat-rights-issue-17-6-saham" target="_blank" rel="noopener">Garuda&#x27;s GMF plans Rp1.19 trillion rights issue</a></div><div class="sum">Garuda Maintenance Facility Aero Asia (GMFI), a unit of Garuda Indonesia (GIAA), plans a rights issue of 22.02 billion new shares (17.6% of its stock) to raise up to Rp1.19 trillion.</div><div class="foot"><span class="outlet">IDN Financials</span> <span aria-hidden="true">·</span> 11:20 <span aria-hidden="true">·</span> <span class="xo">3 outlets</span><span class="tag">gmfi</span><span class="tag">giaa</span><span class="tag">rights-issue</span></div></div></article><article class="story"><div class="rank">4</div><div class="body"><div class="hl"><a href="https://emitennews.com/news/di-rupslb-daring-dirut-pln-berganti-dari-darmawan-ke-suroso-isnandar" target="_blank" rel="noopener">State utility PLN replaces president director</a></div><div class="sum">State electricity utility PLN replaced its president director, Darmawan, with Suroso Isnandar, at an online extraordinary shareholders&#x27; meeting.</div><div class="foot"><span class="outlet">Emitennews</span> <span aria-hidden="true">·</span> <span class="pop">#1 most-read</span><span class="tag">pln</span><span class="tag">soe</span><span class="tag">management</span></div></div></article><article class="story"><div class="rank">5</div><div class="body"><div class="hl"><a href="https://investasi.kontan.co.id/news/goto-gojek-goto-batalkan-penghapusan-32-miliar-saham-tresuri-begini-dampaknya" target="_blank" rel="noopener">GoTo cancels treasury-share write-off as deputy president director resigns</a></div><div class="sum">GoTo Gojek Tokopedia (GOTO) called off its plan to cancel/retire 32 billion treasury shares, a decision that coincided with deputy president director Catherine stepping down.</div><div class="foot"><span class="outlet">Kontan</span> <span aria-hidden="true">·</span> 18:52 <span aria-hidden="true">·</span> <span class="pop">#1 most-read</span><span class="tag">goto</span><span class="tag">treasury-shares</span><span class="tag">management</span></div></div></article><article class="story"><div class="rank">6</div><div class="body"><div class="hl"><a href="https://investasi.kontan.co.id/news/bei-tetapkan-harga-teoretis-rights-issue-bukit-uluwatu-buva" target="_blank" rel="noopener">IDX sets theoretical price for Bukit Uluwatu Villa rights issue</a></div><div class="sum">IDX set the theoretical price for Bukit Uluwatu Villa&#x27;s (BUVA) second rights issue at Rp522 (adjusted to Rp520 for trading), as the hotel operator offers 6.15 billion new shares equal to about 20% of post-issue capital.</div><div class="foot"><span class="outlet">Kontan</span> <span aria-hidden="true">·</span> 13:42 <span aria-hidden="true">·</span> <span class="pop">#2 most-read</span><span class="tag">buva</span><span class="tag">rights-issue</span></div></div></article><article class="story"><div class="rank">7</div><div class="body"><div class="hl"><a href="https://emitennews.com/news/pendapatan-boleh-gacor-kenapa-kantong-wskt-masih-jebol-di-q3-2026" target="_blank" rel="noopener">Waskita Karya&#x27;s cash position still weak in Q3 despite revenue growth</a></div><div class="sum">State contractor Waskita Karya (WSKT) posted stronger Q3 2026 revenue but its cash position remained weak, per Emitennews.</div><div class="foot"><span class="outlet">Emitennews</span> <span aria-hidden="true">·</span> <span class="pop">#2 most-read</span><span class="tag">wskt</span><span class="tag">earnings</span></div></div></article><article class="story"><div class="rank">8</div><div class="body"><div class="hl"><a href="https://investasi.kontan.co.id/news/asing-net-sell-rp-113-triliun-saat-ihsg-rebound-cek-saham-yang-banyak-dilepas" target="_blank" rel="noopener">Foreign investors net sell Rp1.13 trillion as IHSG rebounds 0.29%</a></div><div class="sum">Foreign investors posted a net sell of about Rp1.13 trillion on Wednesday (14/10) even as the IHSG rebounded 0.29% (+17.04 points) to close at 5,943.02.</div><div class="foot"><span class="outlet">Kontan</span> <span aria-hidden="true">·</span> 21:49 <span aria-hidden="true">·</span> <span class="pop">#3 most-read</span><span class="tag">ihsg</span><span class="tag">foreign-flow</span></div></div></article><article class="story"><div class="rank">9</div><div class="body"><div class="hl"><a href="https://internasional.kontan.co.id/news/negara-asia-harus-waspadai-munculnya-krisis-keuangan-lagi" target="_blank" rel="noopener">Report warns Asian countries to stay alert to renewed financial-crisis risk</a></div><div class="sum">A Kontan report warns Asian countries to stay vigilant against the risk of a renewed financial crisis.</div><div class="foot"><span class="outlet">Kontan</span> <span aria-hidden="true">·</span> <span class="pop">#5 most-read</span><span class="tag">macro</span><span class="tag">asia</span></div></div></article><article class="story"><div class="rank">10</div><div class="body"><div class="hl"><a href="https://insight.kontan.co.id/news/ujian-berat-bagi-ihsg-badai-inflasi-as-hingga-penantian-evaluasi-msci-pada-november" target="_blank" rel="noopener">IHSG faces tough test from US inflation shock and looming November MSCI review</a></div><div class="sum">Kontan says the IHSG faces a difficult stretch ahead, citing a US inflation shock and the wait for November&#x27;s MSCI index review.</div><div class="foot"><span class="outlet">Kontan</span> <span aria-hidden="true">·</span> <span class="pop">#6 most-read</span><span class="tag">ihsg</span><span class="tag">msci</span><span class="tag">macro</span></div></div></article></div>
+    </section>
+
+    <div class="cols">
+      <section class="block">
+        <h2>Corporate / Emiten <span class="count">8</span></h2>
+        <div class="stories"><article class="story"><div class="body"><div class="hl"><a href="https://emitennews.com/news/btps-buyback-rp1-triliun-cek-alasannya" target="_blank" rel="noopener">BTPN Syariah files Rp1 trillion share buyback</a></div><div class="sum">BTPN Syariah (BTPS) filed a Rp1 trillion share buyback plan, which director Arief Ismail called a step to build long-term shareholder value and confidence in its fundamentals.</div><div class="foot"><span class="outlet">Emitennews</span> <span aria-hidden="true">·</span> 06:20 <span aria-hidden="true">·</span> <span class="xo">2 outlets</span><span class="tag">btps</span><span class="tag">buyback</span></div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://investasi.kontan.co.id/news/investor-asing-ramai-borong-saham-hmsp-cermati-rekomendasi-analis" target="_blank" rel="noopener">Foreign investors heavily buy Sampoerna shares</a></div><div class="sum">Foreign investors have been heavily buying Sampoerna (HMSP) shares, which gained about 4% over the past week to around Rp650, with analysts weighing in on the move.</div><div class="foot"><span class="outlet">Kontan</span> <span aria-hidden="true">·</span> 19:36<span class="tag">hmsp</span><span class="tag">foreign-flow</span></div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://stockwatch.id/saham-tfco-disuspensi-bei-hari-ini-harga-melonjak-95/" target="_blank" rel="noopener">IDX suspends Tifico Fiber (TFCO) after 94.5% three-day price spike</a></div><div class="sum">IDX suspended trading in Tifico Fiber Indonesia (TFCO) shares on 14 October as a cooling-down measure after the stock hit the auto-reject-up limit three sessions straight, rising about 94.5% from Rp825 on 8 October to Rp1,605 on 13 October; trading reopened 15 October.</div><div class="foot"><span class="outlet">StockWatch</span><span class="tag">tfco</span><span class="tag">suspension</span></div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://investor.id/market/457945/kas-solid-prodia-prda-pacu-laba-dan-inovasi-digital" target="_blank" rel="noopener">Prodia Widyahusada posts solid net cash position in H1 2026</a></div><div class="sum">Clinical lab operator Prodia Widyahusada (PRDA) held a net cash position of Rp646.13 billion as of June 2026, with a low 12.85% debt-to-equity ratio, supporting profit growth and digital investment.</div><div class="foot"><span class="outlet">Investor Daily</span> <span aria-hidden="true">·</span> 15:45 <span aria-hidden="true">·</span> <span class="xo">2 outlets</span><span class="tag">prda</span><span class="tag">earnings</span></div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://investasi.kontan.co.id/news/belanja-eksplorasi-berlanjut-simak-prospek-saham-brms-arci-emas-enrg-dewa" target="_blank" rel="noopener">Mining issuers&#x27; exploration spending in focus: BRMS, ARCI, EMAS, ENRG, DEWA</a></div><div class="sum">Kontan highlights continued exploration spending at mining issuers BRMS, ARCI, EMAS, ENRG and DEWA and their stock outlooks.</div><div class="foot"><span class="outlet">Kontan</span><span class="tag">brms</span><span class="tag">arci</span><span class="tag">emas</span><span class="tag">enrg</span><span class="tag">dewa</span></div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://emitennews.com/news/akselerasi-streamlining-pastikan-telkomgroup-fokus-pada-bisnis-inti" target="_blank" rel="noopener">Telkom Group accelerates core-business streamlining</a></div><div class="sum">Telkom Group is accelerating a streamlining program to keep the group focused on its core telecommunications business, per Emitennews.</div><div class="foot"><span class="outlet">Emitennews</span><span class="tag">telkom</span><span class="tag">strategy</span></div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://emitennews.com/news/ipo-2-tahun-lagi-ceo-kopi-kenangan-galau-pilih-idx-atau-sgx" target="_blank" rel="noopener">Kopi Kenangan&#x27;s CEO weighs IDX vs Singapore listing, roughly two years from IPO</a></div><div class="sum">Kopi Kenangan&#x27;s CEO said the coffee chain, now at 1,500 outlets after nine years, is weighing an IPO on the IDX or the Singapore Exchange about two years out.</div><div class="foot"><span class="outlet">Emitennews</span><span class="tag">ipo</span><span class="tag">kopi-kenangan</span></div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://investasi.kontan.co.id/news/kepercayaan-investor-jadi-taruhan-iicd-umumkan-35-emiten-dengan-tata-kelola-unggul" target="_blank" rel="noopener">IICD names 35 listed companies with top-tier corporate governance</a></div><div class="sum">The Indonesia Institute for Corporate Directorship named 35 listed companies (20 big-cap, 15 mid-cap) as having superior corporate governance.</div><div class="foot"><span class="outlet">Kontan</span> <span aria-hidden="true">·</span> 22:57<span class="tag">governance</span><span class="tag">iicd</span></div></div></article></div>
+      </section>
+      <section class="block">
+        <h2>Bank Indonesia Watch <span class="count">4</span></h2>
+        <div class="stories"><article class="story"><div class="body"><div class="hl"><a href="https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/sp_2821426.aspx" target="_blank" rel="noopener">Official reserve assets remain solid in September 2026</a></div><div class="sum">Bank Indonesia reported official reserve assets remained solid as of September 2026.</div><div class="foot">7 October 2026</div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/sp_2821626.aspx" target="_blank" rel="noopener">Consumer Survey September 2026: consumer confidence remains solid</a></div><div class="sum">Bank Indonesia&#x27;s September 2026 Consumer Survey showed consumer confidence holding at a solid level.</div><div class="foot">8 October 2026</div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/sp_2821726.aspx" target="_blank" rel="noopener">Retail Sales Survey September 2026: retail sales expected to increase</a></div><div class="sum">Bank Indonesia&#x27;s September 2026 Retail Sales Survey pointed to an expected increase in retail sales.</div><div class="foot">9 October 2026</div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/sp_2821826.aspx" target="_blank" rel="noopener">ISEF 2026: advancing Indonesia&#x27;s Islamic economy and finance</a></div><div class="sum">Bank Indonesia used its ISEF 2026 event to promote Indonesia&#x27;s ambition to become a global hub for Islamic economy and finance.</div><div class="foot">14 October 2026</div></div></article></div>
+      </section>
+    </div>
+
+    <section class="block">
+      <h2>Global Markets <span class="count">4</span></h2>
+      <div class="stories"><article class="story"><div class="body"><div class="hl"><a href="https://investing.com/news/forex-news/eurozone-debt-bourses-consolidate-as-lagarde-rejects-french-bond-backstop-4948176" target="_blank" rel="noopener">Hot September US CPI pushes 10-year Treasury yield up to 5.27%</a></div><div class="sum">September US CPI came in above forecasts (headline 3.7% y/y, core 2.6% y/y), sending the 10-year Treasury yield up 8.2bp to 5.266% on 14 October and reviving bets the Fed may tighten further.</div><div class="foot"><span class="outlet">Investing.com</span><span class="tag">ust10y</span><span class="tag">cpi</span><span class="tag">fed</span></div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://www.cnbc.com/2026/10/07/fed-officials-see-another-hike-coming-but-no-sign-as-to-when-minutes-show.html" target="_blank" rel="noopener">FOMC minutes show most officials still expect another 2026 rate hike</a></div><div class="sum">Minutes released 7 October showed most Fed officials still project at least one more rate hike this year, though Vice Chair Jefferson and the NY Fed&#x27;s Williams want more data before backing another move; the next FOMC decision is 27-28 October.</div><div class="foot"><span class="outlet">CNBC</span><span class="tag">fed</span><span class="tag">fomc</span></div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://panews.io/articles/01a13cde-766c-76df-bd1e-d3afa5756e0a" target="_blank" rel="noopener">Dollar index erases all its post-CPI gains</a></div><div class="sum">The DXY dollar index fell to 102.16 in early Asian trading on 15 October, erasing all the gains it made after the September CPI report.</div><div class="foot"><span class="outlet">PANews</span><span class="tag">dxy</span><span class="tag">dollar</span></div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://www.fool.com/investing/2026/10/07/donald-trump-threaten-tariffs-countries-xi-china/" target="_blank" rel="noopener">Trump threatens 150-300% tariffs on firms not building US factories</a></div><div class="sum">Trump threatened foreign companies in South Korea, China, Japan and Canada with 150-300% tariffs if they don&#x27;t build US factories within about 18 months, days after a Trump-Xi summit extended the US-China trade truce to January 2027.</div><div class="foot"><span class="outlet">The Motley Fool</span><span class="tag">tariffs</span><span class="tag">trump</span><span class="tag">china</span></div></div></article></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="disc">Compiled from public sources for internal research use; not investment advice. Ranking is a transparent heuristic (most-read rails + cross-outlet coverage + Bank Indonesia priority), not view counts. Headlines link to the original publishers.</div>
+    <div style="margin-top:10px">IDX Morning Brief · Thursday, 15 October 2026 · <a href="../archive.html">browse the archive</a></div>
+  </footer>
+</div>
+</body>
+</html>
