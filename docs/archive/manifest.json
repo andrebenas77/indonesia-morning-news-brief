@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-10-19",
+    "date_display": "Monday, 19 October 2026",
+    "generated_at": "08:15 WIB",
+    "top_headline": "JCI plunges 14.91% over the week to 5,185 as foreign investors post record net sells",
+    "counts": {
+      "top": 10,
+      "corporate": 8,
+      "bank_indonesia": 2,
+      "global": 5,
+      "merged": 24,
+      "cross_outlet_max": 4
+    }
+  },
+  {
     "date": "2026-10-16",
     "date_display": "Friday, 16 October 2026",
     "generated_at": "07:55 WIB",
