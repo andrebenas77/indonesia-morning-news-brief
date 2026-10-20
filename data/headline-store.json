@@ -70,22 +70,6 @@
       ],
       "tickers": []
     },
-    "dipimpin|gantikan|garuda|giaa|glenny|indonesia|sugiarto|thomas": {
-      "first_seen": "2026-10-09",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-09",
-        "2026-10-12"
-      ],
-      "title": "Gantikan Glenny, Garuda Indonesia (GIAA) Kini Dipimpin Thomas Sugiarto",
-      "url": "https://emitennews.com/news/gantikan-glenny-garuda-indonesia-giaa-kini-dipimpin-thomas-sugiarto",
-      "outlets": [
-        "Emitennews"
-      ],
-      "tickers": [
-        "GIAA"
-      ]
-    },
     "2026|mandiri|minimal|nasabah|oktober|prioritas|saldo": {
       "first_seen": "2026-10-09",
       "last_seen": "2026-10-15",
@@ -104,352 +88,6 @@
         "BMRI"
       ]
     },
-    "adds|firm|hermanto|investama|investment|mega|mulia|perintis|share|stake|tancorp|tanoko|zone": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Hermanto Tanoko's Investment Firm PT Tancorp Investama Mulia Adds Stake in PT Mega Perintis Tbk (ZONE) at Rp 700 per Share",
-      "url": "https://investasi.kontan.co.id/news/perusahaan-investasi-hermanto-tanoko-tambah-saham-zone-beli-di-harga-rp-700",
-      "outlets": [
-        "Kontan"
-      ],
-      "tickers": [
-        "ZONE"
-      ]
-    },
-    "asia|convert|debt|diluting|existing|into|media|placement|plans|private|shareholders|shares|trillion|visi|viva": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "PT Visi Media Asia Tbk (VIVA) Plans to Convert Rp 1.72 Trillion Debt into Shares via Private Placement, Diluting Existing Shareholders 72.35%",
-      "url": "https://investasi.kontan.co.id/news/visi-media-viva-konversi-utang-rp-172-triliun-jadi-saham-dan-bikin-dilusi-7235",
-      "outlets": [
-        "Kontan"
-      ],
-      "tickers": [
-        "VIVA"
-      ]
-    },
-    "ascot|faces|filed|group|holdings|msky|petition|pkpu|vision": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "PT MNC Sky Vision Tbk (MSKY) Faces PKPU Petition Filed by Ascot Group Holdings Ltd",
-      "url": "https://investasi.kontan.co.id/news/mnc-sky-vision-msky-hadapi-permohonan-pkpu-dari-ascot-group-holdings",
-      "outlets": [
-        "Kontan"
-      ],
-      "tickers": [
-        "MSKY"
-      ]
-    },
-    "dooh|investasi|lepas|prambahan|premium|sukses": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Prambahan Investasi Sukses (PIS) Lepas 7,04% Saham DOOH di Harga Premium",
-      "url": "https://investasi.kontan.co.id/news/prambahan-investasi-sukses-pis-lepas-704-saham-dooh-di-harga-premium",
-      "outlets": [
-        "Emitennews",
-        "IDX",
-        "Kontan"
-      ],
-      "tickers": [
-        "DOOH"
-      ]
-    },
-    "additional|bank|bmri|bond|capital|core|equivalent|issues|mandiri|million|perpetual|rp13|trillion": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Bank Mandiri (BMRI) Issues US$750 Million Perpetual Bond Equivalent to Rp13.42 Trillion as Additional Core Capital",
-      "url": "https://www.bloombergtechnoz.com/detail-news/124239/bmri-terbitkan-perpetual-bond-dolar-as-setara-rp13-42-triliun",
-      "outlets": [
-        "Bloomberg Technoz"
-      ],
-      "tickers": [
-        "BMRI"
-      ]
-    },
-    "2026|covid|crisis|exceeding|foreign|from|indonesian|investors|market|outflows|pull|stock|trillion": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Foreign Investors Pull Rp 84.99 Trillion from Indonesian Stock Market in 2026, Exceeding Covid-19 Crisis Outflows",
-      "url": "https://investasi.kontan.co.id/news/rp-84-triliun-dana-investor-asing-cabut-dari-pasar-saham-indonesia-kemana-perginya",
-      "outlets": [
-        "Kontan"
-      ],
-      "tickers": [
-        "IMPC",
-        "PIPA",
-        "REAL"
-      ]
-    },
-    "2026|analysts|banks|bbca|bbni|bbri|bmri|grow|profit|projected|recommend": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Big Banks' Q3-2026 Net Profit Projected to Grow; Analysts Recommend BBCA, BBRI, BMRI, and BBNI",
-      "url": "https://keuangan.kontan.co.id/news/laba-bank-besar-diproyeksi-tumbuh-pada-kuartal-iii-2026-ini-saham-rekomendasi-analis",
-      "outlets": [
-        "Kontan"
-      ],
-      "tickers": [
-        "BBCA",
-        "BBNI",
-        "BBRI",
-        "BMRI"
-      ]
-    },
-    "acquire|agung|bumi|deal|estimated|indys|jaya|kideco|resources|rumored|subsidiary|trillion": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Bumi Resources (BUMI) Rumored to Acquire Indys Subsidiary Kideco Jaya Agung in Deal Estimated at Rp 18 Trillion",
-      "url": "https://investasi.kontan.co.id/news/rumor-akuisisi-kideco-oleh-bumi-resources-bumi-nilainya-ditaksir-rp-18-triliun",
-      "outlets": [
-        "Kontan"
-      ],
-      "tickers": [
-        "BUMI",
-        "INDY"
-      ]
-    },
-    "analysts|from|ihsg|monday|outlook|recommendations|stock|trading": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "IHSG Outlook and Stock Recommendations from Analysts for Monday Trading (12/10)",
-      "url": "https://investasi.kontan.co.id/news/simak-proyeksi-ihsg-dan-rekomendasi-saham-dari-analis-untuk-perdagangan-senin-1210",
-      "outlets": [
-        "Kontan"
-      ],
-      "tickers": [
-        "AADI",
-        "ADRO",
-        "ANTM",
-        "DSSA",
-        "MDKA",
-        "SMDR"
-      ]
-    },
-    "acquires|baratama|bayan|byan|jhonlin|resources|stake|trillion": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "PT Jhonlin Baratama Acquires 30.25% Stake in PT Bayan Resources Tbk (BYAN) for Rp 26.09 Trillion",
-      "url": "https://investor.id/market/457516/nasib-bayan-resources-byan-kini",
-      "outlets": [
-        "Investor Daily"
-      ],
-      "tickers": [
-        "BYAN"
-      ]
-    },
-    "action|amid|bank|bris|corporate|financial|indonesia|limited|persero|planned|release|reviewed|statements|syariah": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "PT Bank Syariah Indonesia (Persero) Tbk (BRIS) to Release Limited-Reviewed Financial Statements Amid Planned Corporate Action",
-      "url": "https://finansial.bisnis.com/read/20261011/90/2011558/bsi-bris-bakal-rilis-laporan-keuangan-ditelaah-terbatas-ada-aksi-korporasi",
-      "outlets": [
-        "Bisnis"
-      ],
-      "tickers": [
-        "BRIS"
-      ]
-    },
-    "2026|asii|astra|date|distribute|dividend|interim|international|october|rp98|share|with": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "PT Astra International Tbk (ASII) to Distribute Interim Dividend of Rp98 Per Share with Cum Date on October 12, 2026",
-      "url": "https://market.bisnis.com/read/20261011/192/2011562/astra-asii-siap-tebar-dividen-interim-rp98-per-saham-cum-date-12-oktober-2026",
-      "outlets": [
-        "Bisnis"
-      ],
-      "tickers": [
-        "ASII"
-      ]
-    },
-    "2030|adiperkasa|coal|contract|hauling|herindo|maha|mandiri|secures|through|trillion": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "PT Mandiri Herindo Adiperkasa Tbk (MAHA) Secures Rp2.2 Trillion Coal Hauling Contract Through 2030",
-      "url": "https://emitennews.com/news/maha-amankan-kontrak-angkut-batu-bara-rp22-triliun-hingga-2030",
-      "outlets": [
-        "Emitennews"
-      ],
-      "tickers": [
-        "MAHA"
-      ]
-    },
-    "acquisitions|banks|business|expand|foreign|indonesia|integration|through": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Foreign Banks Expand Business in Indonesia Through Acquisitions and Integration",
-      "url": "https://keuangan.kontan.co.id/news/bank-asing-ramai-ramai-perbesar-bisnis-di-indonesia",
-      "outlets": [
-        "Kontan"
-      ],
-      "tickers": []
-    },
-    "amid|analysts|announce|correction|dividend|dividends|ihsg|indonesian|interim|issuers|play|seven|strategy|weigh": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Seven Indonesian Issuers Announce Interim Dividends as Analysts Weigh Dividend Play Strategy Amid IHSG Correction",
-      "url": "https://investasi.kontan.co.id/news/deretan-emiten-ini-bakal-bagikan-dividen-interim-bagi-investor-mana-yang-menarik",
-      "outlets": [
-        "Kontan"
-      ],
-      "tickers": [
-        "AMRT",
-        "ASII",
-        "AUTO",
-        "BSBK",
-        "BUAH",
-        "PLIN",
-        "TLDN"
-      ]
-    },
-    "adro|alamtri|citing|danareksa|discounted|forecasts|indonesia|price|profit|raises|resources|sekuritas|target|valuation": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "BRI Danareksa Sekuritas Raises PT Alamtri Resources Indonesia Tbk (ADRO) Profit Forecasts and Price Target, Citing Discounted Valuation",
-      "url": "https://investor.id/market/457515/saham-diskon-emiten-boy-thohir-target-harga-naik-pula",
-      "outlets": [
-        "Investor Daily"
-      ],
-      "tickers": [
-        "ADMR",
-        "ADRO"
-      ]
-    },
-    "analysts|heal|hermina|hospital|hospitals|international|karyasehat|keluarga|medikaloka|mika|mitra|recommend|silo|siloam|stocks": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Analysts Recommend Buy on Hospital Stocks PT Medikaloka Hermina Tbk (HEAL), PT Mitra Keluarga Karyasehat Tbk (MIKA), and PT Siloam International Hospitals Tbk (SILO)",
-      "url": "https://investasi.kontan.co.id/news/simak-rekomendasi-saham-rumahsakit-heal-mika-dan-silo-mana-yang-layakn-dicermati",
-      "outlets": [
-        "Kontan"
-      ],
-      "tickers": [
-        "HEAL",
-        "MIKA",
-        "SILO"
-      ]
-    },
-    "bank|btpn|btps|cost|credit|financing|improving|international|lower|maintains|quality|rating|syariah": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "CGS International Maintains Add Rating on PT Bank BTPN Syariah Tbk (BTPS) on Improving Financing Quality and Lower Cost of Credit",
-      "url": "https://keuangan.kontan.co.id/news/kualitas-pembiayaan-biaya-kredit-btpn-syariah-btps-positif-simak-prospeknya",
-      "outlets": [
-        "Kontan"
-      ],
-      "tickers": [
-        "BTPS"
-      ]
-    },
-    "amman|ammn|coverage|initiates|internasional|international|mineral|price|rating|target|with": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "CGS International Initiates Coverage on PT Amman Mineral Internasional Tbk (AMMN) with Add Rating and Rp 7,000 Target Price",
-      "url": "https://investasi.kontan.co.id/news/amman-mineral-ammn-masuki-fase-produksi-menguntungkan-target-saham-di-rp-7000",
-      "outlets": [
-        "Kontan"
-      ],
-      "tickers": [
-        "AMMN"
-      ]
-    },
-    "blue|catalyst|energy|export|first|harum|hrum|positive|seen|sparking": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "First MHP Export by PT Blue Sparking Energy Seen as Positive Catalyst for PT Harum Energy Tbk (HRUM)",
-      "url": "https://investasi.kontan.co.id/news/ekspor-mhp-jadi-katalis-harum-energy-hrum-simak-rekomendasi-sahamnya",
-      "outlets": [
-        "Kontan"
-      ],
-      "tickers": [
-        "HRUM"
-      ]
-    },
-    "costs|fuel|high|hormuz|insurance|prices|reopens|shipping|soar|stay|strait": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Strait of Hormuz Reopens, Yet Fuel Prices Stay High as Shipping and Insurance Costs Soar",
-      "url": "https://www.cnnindonesia.com/ekonomi/20261010171817-85-1413899/selat-hormuz-sudah-terbuka-kenapa-harga-bbm-masih-mahal",
-      "outlets": [
-        "CNN Indonesia"
-      ],
-      "tickers": []
-    },
-    "asap|kabut|kinerja|sawit|tengah": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Kinerja Emiten Sawit di Tengah Kabut Asap",
-      "url": "https://emitennews.com/news/kinerja-emiten-sawit-di-tengah-kabut-asap",
-      "outlets": [
-        "Emitennews"
-      ],
-      "tickers": []
-    },
     "berbenah|bukan|emerging|harus|indonesia|market|nyaman|zona": {
       "first_seen": "2026-10-12",
       "last_seen": "2026-10-13",
@@ -461,19 +99,6 @@
       "url": "https://emitennews.com/news/emerging-market-bukan-zona-nyaman-bursa-indonesia-harus-berbenah",
       "outlets": [
         "Emitennews"
-      ],
-      "tickers": []
-    },
-    "anak|dana|konglomerat|pemiliknya|sawit|singapura|sita": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Singapura Sita Rp1,9 T Dana Anak Konglomerat Sawit RI, Ini Pemiliknya",
-      "url": "https://www.cnbcindonesia.com/market/20261011120451-17-775068/singapura-sita-rp19-t-dana-anak-konglomerat-sawit-ri-ini-pemiliknya",
-      "outlets": [
-        "CNBC Indonesia"
       ],
       "tickers": []
     },
@@ -510,760 +135,6 @@
         "PGUN"
       ]
     },
-    "dirut|hanya|kuasai|kurangi|porsi|ppri|sang": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Kurangi Porsi, Sang Dirut Kini Hanya Kuasai 10,34 Persen Saham PPRI",
-      "url": "https://emitennews.com/news/kurangi-porsi-sang-dirut-kini-hanya-kuasai-1034-persen-saham-ppri",
-      "outlets": [
-        "Emitennews"
-      ],
-      "tickers": [
-        "PPRI"
-      ]
-    },
-    "abadi|dana|issue|nusantara|pack|pakai|rights|telah|triliun": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Abadi Nusantara (PACK) Telah Pakai Rp 2,87 Triliun Dana Rights Issue",
-      "url": "https://investasi.kontan.co.id/news/abadi-nusantara-pack-telah-pakai-rp-287-triliun-dana-rights-issue",
-      "outlets": [
-        "Kontan"
-      ],
-      "tickers": [
-        "PACK"
-      ]
-    },
-    "analis|berikut|emas|konsolidasi|koreksi|rekomendasi|sebatas": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Koreksi Harga Emas Sebatas Konsolidasi, Simak Rekomendasi Analis Berikut",
-      "url": "https://investasi.kontan.co.id/news/koreksi-harga-emas-sebatas-konsolidasi-simak-rekomendasi-analis-berikut?source=home_popular",
-      "outlets": [
-        "Kontan"
-      ],
-      "tickers": []
-    },
-    "berpeluang|depan|dibayangi|eksternal|internal|pekan|sentimen|tertekan": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Rupiah Berpeluang Tertekan Pekan Depan, Dibayangi Sentimen Eksternal dan Internal",
-      "url": "https://investasi.kontan.co.id/news/rupiah-berpeluang-tertekan-pekan-depan-dibayangi-sentimen-eksternal-dan-internal?source=home_popular",
-      "outlets": [
-        "Kontan"
-      ],
-      "tickers": []
-    },
-    "berapa|kena|pajak|pajaknya|potensi|tarif|wajib": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "420.000 Wajib Pajak Kena Tarif PPh 35%, Berapa Potensi Pajaknya?",
-      "url": "https://nasional.kontan.co.id/news/420000-wajib-pajak-kena-tarif-pph-35-berapa-potensi-pajaknya?source=home_popular",
-      "outlets": [
-        "Kontan"
-      ],
-      "tickers": []
-    },
-    "2027|america|apbn|bank|defisit|lebar|pemerintah|proyeksi|target": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Bank of America Proyeksi Defisit APBN 2027 Lebih Lebar dari Target Pemerintah",
-      "url": "https://nasional.kontan.co.id/news/bank-of-america-proyeksi-defisit-apbn-2027-lebih-lebar-dari-target-pemerintah?source=home_popular",
-      "outlets": [
-        "Kontan"
-      ],
-      "tickers": []
-    },
-    "asal|kilang|lakukan|minyak|moskow|rusia|serang|setop|siap|ukraina": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Ukraina Siap Setop Serang Kilang Minyak Rusia, Asal Moskow Lakukan Ini",
-      "url": "https://internasional.kontan.co.id/news/ukraina-siap-setop-serang-kilang-minyak-rusia-asal-moskow-lakukan-ini?source=home_popular",
-      "outlets": [
-        "Kontan"
-      ],
-      "tickers": []
-    },
-    "aplikasi|atur|bakal|kurir|llaj|ojol|revisi": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Revisi UU LLAJ Bakal Atur Ojol dan Kurir Aplikasi",
-      "url": "https://emitennews.com/news/revisi-uu-llaj-bakal-atur-ojol-dan-kurir-aplikasi",
-      "outlets": [
-        "Emitennews"
-      ],
-      "tickers": []
-    },
-    "ihsg|krusial|level|pasca|rebound": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Pasca Rebound, Ini Level Krusial IHSG Saat Ini",
-      "url": "https://emitennews.com/news/pasca-rebound-ini-level-krusial-ihsg-saat-ini",
-      "outlets": [
-        "Emitennews"
-      ],
-      "tickers": []
-    },
-    "danantara|gede|gelontor|investasi|menarik|siap|valuasi": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Valuasi Saham Menarik, Danantara Siap Gelontor Investasi Gede",
-      "url": "https://emitennews.com/news/valuasi-saham-menarik-danantara-siap-gelontor-investasi-gede",
-      "outlets": [
-        "Emitennews"
-      ],
-      "tickers": []
-    },
-    "bank|besar|jelang|menguat|pendapatan|rilis|street|wall": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Wall Street Menguat Jelang Rilis Pendapatan Bank Besar",
-      "url": "https://emitennews.com/news/wall-street-menguat-jelang-rilis-pendapatan-bank-besar",
-      "outlets": [
-        "Emitennews"
-      ],
-      "tickers": []
-    },
-    "bandara|brent|dorong|minyak|naik|riyadh|serangan|usd105": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Serangan Bandara Riyadh Dorong Minyak Brent Naik ke USD105",
-      "url": "https://emitennews.com/news/serangan-bandara-riyadh-dorong-minyak-brent-naik-ke-usd105",
-      "outlets": [
-        "Bloomberg Technoz",
-        "Emitennews"
-      ],
-      "tickers": []
-    },
-    "bandang|banjir|hancurkan|hantam|lagi|nepal|potret|rumah|tsunami": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Bak Tsunami, Potret Banjir Bandang Hantam Nepal Lagi & Hancurkan Rumah",
-      "url": "https://www.cnbcindonesia.com/news/20261011205410-7-775133/bak-tsunami-potret-banjir-bandang-hantam-nepal-lagi-hancurkan-rumah",
-      "outlets": [
-        "CNBC Indonesia"
-      ],
-      "tickers": []
-    },
-    "2028|alun|anti|babah|dibuka|gempa|langit|milik|tahun": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Tol 'Langit' Anti Gempa 1.000 Tahun Milik Babah Alun Dibuka 2028",
-      "url": "https://www.cnbcindonesia.com/news/20261010225711-4-775020/tol-langit-anti-gempa-1000-tahun-milik-babah-alun-dibuka-2028",
-      "outlets": [
-        "CNBC Indonesia"
-      ],
-      "tickers": []
-    },
-    "aktif|barat|daftarnya|dikepung|gempa|jawa|sarang|sesar": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Jawa Barat Sarang Gempa Dikepung 29 Sesar Aktif, Ini Daftarnya",
-      "url": "https://www.cnbcindonesia.com/tech/20261010231857-37-775024/jawa-barat-sarang-gempa-dikepung-29-sesar-aktif-ini-daftarnya",
-      "outlets": [
-        "CNBC Indonesia"
-      ],
-      "tickers": []
-    },
-    "gabung|houthi|lawan|makin|menggila|perang|saudi|timteng|yaman": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Timteng Makin Menggila, AS Akan Gabung Saudi Perang Lawan Houthi Yaman",
-      "url": "https://www.cnbcindonesia.com/news/20261011212052-4-775139/timteng-makin-menggila-as-akan-gabung-saudi-perang-lawan-houthi-yaman",
-      "outlets": [
-        "CNBC Indonesia"
-      ],
-      "tickers": []
-    },
-    "bakal|istana|mesir|prabowo|presiden|temui": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Presiden Mesir Bakal Temui Prabowo di Istana Hari Ini",
-      "url": "https://www.bloombergtechnoz.com/detail-news/124208/presiden-mesir-bakal-temui-prabowo-di-istana-hari-ini",
-      "outlets": [
-        "Bloomberg Technoz"
-      ],
-      "tickers": []
-    },
-    "berbuat|kendali|kirim|laporan|luar|model|palsu|polisi": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Model AI Berbuat di Luar Kendali, Kirim Laporan Palsu ke Polisi",
-      "url": "https://www.bloombergtechnoz.com/detail-news/124209/model-ai-berbuat-di-luar-kendali-kirim-laporan-palsu-ke-polisi",
-      "outlets": [
-        "Bloomberg Technoz"
-      ],
-      "tickers": []
-    },
-    "berpeluang|investasi|nvidia|pertebal|reflection": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Nvidia Berpeluang Pertebal Investasi di Reflection",
-      "url": "https://www.bloombergtechnoz.com/detail-news/124213/nvidia-berpeluang-pertebal-investasi-di-reflection",
-      "outlets": [
-        "Bloomberg Technoz"
-      ],
-      "tickers": []
-    },
-    "hutan|kebakaran|mana|penanganan|sampai|wilayah": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Sampai Mana Penanganan Kebakaran Hutan & TPA di 7 Wilayah?",
-      "url": "https://www.bloombergtechnoz.com/detail-news/124214/sampai-mana-penanganan-kebakaran-hutan-tpa-di-7-wilayah",
-      "outlets": [
-        "Bloomberg Technoz"
-      ],
-      "tickers": []
-    },
-    "belum|ekonomi|miliarder|potanin|rusia|terendah|titik|vladimir": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Miliarder Rusia Vladimir Potanin: Ekonomi Belum di Titik Terendah",
-      "url": "https://www.bloombergtechnoz.com/detail-news/124215/miliarder-rusia-vladimir-potanin-ekonomi-belum-di-titik-terendah",
-      "outlets": [
-        "Bloomberg Technoz"
-      ],
-      "tickers": []
-    },
-    "bandang|banjir|fakta|kota|padang|penyebab": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Fakta Penyebab Banjir Bandang di Kota Padang",
-      "url": "https://www.bloombergtechnoz.com/detail-news/124217/fakta-penyebab-banjir-bandang-di-kota-padang",
-      "outlets": [
-        "Bloomberg Technoz"
-      ],
-      "tickers": []
-    },
-    "daftar|gunung|lewotolo|sebaran|semeru|vulkanik": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Daftar Sebaran Abu Vulkanik: Gunung Semeru Hingga Lewotolo",
-      "url": "https://www.bloombergtechnoz.com/detail-news/124218/daftar-sebaran-abu-vulkanik-gunung-semeru-hingga-lewotolo",
-      "outlets": [
-        "Bloomberg Technoz"
-      ],
-      "tickers": []
-    },
-    "kripto|menguap|rp340|taruhan": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Pasar Kripto Menguap Rp340 T, Taruhan BTC di US$80.000-US$90.000",
-      "url": "https://www.bloombergtechnoz.com/detail-news/124220/pasar-kripto-menguap-rp340-t-taruhan-btc-di-us-80-000-us-90-000",
-      "outlets": [
-        "Bloomberg Technoz"
-      ],
-      "tickers": []
-    },
-    "baru|butuh|dialog|mampu|pemimpin|putin|trump|ukraina": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Trump: Ukraina Butuh Pemimpin Baru yang Mampu Dialog dengan Putin",
-      "url": "https://www.bloombergtechnoz.com/detail-news/124221/trump-ukraina-butuh-pemimpin-baru-yang-mampu-dialog-dengan-putin",
-      "outlets": [
-        "Bloomberg Technoz"
-      ],
-      "tickers": []
-    },
-    "asal|china|eropa|hybrid|impor|ingin|jumlah|mobil|pangkas|setengah": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Eropa Ingin Pangkas Setengah Jumlah Impor Mobil Hybrid Asal China",
-      "url": "https://www.bloombergtechnoz.com/detail-news/124222/eropa-ingin-pangkas-setengah-jumlah-impor-mobil-hybrid-asal-china",
-      "outlets": [
-        "Bloomberg Technoz"
-      ],
-      "tickers": []
-    },
-    "bank|buka|gadai|gunatama|manajemen|mandiri|pgun|pradiksi|suara": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Manajemen Pradiksi Gunatama (PGUN) Buka Suara Soal Gadai Saham ke Bank Mandiri",
-      "url": "https://investasi.kontan.co.id/news/manajemen-pradiksi-gunatama-pgun-buka-suara-soal-gadai-saham-ke-bank-mandiri",
-      "outlets": [
-        "Kontan"
-      ],
-      "tickers": [
-        "BMRI",
-        "PGUN"
-      ]
-    },
-    "dukung|negara|pasarkan|pembiayaan|ritel|sbr015": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Dukung Pembiayaan Negara, BRI Pasarkan SBN Ritel SBR015",
-      "url": "https://www.bloombergtechnoz.com/detail-news/124228/dukung-pembiayaan-negara-bri-pasarkan-sbn-ritel-sbr015",
-      "outlets": [
-        "Bloomberg Technoz"
-      ],
-      "tickers": [
-        "BBRI"
-      ]
-    },
-    "investor|mana|msci|pilihan|sektor|sentimen|video": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Video: Ada Sentimen The Fed - MSCI, Sektor Mana Pilihan Investor?",
-      "url": "https://www.cnbcindonesia.com/market/20261009115040-19-774711/video-ada-sentimen-the-fed--msci-sektor-mana-pilihan-investor",
-      "outlets": [
-        "CNBC Indonesia"
-      ],
-      "tickers": []
-    },
-    "akses|akun|anak|batasi|bawah|media|sosial|tahun|turki": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Turki Batasi Anak di Bawah 15 Tahun Akses Akun Media Sosial",
-      "url": "https://www.bloombergtechnoz.com/detail-news/124224/turki-batasi-anak-di-bawah-15-tahun-akses-akun-media-sosial",
-      "outlets": [
-        "Bloomberg Technoz"
-      ],
-      "tickers": []
-    },
-    "dibarengi|dolar|dorongan|ekspor|harus|intervensi|rawan": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Rupiah Rawan ke 18.000 per Dolar AS, Intervensi BI Harus Dibarengi Dorongan Ekspor",
-      "url": "https://investasi.kontan.co.id/news/rupiah-rawan-ke-18000-per-dolar-as-intervensi-bi-harus-dibarengi-dorongan-ekspor",
-      "outlets": [
-        "Kontan"
-      ],
-      "tickers": []
-    },
-    "harian|ihsg|melonjak|naik|sepekan|transaksi|triliun": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Transaksi Harian BEI Melonjak 28,52% Jadi Rp 16,23 Triliun, IHSG Naik 0,94% Sepekan",
-      "url": "https://investasi.kontan.co.id/news/transaksi-harian-bei-melonjak-2852-jadi-rp-1623-triliun-ihsg-naik-094-sepekan",
-      "outlets": [
-        "Kontan"
-      ],
-      "tickers": []
-    },
-    "cuaca|depan|jakarta|kota|pekan|ramalan|sejumlah|selasa|senin": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Ramalan Cuaca Jakarta dan Sejumlah Kota Senin–Selasa Pekan Depan",
-      "url": "https://www.bloombergtechnoz.com/detail-news/124225/ramalan-cuaca-jakarta-dan-sejumlah-kota-senin-selasa-pekan-depan",
-      "outlets": [
-        "Bloomberg Technoz"
-      ],
-      "tickers": []
-    },
-    "bernilai|beruntun|empat|merek|paling|tahun": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Empat Tahun Beruntun, BRI Jadi Merek Paling Bernilai",
-      "url": "https://www.bloombergtechnoz.com/detail-news/124226/empat-tahun-beruntun-bri-jadi-merek-paling-bernilai",
-      "outlets": [
-        "Bloomberg Technoz"
-      ],
-      "tickers": [
-        "BBRI"
-      ]
-    },
-    "berkontribusi|bidik|bisnis|diversifikasi|elnusa|elsa|irak|pertamina": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Diversifikasi Elnusa (ELSA) Bidik Pasar Irak, Bisnis Non-Pertamina Berkontribusi 22%",
-      "url": "https://investasi.kontan.co.id/news/diversifikasi-elnusa-elsa-bidik-pasar-irak-bisnis-non-pertamina-berkontribusi-22",
-      "outlets": [
-        "Kontan"
-      ],
-      "tickers": [
-        "ELSA"
-      ]
-    },
-    "apbn|defisit|ekonom|jaga|kunci|pajak|penerimaan": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Ekonom: Penerimaan Pajak Jadi Kunci Jaga Defisit APBN",
-      "url": "https://www.bloombergtechnoz.com/detail-news/124227/ekonom-penerimaan-pajak-jadi-kunci-jaga-defisit-apbn",
-      "outlets": [
-        "Bloomberg Technoz"
-      ],
-      "tickers": []
-    },
-    "ajak|apresiasi|bukit|mandalika|motogp|nasabah|nonton": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "BNI Apresiasi Nasabah, Ajak Nonton MotoGP di Bukit 360 Mandalika",
-      "url": "https://www.bloombergtechnoz.com/detail-news/124232/bni-apresiasi-nasabah-ajak-nonton-motogp-di-bukit-360-mandalika",
-      "outlets": [
-        "Bloomberg Technoz"
-      ],
-      "tickers": [
-        "BMRI"
-      ]
-    },
-    "danantara|fund|investment|jajaki|joint|mesir|pembentukan": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Danantara-SWF Mesir Jajaki Pembentukan Joint Investment Fund",
-      "url": "https://www.bloombergtechnoz.com/detail-news/124233/danantara-swf-mesir-jajaki-pembentukan-joint-investment-fund",
-      "outlets": [
-        "Bloomberg Technoz"
-      ],
-      "tickers": []
-    },
-    "bernilai|kokoh|merek|miliar|nilai|paling|punya|usd6": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Punya Nilai USD6,9 Miliar, BRI Kokoh Jadi Merek Paling Bernilai di RI",
-      "url": "https://www.cnbcindonesia.com/market/20261011161014-17-775103/punya-nilai-usd69-miliar-bri-kokoh-jadi-merek-paling-bernilai-di-ri",
-      "outlets": [
-        "CNBC Indonesia"
-      ],
-      "tickers": [
-        "BBRI"
-      ]
-    },
-    "kerja|mesir|pendidikan|perluas|prabowo|sama|siap": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Prabowo: RI Siap Perluas Kerja Sama Pendidikan dengan Mesir",
-      "url": "https://www.bloombergtechnoz.com/detail-news/124234/prabowo-ri-siap-perluas-kerja-sama-pendidikan-dengan-mesir",
-      "outlets": [
-        "Bloomberg Technoz"
-      ],
-      "tickers": []
-    },
-    "arab|besar|dampak|hadapi|imbas|perang|saudi|yaman": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Arab Saudi Hadapi Dampak Besar Imbas Perang di Yaman",
-      "url": "https://www.bloombergtechnoz.com/detail-news/124235/arab-saudi-hadapi-dampak-besar-imbas-perang-di-yaman",
-      "outlets": [
-        "Bloomberg Technoz"
-      ],
-      "tickers": []
-    },
-    "bpjs|cara|ketenagakerjaan|mencairkan|resign|saldo|tanpa": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Cara Mencairkan Saldo JHT BPJS Ketenagakerjaan Tanpa Resign",
-      "url": "https://www.cnbcindonesia.com/market/20261010222612-17-775013/cara-mencairkan-saldo-jht-bpjs-ketenagakerjaan-tanpa-resign",
-      "outlets": [
-        "CNBC Indonesia"
-      ],
-      "tickers": []
-    },
-    "atlet|bulu|indonesia|pbsi|perkuat|regenerasi|tangkis": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "BNI dan PBSI Perkuat Regenerasi Atlet Bulu Tangkis Indonesia",
-      "url": "https://www.bloombergtechnoz.com/detail-news/124238/bni-dan-pbsi-perkuat-regenerasi-atlet-bulu-tangkis-indonesia",
-      "outlets": [
-        "Bloomberg Technoz"
-      ],
-      "tickers": [
-        "BBNI"
-      ]
-    },
-    "2025|akhir|beber|cadev|ekonom|penyebab|sejak|turun": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Ekonom Beber Penyebab Cadev RI Turun 6,5% sejak Akhir 2025",
-      "url": "https://www.bloombergtechnoz.com/detail-news/124231/ekonom-beber-penyebab-cadev-ri-turun-6-5-sejak-akhir-2025",
-      "outlets": [
-        "Bloomberg Technoz"
-      ],
-      "tickers": []
-    },
-    "kabinet|pelaku|reshuffle|tanggapi|video|volatilitas": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Video: Pelaku Pasar Tanggapi Volatilitas Rupiah - Reshuffle Kabinet",
-      "url": "https://www.cnbcindonesia.com/market/20261009115048-19-774709/video-pelaku-pasar-tanggapi-volatilitas-rupiah--reshuffle-kabinet",
-      "outlets": [
-        "CNBC Indonesia"
-      ],
-      "tickers": []
-    },
-    "coba|jabodebek|keberangkatan|perpanjang|pukul": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "LRT Jabodebek Perpanjang Uji Coba Keberangkatan Pukul 05.30",
-      "url": "https://www.bloombergtechnoz.com/detail-news/124241/lrt-jabodebek-perpanjang-uji-coba-keberangkatan-pukul-05-30",
-      "outlets": [
-        "Bloomberg Technoz"
-      ],
-      "tickers": []
-    },
-    "ameriza|gubernur|kepala|mengukuhkan|perwakilan|sebagai|sumut": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Gubernur BI Mengukuhkan Ameriza Sebagai Kepala Perwakilan Sumut",
-      "url": "https://www.cnbcindonesia.com/market/20261011192842-17-775130/gubernur-bi-mengukuhkan-ameriza-sebagai-kepala-perwakilan-sumut",
-      "outlets": [
-        "CNBC Indonesia"
-      ],
-      "tickers": []
-    },
-    "berubah|danza|denza|mobil|nama|penjelasan": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Mobil Denza di RI Berubah Nama Jadi Danza, Ini Penjelasan BYD",
-      "url": "https://www.cnbcindonesia.com/market/20261010230233-17-775021/mobil-denza-di-ri-berubah-nama-jadi-danza-ini-penjelasan-byd",
-      "outlets": [
-        "CNBC Indonesia"
-      ],
-      "tickers": []
-    },
-    "angkat|jalani|nodul|operasi|paru|paus": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Paus Leo Akan Jalani Operasi Angkat Nodul di Paru-paru",
-      "url": "https://www.bloombergtechnoz.com/detail-news/124242/paus-leo-akan-jalani-operasi-angkat-nodul-di-paru-paru",
-      "outlets": [
-        "Bloomberg Technoz"
-      ],
-      "tickers": []
-    },
-    "2026|ammn|indy|lq45|melesat|oktober|terendah|tertinggi": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "10 Saham LQ45 dengan PER Terendah & Tertinggi (9 Oktober 2026), INDY dan AMMN Melesat",
-      "url": "https://investasi.kontan.co.id/news/10-saham-lq45-dengan-per-terendah-tertinggi-9-oktober-2026-indy-dan-ammn-melesat",
-      "outlets": [
-        "Kontan"
-      ],
-      "tickers": [
-        "AMMN",
-        "INDY"
-      ]
-    },
-    "asing|investor|keluar|menanti|pembenahan|upaya": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Asing Keluar dari Pasar Saham RI, Investor Menanti Upaya Pembenahan dari OJK dan SRO",
-      "url": "https://investasi.kontan.co.id/news/asing-keluar-dari-pasar-saham-ri-investor-menanti-upaya-pembenahan-dari-ojk-dan-sro",
-      "outlets": [
-        "Kontan"
-      ],
-      "tickers": []
-    },
-    "dibayangi|pelemahan|penopang|proyeksinya|sentimen": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Rupiah Masih Dibayangi Pelemahan, Ini Sentimen Penopang dan Proyeksinya",
-      "url": "https://investasi.kontan.co.id/news/rupiah-masih-dibayangi-pelemahan-ini-sentimen-penopang-dan-proyeksinya",
-      "outlets": [
-        "Kontan"
-      ],
-      "tickers": []
-    },
-    "akuisisi|anak|bakrie|grup|indy|investor|rumor|saran|usaha": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Rumor! Perusahaan Bakrie Grup Ini Akuisisi Anak Usaha INDY, Cek Saran untuk Investor",
-      "url": "https://investasi.kontan.co.id/news/rumor-perusahaan-bakrie-grup-ini-akuisisi-anak-usaha-indy-cek-saran-untuk-investor",
-      "outlets": [
-        "Kontan"
-      ],
-      "tickers": [
-        "INDY"
-      ]
-    },
-    "aturan|batubara|berpotensi|ekspor|lama|risiko|tapi|tinggi": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Harga Batubara Berpotensi Tinggi Lebih Lama, Tapi Ada Risiko dari Aturan Ekspor DSI",
-      "url": "https://investasi.kontan.co.id/news/harga-batubara-berpotensi-tinggi-lebih-lama-tapi-ada-risiko-dari-aturan-ekspor-dsi",
-      "outlets": [
-        "Kontan"
-      ],
-      "tickers": []
-    },
-    "bagi|beli|date|dividen|interim|layak|mulai": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "7 Saham Bagi Dividen Interim Cum Date Mulai Hari Ini (12/10), Cek yang Layak Beli",
-      "url": "https://investasi.kontan.co.id/news/7-saham-bagi-dividen-interim-cum-date-mulai-hari-ini-1210-cek-yang-layak-beli",
-      "outlets": [
-        "Kontan"
-      ],
-      "tickers": []
-    },
-    "bandara|houthi|kembali|minyak|naik|riyadh|serang": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Harga Minyak Naik usai Houthi Kembali Serang Bandara Riyadh",
-      "url": "https://www.bloombergtechnoz.com/detail-news/124245/harga-minyak-naik-usai-houthi-kembali-serang-bandara-riyadh",
-      "outlets": [
-        "Bloomberg Technoz",
-        "Kontan"
-      ],
-      "tickers": []
-    },
     "beraset|calon|jumbo|siap": {
       "first_seen": "2026-10-12",
       "last_seen": "2026-10-13",
@@ -1275,72 +146,6 @@
       "url": "https://www.cnbcindonesia.com/market/20261012054324-17-775160/9-calon-emiten-siap-ipo-2-perusahaan-beraset-jumbo",
       "outlets": [
         "CNBC Indonesia"
-      ],
-      "tickers": []
-    },
-    "energi|gencatan|klaim|rusia|senjata|sepakati|trump|ukraina": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Trump Klaim Rusia dan Ukraina Sepakati 'Gencatan Senjata Energi'",
-      "url": "https://www.bloombergtechnoz.com/detail-news/124246/trump-klaim-rusia-dan-ukraina-sepakati-gencatan-senjata-energi",
-      "outlets": [
-        "Bloomberg Technoz"
-      ],
-      "tickers": []
-    },
-    "bank|bersidang|dunia|ekonomi|global|kalender|siaga": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Kalender Ekonomi: IMF-Bank Dunia Bersidang, Pasar Global Siaga",
-      "url": "https://www.bloombergtechnoz.com/detail-news/124244/kalender-ekonomi-imf-bank-dunia-bersidang-pasar-global-siaga",
-      "outlets": [
-        "Bloomberg Technoz"
-      ],
-      "tickers": []
-    },
-    "berikut|berpeluang|ihsg|menguat|rekomendasi|senin|terbatas": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "IHSG Berpeluang Menguat Terbatas pada Senin (12/10), Cek Rekomendasi Saham Berikut",
-      "url": "https://investasi.kontan.co.id/news/ihsg-berpeluang-menguat-terbatas-pada-senin-1210-cek-rekomendasi-saham-berikut",
-      "outlets": [
-        "Kontan"
-      ],
-      "tickers": []
-    },
-    "beli|emas|jual|minggu|pantau|posisi|ramalan": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Pantau Ramalan Harga Emas Minggu Ini, Posisi Jual atau Beli?",
-      "url": "https://www.bloombergtechnoz.com/detail-news/124249/pantau-ramalan-harga-emas-minggu-ini-posisi-jual-atau-beli",
-      "outlets": [
-        "Bloomberg Technoz",
-        "Kontan"
-      ],
-      "tickers": []
-    },
-    "bulan|lalu|nato|ribu|rusia|sebut|tentara|tewas|ukraina": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "NATO Sebut 28 Ribu Tentara Rusia Tewas di Ukraina Bulan Lalu",
-      "url": "https://www.bloombergtechnoz.com/detail-news/124247/nato-sebut-28-ribu-tentara-rusia-tewas-di-ukraina-bulan-lalu",
-      "outlets": [
-        "Bloomberg Technoz"
       ],
       "tickers": []
     },
@@ -1369,19 +174,6 @@
       "url": "https://www.cnbcindonesia.com/market/20261012071117-17-775182/transparansi-kepemilikan-bei-pantau-kapitaliasi-di-atas-rp-5-triliun",
       "outlets": [
         "CNBC Indonesia"
-      ],
-      "tickers": []
-    },
-    "atas|belum|damai|iran|memadai|persyaratan|respons|sebut": {
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
-      "seen_dates": [
-        "2026-10-12"
-      ],
-      "title": "Iran Sebut Respons AS atas Persyaratan Damai Belum Memadai",
-      "url": "https://www.bloombergtechnoz.com/detail-news/124248/iran-sebut-respons-as-atas-persyaratan-damai-belum-memadai",
-      "outlets": [
-        "Bloomberg Technoz"
       ],
       "tickers": []
     },
@@ -12940,9 +11732,10 @@
     },
     "bereskan|bermasalah|bumn|danantara|fokus|mending|siapkan": {
       "first_seen": "2026-10-19",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "seen_dates": [
-        "2026-10-19"
+        "2026-10-19",
+        "2026-10-20"
       ],
       "title": "Danantara Siapkan IPO BUMN: Mending Fokus Bereskan BUMN Bermasalah?",
       "url": "https://emitennews.com/news/danantara-siapkan-ipo-bumn-mending-fokus-bereskan-bumn-bermasalah",
@@ -12953,14 +11746,16 @@
     },
     "indonesia|janji|karut|marut|modal|reformasi|sekadar": {
       "first_seen": "2026-10-19",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "seen_dates": [
-        "2026-10-19"
+        "2026-10-19",
+        "2026-10-20"
       ],
       "title": "Karut Marut Pasar Modal Indonesia, Reformasi atau Sekadar Janji?",
       "url": "https://emitennews.com/news/karut-marut-pasar-modal-indonesia-reformasi-atau-sekadar-janji",
       "outlets": [
-        "Emitennews"
+        "Emitennews",
+        "Kontan"
       ],
       "tickers": []
     },
@@ -12992,9 +11787,10 @@
     },
     "beli|buyback|dilarang|jual|karyawan|oktober": {
       "first_seen": "2026-10-19",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "seen_dates": [
-        "2026-10-19"
+        "2026-10-19",
+        "2026-10-20"
       ],
       "title": "BCA Mau Buyback 19-21 Oktober, Karyawan Dilarang Jual-Beli Saham",
       "url": "https://www.cnbcindonesia.com/market/20261019064101-17-777293/bca-mau-buyback-19-21-oktober-karyawan-dilarang-jual-beli-saham",
@@ -13491,9 +12287,10 @@
     },
     "auto|batas|bawah|mulai|rejection|terapkan": {
       "first_seen": "2026-10-19",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "seen_dates": [
-        "2026-10-19"
+        "2026-10-19",
+        "2026-10-20"
       ],
       "title": "BEI Terapkan Batas Auto Rejection Bawah Jadi 7% Mulai Hari Ini",
       "url": "https://www.cnbcindonesia.com/market/20261019062711-17-777291/bei-terapkan-batas-auto-rejection-bawah-jadi-7-mulai-hari-ini",
@@ -13544,9 +12341,10 @@
     },
     "bansos|disalurkan|kopdes|lewat|mensos|mulai|potongan": {
       "first_seen": "2026-10-19",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "seen_dates": [
-        "2026-10-19"
+        "2026-10-19",
+        "2026-10-20"
       ],
       "title": "Bansos Mulai Disalurkan Lewat Kopdes, Mensos: Tak Ada Potongan",
       "url": "https://www.cnbcindonesia.com/market/20261019043638-17-777285/bansos-mulai-disalurkan-lewat-kopdes-mensos-tak-ada-potongan",
@@ -13570,14 +12368,2681 @@
     },
     "bahas|finfluencer|kumpulkan|pelaku": {
       "first_seen": "2026-10-19",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "seen_dates": [
-        "2026-10-19"
+        "2026-10-19",
+        "2026-10-20"
       ],
       "title": "OJK Kumpulkan Pelaku Pasar Hingga Finfluencer, Bahas Ini",
       "url": "https://www.cnbcindonesia.com/market/20261019071648-17-777296/ojk-kumpulkan-pelaku-pasar-hingga-finfluencer-bahas-ini",
       "outlets": [
         "CNBC Indonesia"
+      ],
+      "tickers": []
+    },
+    "completes|danantara|four|into|investasi|investment|managers|manajemen|mandiri|merger": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Danantara Completes Merger of Four Investment Managers into PT Mandiri Manajemen Investasi",
+      "url": "https://investor.id/market/458662/gebrakan-danantara-usai-merger-4-manajer-investasi",
+      "outlets": [
+        "Investor Daily"
+      ],
+      "tickers": []
+    },
+    "2026|billion|citra|distribute|dividend|fiscal|interim|media|rp533|scma|surya|year": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "PT Surya Citra Media Tbk (SCMA) to Distribute Rp533.44 Billion Interim Dividend for Fiscal Year 2026",
+      "url": "https://investor.id/market/458658/scma-gelontorkan-dividen-interim-rp-533-miliar",
+      "outlets": [
+        "Investor Daily"
+      ],
+      "tickers": [
+        "SCMA"
+      ]
+    },
+    "amid|buybacks|conglomerate|group|issuers|launch|market|share|trillion|volatility": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Conglomerate Group Issuers Launch Rp8.02 Trillion Share Buybacks Amid Market Volatility",
+      "url": "https://investor.id/market/458655/deretan-emiten-grup-konglomerat-buyback-saham-rp-8-triliun",
+      "outlets": [
+        "Investor Daily",
+        "Kontan"
+      ],
+      "tickers": [
+        "AALI",
+        "BBCA",
+        "BREN",
+        "BRPT",
+        "CUAN",
+        "DSSA",
+        "HRUM",
+        "KLBF",
+        "PBSA",
+        "TOWR",
+        "TPIA",
+        "UNTR"
+      ]
+    },
+    "bersama|digital|investasi|sells|shares|sinergi|solusi|sukses": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Investasi Sukses Bersama Sells Shares of Solusi Sinergi Digital",
+      "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-19102026-5566-00.pdf-0.pdf",
+      "outlets": [
+        "IDX"
+      ],
+      "tickers": [
+        "WIFI"
+      ]
+    },
+    "foreign|ihsg|investors|plunges|sell|trillion": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "IHSG Plunges 3.63% to 4,996 as Foreign Investors Log Rp 1.72 Trillion Net Sell",
+      "url": "https://investasi.kontan.co.id/news/ihsg-ambles-363-ke-4996-cermati-saham-net-sell-terbesar-asing-di-awal-pekan",
+      "outlets": [
+        "Antara",
+        "Bloomberg Technoz",
+        "IDN Financials",
+        "Kontan"
+      ],
+      "tickers": [
+        "AADI",
+        "ADMR",
+        "BBCA",
+        "BBRI",
+        "BMRI",
+        "BRIS",
+        "DEWA",
+        "ERAA",
+        "EXCL",
+        "INDF",
+        "ISAT",
+        "MBMA",
+        "PTBA",
+        "TLKM",
+        "TPIA",
+        "ULTJ",
+        "WIFI"
+      ]
+    },
+    "affiliations|concentration|disclose|exchange|exclude|from|high|indonesia|shareholder|shareholding|stock|stocks": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Indonesia Stock Exchange to Exclude High Shareholding Concentration (HSC) Stocks from JCI and Disclose 1% Shareholder Affiliations",
+      "url": "https://investasi.kontan.co.id/news/bei-siapkan-dua-inisiatif-baru-saham-hsc-bakal-dikeluarkan-dari-ihsg",
+      "outlets": [
+        "CNN Indonesia",
+        "Detik",
+        "Investor Daily",
+        "Kompas",
+        "Kontan"
+      ],
+      "tickers": [
+        "ADES",
+        "AGAR",
+        "AGII",
+        "ALII",
+        "ALKA",
+        "BAJA",
+        "BALI",
+        "BBHI",
+        "BBMD",
+        "BBSI",
+        "BDKR",
+        "BELI",
+        "BIKE",
+        "BINA",
+        "BKDP",
+        "BMAS",
+        "BNII",
+        "BNLI",
+        "BREN",
+        "BSWD",
+        "BTPN",
+        "BYAN",
+        "CITA",
+        "CLAY",
+        "CMNP",
+        "CMNT",
+        "DCII",
+        "DGWG",
+        "DMND",
+        "DNET",
+        "DSSA",
+        "DUTI",
+        "ELPI",
+        "EPMT",
+        "FAPA",
+        "FITT",
+        "GEMS",
+        "HATM",
+        "IFSH",
+        "INDO",
+        "INPP",
+        "KING",
+        "KONI",
+        "LIFE",
+        "MAYA",
+        "MCOL",
+        "MDIA",
+        "MEGA",
+        "MGRO",
+        "MKPI",
+        "MLPT",
+        "MORA",
+        "MPRO",
+        "MSJA",
+        "MTEL",
+        "NICK",
+        "PGUN",
+        "POLU",
+        "PRAY",
+        "PSAB",
+        "RISE",
+        "RLCO",
+        "ROCK",
+        "SAFE",
+        "SAME",
+        "SATU",
+        "SHIP",
+        "SILO",
+        "SMAR",
+        "SMMT",
+        "SOHO",
+        "SOTS",
+        "SRAJ",
+        "SSMS",
+        "STTP",
+        "TBIG",
+        "TCPI",
+        "TMAS",
+        "WBSA",
+        "YUPI"
+      ]
+    },
+    "amid|chief|conditions|decline|indonesian|market|prabowo|president|reports|sharp|stock": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "OJK Chief Reports Indonesian Stock Market Conditions to President Prabowo Amid Sharp IDX Decline",
+      "url": "https://finance.detik.com/bursa-dan-valas/d-8714572/bos-ojk-buka-suara-usai-lapor-kondisi-bursa-saham-ke-prabowo",
+      "outlets": [
+        "Detik"
+      ],
+      "tickers": []
+    },
+    "advise|analysts|exchange|indonesia|market|selective|shrinks|stock|strategies|trillion": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Indonesia Stock Exchange Market Cap Shrinks 17.35% to Rp 8,844 Trillion as Analysts Advise Selective Strategies",
+      "url": "https://investasi.kontan.co.id/news/kapitalisasi-pasar-bei-susut-simak-rekomendasi-analis",
+      "outlets": [
+        "Kontan"
+      ],
+      "tickers": [
+        "AMMN",
+        "BBCA",
+        "BBRI",
+        "BMRI",
+        "BYAN",
+        "DCII",
+        "TLKM"
+      ]
+    },
+    "amid|backs|capital|classification|danantara|indonesia|indonesian|market|msci|reform|scrutiny": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Danantara Indonesia Backs Capital Market Reform Amid MSCI Scrutiny of Indonesian Market Classification",
+      "url": "https://market.bisnis.com/read/20261019/7/2013911/danantara-dukung-reformasi-pasar-modal-usai-sorotan-downgrade-msci",
+      "outlets": [
+        "Bisnis",
+        "Bloomberg Technoz",
+        "Detik",
+        "Kontan"
+      ],
+      "tickers": [
+        "BBCA",
+        "BBRI",
+        "BMRI",
+        "BREN",
+        "CUAN",
+        "DSSA",
+        "TLKM"
+      ]
+    },
+    "bank|defend|indonesia|intervene|orders|past|prabowo|president|rp18": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "President Prabowo Orders Bank Indonesia to Intervene to Defend the Rupiah Past Rp18,000/US$",
+      "url": "https://www.bloombergtechnoz.com/detail-news/125062/prabowo-perintahkan-bi-lakukan-intervensi-jaga-rupiah",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "amid|buyback|changes|gojek|goto|lifts|ownership|shares|tokopedia|treasury": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "PT GoTo Gojek Tokopedia Tbk (GOTO) buyback lifts treasury shares to 5.67% amid ownership changes on IDX",
+      "url": "https://www.idnfinancials.com/id/news/70495/aksi-buyback-goto-berlanjut-total-saham-treasuri-jadi-5-67",
+      "outlets": [
+        "IDN Financials"
+      ],
+      "tickers": [
+        "GOTO",
+        "JECX",
+        "MAPI"
+      ]
+    },
+    "academician|capital|confidence|data|global|greater|indonesia|investor|market|ownership|says|stock|strengthen|transparency": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "UI Academician Says Greater Transparency in Stock Ownership Data Can Strengthen Global Investor Confidence in Indonesia's Capital Market",
+      "url": "https://www.antaranews.com/berita/5797313/akademisi-ui-keterbukaan-data-saham-perkuat-kepercayaan-investor",
+      "outlets": [
+        "Antara"
+      ],
+      "tickers": []
+    },
+    "announcement|asia|bank|bbca|bbri|central|foreign|hardest|indonesia|jumbo|msci|outflows|rakyat|stocks|weaken": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Jumbo Bank Stocks Weaken on MSCI Announcement as Foreign Outflows Hit PT Bank Central Asia Tbk (BBCA) and PT Bank Rakyat Indonesia Tbk (BBRI) Hardest",
+      "url": "https://keuangan.kontan.co.id/news/saham-big-banks-melemah-imbas-pengumuman-msci-waktunya-masuk",
+      "outlets": [
+        "Kontan"
+      ],
+      "tickers": [
+        "BBCA",
+        "BBNI",
+        "BBRI",
+        "BMRI"
+      ]
+    },
+    "alam|change|indonesia|insider|maybank|realty|reports|sekuritas|shareholding|sutera": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Alam Sutera Realty Insider Maybank Sekuritas Indonesia Reports Shareholding Change",
+      "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-19102026-9650-00.pdf-0.pdf",
+      "outlets": [
+        "IDX"
+      ],
+      "tickers": [
+        "ASRI"
+      ]
+    },
+    "2026|auto|bottom|exchange|imposes|indonesia|limit|reject|stock|until": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Indonesia Stock Exchange Imposes 7% Auto Reject Bottom Limit Until End of 2026",
+      "url": "https://investasi.kontan.co.id/news/bei-berlakukan-arb-7-hingga-akhir-2026-ini-aturan-lengkapnya",
+      "outlets": [
+        "CNBC Indonesia",
+        "Kontan"
+      ],
+      "tickers": [
+        "AMMN",
+        "BBCA",
+        "BBRI",
+        "BRMS",
+        "BYAN",
+        "CUAN",
+        "GOTO",
+        "ICBP",
+        "MDKA",
+        "MORA",
+        "TLKM",
+        "TPIA"
+      ]
+    },
+    "2026|bank|capital|declines|himbara|issuances|mandiri|strengthen|through": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Himbara CAR Declines in H1-2026 as Bank Mandiri and BNI Strengthen Capital Through AT1 Issuances",
+      "url": "https://keuangan.kontan.co.id/news/rasio-kecukupan-modal-car-himbara-susut-mandiri-dan-bni-pertebal-modal-lewat-at1",
+      "outlets": [
+        "Kontan"
+      ],
+      "tickers": [
+        "BBNI",
+        "BBRI",
+        "BBTN",
+        "BMRI"
+      ]
+    },
+    "2026|forecast|october|recommendations|stock|tuesday": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "JCI Forecast and Stock Recommendations for Tuesday, October 20, 2026",
+      "url": "https://investor.id/market/458612/prediksi-ihsg-dan-rekomendasi-saham-selasa-20-oktober-2026",
+      "outlets": [
+        "Investor Daily"
+      ],
+      "tickers": [
+        "AADI",
+        "ADRO",
+        "ANTM",
+        "TAPG"
+      ]
+    },
+    "concerns|downplay|hits|level|lowest|msci|officials|pandemic|reclassification|since": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "JCI Hits Lowest Level Since Pandemic as Officials Downplay MSCI Reclassification Concerns",
+      "url": "https://www.cnbcindonesia.com/market/20261019173853-17-777614/ihsg-sentuh-level-terendah-sejak-pandemi-ini-kata-menko-airlangga",
+      "outlets": [
+        "CNBC Indonesia",
+        "Detik"
+      ],
+      "tickers": []
+    },
+    "christian|director|indocement|intp|kartawijaya|prakarsa|president|resigns|tunggal": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Indocement Tunggal Prakarsa (INTP) President Director Christian Kartawijaya Resigns",
+      "url": "https://www.cnbcindonesia.com/market/20261019163552-17-777570/dirut-indocement--intp--christian-kartawijaya-mundur-ada-apa",
+      "outlets": [
+        "CNBC Indonesia"
+      ],
+      "tickers": [
+        "INTP"
+      ]
+    },
+    "billion|could|from|fund|goldman|indonesia|msci|outflows|potential|reclassification|sachs|trigger": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Goldman Sachs: Potential MSCI Reclassification Could Trigger US$5.6 Billion Fund Outflows From Indonesia",
+      "url": "https://www.idnfinancials.com/id/news/70484/goldman-sachs-ancaman-msci-bisa-picu-dana-keluar-us5-6-miliar",
+      "outlets": [
+        "IDN Financials",
+        "Kompas"
+      ],
+      "tickers": []
+    },
+    "2026|hinges|internusa|land|outlook|posts|profit|realization|sales|semesta|ssia|surya|through": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "PT Surya Semesta Internusa Tbk (SSIA) Posts Profit, Outlook Through End-2026 Hinges on Land Sales Realization",
+      "url": "https://investasi.kontan.co.id/news/surya-semesta-ssia-cetak-laba-cermati-prospek-dan-tantangannya-hingga-akhir-2026",
+      "outlets": [
+        "Kontan"
+      ],
+      "tickers": [
+        "SSIA"
+      ]
+    },
+    "capital|exchange|indonesia|initiatives|integrity|market|prepares|stock|strengthen|transparency": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Indonesia Stock Exchange Prepares Two New Initiatives to Strengthen Capital Market Transparency and Integrity",
+      "url": "https://investasi.kontan.co.id/news/bei-siapkan-dua-inisiatif-baru-untuk-perkuat-transparansi-dan-integritas-pasar-modal",
+      "outlets": [
+        "Kontan"
+      ],
+      "tickers": []
+    },
+    "after|asia|auto|bank|bbca|bottom|buyback|central|executes|plunge|price|reject|share": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "PT Bank Central Asia Tbk (BBCA) Executes Share Buyback After Price Plunge and Auto Reject Bottom Hit",
+      "url": "https://investasi.kontan.co.id/news/harga-anjlok-kena-arb-manajemen-bbca-eksekusi-buyback",
+      "outlets": [
+        "IDN Financials",
+        "Kontan"
+      ],
+      "tickers": [
+        "BBCA"
+      ]
+    },
+    "allocates|bangun|billion|buyback|october|paramita|pbsa|sarana|share|starting": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "PT Paramita Bangun Sarana Tbk (PBSA) Allocates Up to Rp 100 Billion for Share Buyback Starting October 20",
+      "url": "https://investasi.kontan.co.id/news/paramita-pbsa-alokasikan-rp-100-miliar-untuk-buyback-saham-mulai-selasa-2010",
+      "outlets": [
+        "Kontan"
+      ],
+      "tickers": [
+        "PBSA"
+      ]
+    },
+    "bonds|downgrade|foreign|from|fund|government|indonesian|msci|outflows|poses|proposal|risk": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "MSCI Downgrade Proposal Poses Risk of Foreign Fund Outflows from Indonesian Government Bonds",
+      "url": "https://investasi.kontan.co.id/news/usulan-msci-picu-risiko-arus-keluar-dana-asing-ini-dampaknya-terhadap-obligasi-ri",
+      "outlets": [
+        "Kontan"
+      ],
+      "tickers": []
+    },
+    "billion|citra|distribute|dividends|emtek|entity|group|interim|media|scma|surya": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "PT Surya Citra Media Tbk (SCMA), an Emtek Group entity, to distribute Rp 533.43 billion in interim dividends",
+      "url": "https://investasi.kontan.co.id/news/entitas-grup-emtek-scma-bagi-dividen-interim-rp-53343-miliar",
+      "outlets": [
+        "IDN Financials",
+        "Kontan"
+      ],
+      "tickers": [
+        "SCMA"
+      ]
+    },
+    "2020|continues|level|msci|pressure|reclassification|touches|weakens": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Rupiah Weakens and JCI Touches 2020 Level as MSCI Reclassification Pressure Continues",
+      "url": "https://investasi.kontan.co.id/news/tekanan-msci-berlanjut-rupiah-melemah-dan-ihsg-sentuh-level-2020",
+      "outlets": [
+        "Bisnis",
+        "IDN Financials",
+        "Jakartaglobe",
+        "Kompas",
+        "Kontan"
+      ],
+      "tickers": [
+        "AADI",
+        "AMMN",
+        "BBCA",
+        "BBNI",
+        "BBRI",
+        "BREN",
+        "CUAN",
+        "DSSA",
+        "INCO",
+        "MBMA",
+        "MDKA",
+        "PGAS"
+      ]
+    },
+    "below|board|chair|commissioners|dewi|falls|friderica|heads|ihsg|palace|widyasari": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "OJK Board of Commissioners Chair Friderica Widyasari Dewi Heads to the Palace as IHSG Falls Below 5,000",
+      "url": "https://finance.detik.com/bursa-dan-valas/d-8714200/bos-ojk-menkeu-merapat-ke-istana-usai-ihsg-anjlok-di-bawah-5-000",
+      "outlets": [
+        "CNBC Indonesia",
+        "Detik"
+      ],
+      "tickers": []
+    },
+    "asuransi|becomes|general|indonesia|insurance|investor|market|pratama|slides|stock|target|tugu": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "General Insurance Stock Asuransi Tugu Pratama Indonesia (TUGU) Becomes Investor Target as Market Slides",
+      "url": "https://emitennews.com/news/kala-ihsg-tersudut-saham-asuransi-umum-ini-menjadi-buruan-investor",
+      "outlets": [
+        "Emitennews"
+      ],
+      "tickers": [
+        "TUGU"
+      ]
+    },
+    "dimas|estika|shares|tata|tiara|wibowo": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Dimas Wibowo Buy Shares of Estika Tata Tiara",
+      "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-19102026-2855-00.pdf-0.pdf",
+      "outlets": [
+        "IDX"
+      ],
+      "tickers": [
+        "BEEF"
+      ]
+    },
+    "administrative|after|dian|dssa|imposes|normal|operations|sanction|says|sentosa|swastatika|trillion": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "PT Dian Swastatika Sentosa Tbk (DSSA) Says Operations Normal After OJK Imposes Rp1.5 Trillion Administrative Sanction",
+      "url": "https://www.bloombergtechnoz.com/detail-news/125035/respons-dssa-usai-dikenai-sanksi-operasional-berjalan-normal",
+      "outlets": [
+        "Bloomberg Technoz",
+        "IDN Financials"
+      ],
+      "tickers": [
+        "BREN",
+        "CUAN",
+        "DSSA"
+      ]
+    },
+    "bank|expected|indonesia|msci|percent|raise|rate|reclassification|sentiment|weakens": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Rupiah Weakens on MSCI Reclassification Sentiment, Bank Indonesia Expected to Raise Rate to 6 Percent",
+      "url": "https://money.kompas.com/read/2026/10/19/160602726/rupiah-tertekan-sentimen-msci-bi-diprediksi-naikkan-suku-bunga-jadi-6-persen",
+      "outlets": [
+        "Bloomberg Technoz",
+        "CNBC Indonesia",
+        "Kompas"
+      ],
+      "tickers": [
+        "BBCA",
+        "BBRI",
+        "TLKM"
+      ]
+    },
+    "amid|classification|concerns|fines|franky|issuers|linked|market|msci|pangestu|prajogo|widjaja": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "OJK Fines Prajogo Pangestu and Franky Widjaja-Linked Issuers Amid MSCI Market Classification Concerns",
+      "url": "https://investor.id/market/458593/ancaman-msci-sanksi-ojk-ke-emiten-konglomerat-dinilai-sudah-tepat",
+      "outlets": [
+        "Investor Daily"
+      ],
+      "tickers": [
+        "BREN",
+        "CUAN",
+        "DSSA"
+      ]
+    },
+    "after|auto|bottom|consultation|curb|cuts|exchange|indonesia|limit|market|msci|panic|percent|reclassification|reject|stock": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Indonesia Stock Exchange Cuts Auto Reject Bottom Limit to 7 Percent to Curb Market Panic After MSCI Reclassification Consultation",
+      "url": "https://www.cnnindonesia.com/ekonomi/20261019153014-92-1417118/bei-ungkap-batas-arb-saham-7-persen-efektif-redam-kepanikan-pasar",
+      "outlets": [
+        "CNN Indonesia",
+        "Kontan"
+      ],
+      "tickers": []
+    },
+    "admar|anwar|buys|dharma|nitrasanata|shares": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Dr.Admar Anwar Buys Shares of Nitrasanata Dharma",
+      "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-19102026-6051-00.pdf-0.pdf",
+      "outlets": [
+        "IDX"
+      ],
+      "tickers": [
+        "JECX"
+      ]
+    },
+    "beyond|bren|capital|cuan|dssa|exchange|extend|indonesia|market|sanctions|signals|stock|suspected|violations": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Indonesia Stock Exchange Signals Sanctions for Suspected Capital Market Violations May Extend Beyond DSSA, BREN, and CUAN",
+      "url": "https://www.bloombergtechnoz.com/detail-news/125033/bei-isyaratkan-sanksi-pelanggaran-tak-hanya-berhenti-di-dssa-cuan",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": [
+        "BREN",
+        "CUAN",
+        "DSSA"
+      ]
+    },
+    "buys|indonesia|nusantara|samuel|sawit|sejahtera|sekuritas|shares": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Samuel Sekuritas Indonesia Buys Shares of Nusantara Sawit Sejahtera",
+      "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-19102026-0453-00.pdf-0.pdf",
+      "outlets": [
+        "IDX"
+      ],
+      "tickers": [
+        "NSSS"
+      ]
+    },
+    "amid|concerns|domestic|exchange|indonesia|institutional|investors|market|msci|reclassification|stock|support|urges": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Indonesia Stock Exchange Urges Domestic Institutional Investors to Support Market Amid MSCI Reclassification Concerns",
+      "url": "https://www.bloombergtechnoz.com/detail-news/125030/bei-minta-dapen-cs-bantu-topang-ihsg",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "announce|barito|bren|buybacks|cuan|dian|dssa|energy|following|jaya|kreasi|petrindo|renewables|sanctions|sentosa|share|swastatika": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "PT Barito Renewables Energy Tbk (BREN), PT Petrindo Jaya Kreasi Tbk (CUAN), and PT Dian Swastatika Sentosa Tbk (DSSA) Announce Share Buybacks Following OJK Sanctions",
+      "url": "https://finance.detik.com/bursa-dan-valas/d-8713986/cuan-bren-dan-dssa-kompak-umumkan-buyback-saham-usai-disanksi-ojk",
+      "outlets": [
+        "Detik",
+        "Investor Daily"
+      ],
+      "tickers": [
+        "BREN",
+        "BRPT",
+        "CUAN",
+        "DSSA",
+        "TPIA"
+      ]
+    },
+    "abadi|indonesia|lestari|samuel|sekuritas|sells|shares": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Samuel Sekuritas Indonesia Sells Shares of Abadi Lestari Indonesia",
+      "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-19102026-1221-00.pdf-0.pdf",
+      "outlets": [
+        "IDX"
+      ],
+      "tickers": [
+        "RLCO"
+      ]
+    },
+    "2026|bank|bris|indonesia|records|remittance|september|syariah|through|transactions|trillion": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "PT Bank Syariah Indonesia Tbk (BRIS) Records Rp 139 Trillion in Remittance Transactions Through September 2026",
+      "url": "https://keuangan.kontan.co.id/news/bsi-catat-transaksi-remitansi-rp-139-triliun-hingga-september-2026",
+      "outlets": [
+        "Kontan"
+      ],
+      "tickers": [
+        "BRIS"
+      ]
+    },
+    "alone|asset|capital|enough|exchange|indonesia|market|meet|mirae|msci|october|reform|sanctions|says|stock": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "OJK and Indonesia Stock Exchange to Meet MSCI on October 19 as Mirae Asset Says Sanctions Alone Are Not Enough for Capital Market Reform",
+      "url": "https://investasi.kontan.co.id/news/ojk-bei-bertemu-msci-pada-senin-1910-mirae-reformasi-tak-cukup-hanya-sanksi",
+      "outlets": [
+        "IDN Financials",
+        "Kontan"
+      ],
+      "tickers": [
+        "BREN",
+        "CUAN",
+        "DSSA"
+      ]
+    },
+    "after|bbca|downgrade|foreign|indonesian|msci|predicted|proposal|selling|stocks|target|with": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Foreign Selling Predicted to Hit Indonesian Stocks After MSCI Downgrade Proposal, with BBCA as Top Target",
+      "url": "https://investor.id/market/458583/ramalan-daftar-saham-yang-bakal-dihajar-asing-bbca-teratas",
+      "outlets": [
+        "Bloomberg Technoz",
+        "Investor Daily"
+      ],
+      "tickers": [
+        "BBCA",
+        "BBNI",
+        "BBRI",
+        "BMRI",
+        "BTPS"
+      ]
+    },
+    "acquire|around|basin|energi|fitch|kutei|leverage|medc|medco|projects|pscs|rising|stake": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Medco Energi (MEDC) to Acquire 10% Stake in Kutei Basin PSCs; Fitch Projects Leverage Rising to Around 3x",
+      "url": "https://investasi.kontan.co.id/news/medco-medc-akuisisi-10-blok-kutei-fitch-proyeksi-leverage-naik-3-kali",
+      "outlets": [
+        "Kontan"
+      ],
+      "tickers": [
+        "MEDC"
+      ]
+    },
+    "after|business|capital|control|focuses|global|nusantara|platinum|strengthening|takes|tguk|visionary|wahab": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "PT Platinum Wahab Nusantara Tbk (TGUK) Focuses on Business Strengthening After Visionary Capital Global Takes Control",
+      "url": "https://investor.id/market/458573/bos-tguk-ungkap-fokus-bisnis-usai-dicaplok-vcg",
+      "outlets": [
+        "Investor Daily"
+      ],
+      "tickers": [
+        "TGUK"
+      ]
+    },
+    "brighten|industrial|internusa|land|outlook|sales|semesta|ssia|strong|subang|surya": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Strong Industrial Land Sales at Subang Brighten Outlook for PT Surya Semesta Internusa Tbk (SSIA)",
+      "url": "https://investasi.kontan.co.id/news/penjualan-lahan-surya-semesta-ssia-di-subang-laris-manis-intip-prospek-sahamnya",
+      "outlets": [
+        "Kontan"
+      ],
+      "tickers": [
+        "SSIA"
+      ]
+    },
+    "2026|asia|bank|buyback|capital|central|continues|market|october|share|stabilization|support": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "PT Bank Central Asia Tbk (BCA) Continues Share Buyback on October 19-21, 2026, to Support Capital Market Stabilization",
+      "url": "https://money.kompas.com/read/2026/10/19/132104826/bca-lanjut-buyback-saham-19-21-oktober-dukung-stabilisasi-pasar-modal",
+      "outlets": [
+        "Kompas"
+      ],
+      "tickers": [
+        "BBCA"
+      ]
+    },
+    "bukan|delisting|dihapus|hanya|hitungan|ihsg": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Bukan Delisting, Saham HSC Hanya Dihapus dari Hitungan IHSG",
+      "url": "https://emitennews.com/news/bukan-delisting-saham-hsc-hanya-dihapus-dari-hitungan-ihsg",
+      "outlets": [
+        "Emitennews"
+      ],
+      "tickers": []
+    },
+    "ekonom|ekonomi|indonesia|krisis|masuk|peringatkan|risiko|zona": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Ekonom BCA Peringatkan Risiko Ekonomi Indonesia Masuk Zona Krisis",
+      "url": "https://nasional.kontan.co.id/news/ekonom-bca-peringatkan-risiko-ekonomi-indonesia-masuk-zona-krisis?source=home_popular",
+      "outlets": [
+        "Kontan"
+      ],
+      "tickers": []
+    },
+    "aturan|baru|hasil|msci|pertemuan|rinciannya|siapkan": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Ini Hasil Pertemuan BEI dan MSCI, BEI Siapkan Dua Aturan Baru Simak Rinciannya!",
+      "url": "https://investasi.kontan.co.id/news/ini-hasil-pertemuan-bei-dan-msci-bei-siapkan-dua-aturan-baru-simak-rinciannya?source=home_popular",
+      "outlets": [
+        "Kontan"
+      ],
+      "tickers": []
+    },
+    "bawah|bersejarah|ihsg|keputusan|terkapar": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "IHSG Terkapar di Bawah 5.000, BEI Buat Keputusan Bersejarah",
+      "url": "https://emitennews.com/news/ihsg-terkapar-di-bawah-5000-bei-buat-keputusan-bersejarah",
+      "outlets": [
+        "CNBC Indonesia",
+        "Emitennews",
+        "Kontan"
+      ],
+      "tickers": [
+        "INCO",
+        "MDKA",
+        "MEDC"
+      ]
+    },
+    "dana|goldman|hapus|hitung|indonesia|jika|keluar|miliar|msci|potensi|sachs": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Goldman Sachs Hitung Potensi Dana Keluar US$ 5,6 Miliar Jika MSCI Hapus Indonesia",
+      "url": "https://investasi.kontan.co.id/news/goldman-sachs-hitung-potensi-dana-keluar-us-56-miliar-jika-msci-hapus-indonesia?source=home_popular",
+      "outlets": [
+        "CNBC Indonesia",
+        "Kontan"
+      ],
+      "tickers": []
+    },
+    "buyback|dana|dian|dssa|mulai|siapkan|swastatika|triliun": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Dian Swastatika (DSSA) Siapkan Dana Rp 1 Triliun untuk Buyback Saham Mulai Hari Ini",
+      "url": "https://investasi.kontan.co.id/news/dian-swastatika-dssa-siapkan-dana-rp-1-triliun-untuk-buyback-saham-mulai-hari-ini?source=home_popular",
+      "outlets": [
+        "Kontan"
+      ],
+      "tickers": [
+        "DSSA"
+      ]
+    },
+    "bayar|bumn|dampaknya|danantara|fitch|gagal|indonesia|menurut": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Pos Indonesia Gagal Bayar, Begini Dampaknya ke BUMN Danantara Menurut Fitch",
+      "url": "https://investasi.kontan.co.id/news/pos-indonesia-gagal-bayar-begini-dampaknya-ke-bumn-danantara-menurut-fitch?source=home_popular",
+      "outlets": [
+        "Kontan"
+      ],
+      "tickers": []
+    },
+    "buyback|cuan|dana|gelar|miliar|mulai|petrindo|senin|siapkan": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Petrindo (CUAN) Gelar Buyback Saham Mulai Senin (19/10), Siapkan Dana Rp 500 Miliar",
+      "url": "https://investasi.kontan.co.id/news/petrindo-cuan-gelar-buyback-saham-mulai-senin-1910-siapkan-dana-rp-500-miliar?source=home_popular",
+      "outlets": [
+        "Kontan"
+      ],
+      "tickers": [
+        "CUAN"
+      ]
+    },
+    "barito|bren|buyback|dana|energy|gelar|renewables|siapkan|triliun": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Barito Renewables Energy (BREN) Gelar Buyback Saham, Siapkan Dana Rp 1 triliun",
+      "url": "https://investasi.kontan.co.id/news/barito-renewables-energy-bren-gelar-buyback-saham-siapkan-dana-rp-1-triliun?source=home_popular",
+      "outlets": [
+        "Kontan"
+      ],
+      "tickers": [
+        "BREN"
+      ]
+    },
+    "minyak|pasokan|persia|pulih|stabil|teluk": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Pasokan Teluk Persia Pulih 80 Persen, Harga Minyak Stabil",
+      "url": "https://emitennews.com/news/pasokan-teluk-persia-pulih-80-persen-harga-minyak-stabil",
+      "outlets": [
+        "Emitennews"
+      ],
+      "tickers": []
+    },
+    "batubara|idbbb|kontraktor|melorot|rating|tertekan|utang": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Tertekan Utang, Rating Kontraktor Batubara ini Melorot ke idBBB",
+      "url": "https://emitennews.com/news/tertekan-utang-rating-kontraktor-batubara-ini-melorot-ke-idbbb",
+      "outlets": [
+        "Emitennews"
+      ],
+      "tickers": []
+    },
+    "chery|jutaan|listrik|murah|perkenalkan|pertamanya|skuter": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Chery Perkenalkan Skuter Listrik Pertamanya Murah Rp5 Jutaan",
+      "url": "https://emitennews.com/news/chery-perkenalkan-skuter-listrik-pertamanya-murah-rp5-jutaan",
+      "outlets": [
+        "Emitennews"
+      ],
+      "tickers": []
+    },
+    "akselerasi|aliansi|baterai|laba|listrik|oscarmas|strategis|truk": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Aliansi Strategis, LABA dan Oscarmas Akselerasi Baterai Truk Listrik",
+      "url": "https://emitennews.com/news/aliansi-strategis-laba-dan-oscarmas-akselerasi-baterai-truk-listrik",
+      "outlets": [
+        "Emitennews"
+      ],
+      "tickers": [
+        "LABA"
+      ]
+    },
+    "karhutla|lutfi|pajak|sawit|sentil|singapura|taipan": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "M Lutfi Sentil Taipan Sawit dan Pajak Singapura Soal Karhutla",
+      "url": "https://emitennews.com/news/m-lutfi-sentil-taipan-sawit-dan-pajak-singapura-soal-karhutla",
+      "outlets": [
+        "CNBC Indonesia",
+        "Emitennews"
+      ],
+      "tickers": []
+    },
+    "asal|ihsg|peluang|rebound|selasa|terbuka|terjadi": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "IHSG Selasa (20/10), Peluang Rebound Terbuka Asal Ini Terjadi",
+      "url": "https://emitennews.com/news/ihsg-selasa-2010-peluang-rebound-terbuka-asal-ini-terjadi",
+      "outlets": [
+        "CNBC Indonesia",
+        "Emitennews"
+      ],
+      "tickers": []
+    },
+    "bekasi|cari|gurun|hidup|pasir|penampakan|susah|warga": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Penampakan Warga Bekasi Hidup Bak di Gurun Pasir, Susah Cari Air",
+      "url": "https://www.cnbcindonesia.com/news/20261019152620-7-777533/penampakan-warga-bekasi-hidup-bak-di-gurun-pasir-susah-cari-air",
+      "outlets": [
+        "CNBC Indonesia"
+      ],
+      "tickers": []
+    },
+    "memanas|meroket|pangan|perang|saudara": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Perang Saudara Memanas, Harga Pangan dan BBM Meroket",
+      "url": "https://www.cnbcindonesia.com/news/20261019095848-7-777357/perang-saudara-memanas-harga-pangan-dan-bbm-meroket",
+      "outlets": [
+        "CNBC Indonesia"
+      ],
+      "tickers": []
+    },
+    "bulan|cairkan|joran|menkeu|prabowo|siap|triliun": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Prabowo Siap Jor-joran, Menkeu Cairkan Rp1.300 Triliun dalam 3 Bulan",
+      "url": "https://www.cnbcindonesia.com/news/20261020061807-4-777672/prabowo-siap-jor-joran-menkeu-cairkan-rp1300-triliun-dalam-3-bulan",
+      "outlets": [
+        "CNBC Indonesia"
+      ],
+      "tickers": []
+    },
+    "buka|bukaan|danantara|kondisi|menkeu|terkini": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Menkeu, BI, OJK, Danantara Buka-bukaan Kondisi RI Terkini",
+      "url": "https://www.cnbcindonesia.com/news/20261020060804-4-777670/menkeu-bi-ojk-danantara-buka-bukaan-kondisi-ri-terkini",
+      "outlets": [
+        "CNBC Indonesia"
+      ],
+      "tickers": []
+    },
+    "balik|buka|dolar|pemerintah|rp18|suara|tekan": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Pemerintah-BI Buka Suara! Dolar Tekan Rupiah Hingga Balik ke Rp18.000",
+      "url": "https://www.cnbcindonesia.com/market/20261019071317-17-777295/pemerintah-bi-buka-suara-dolar-tekan-rupiah-hingga-balik-ke-rp18000",
+      "outlets": [
+        "CNBC Indonesia"
+      ],
+      "tickers": []
+    },
+    "asia|bisnis|cemas|investor|kompak|melemah|prospek": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Bursa Asia Kompak Melemah, Investor Cemas Prospek Bisnis AI",
+      "url": "https://www.cnbcindonesia.com/market/20261019083019-17-777316/bursa-asia-kompak-melemah-investor-cemas-prospek-bisnis-ai",
+      "outlets": [
+        "CNBC Indonesia"
+      ],
+      "tickers": []
+    },
+    "2027|asuransi|berlaku|bidik|mulai|penjaminan|polis": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "LPS Bidik Penjaminan Polis Asuransi Berlaku Mulai 2027",
+      "url": "https://www.cnbcindonesia.com/market/20261019083318-17-777317/lps-bidik-penjaminan-polis-asuransi-berlaku-mulai-2027",
+      "outlets": [
+        "CNBC Indonesia"
+      ],
+      "tickers": []
+    },
+    "anjlok|balik|breaking|ihsg|level": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Breaking, IHSG Anjlok 4% Lebih Balik ke Level 4.900",
+      "url": "https://www.cnbcindonesia.com/market/20261019085011-17-777326/breaking-ihsg-anjlok-4-lebih-balik-ke-level-4900",
+      "outlets": [
+        "Bloomberg Technoz",
+        "CNBC Indonesia"
+      ],
+      "tickers": []
+    },
+    "bertahan|dolar|pagi|rp18": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Dolar AS Bertahan di Rp18.000 Pagi Ini",
+      "url": "https://www.cnbcindonesia.com/market/20261019090555-17-777328/dolar-as-bertahan-di-rp18000-pagi-ini",
+      "outlets": [
+        "Bloomberg Technoz",
+        "CNBC Indonesia"
+      ],
+      "tickers": []
+    },
+    "china|efek|melambat|penurunan|rumah|stimulus": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Efek Stimulus, Penurunan Harga Rumah di China Melambat",
+      "url": "https://www.bloombergtechnoz.com/detail-news/124979/efek-stimulus-penurunan-harga-rumah-di-china-melambat",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "2026|bank|bbca|buyback|dimulai|oktober": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Bank BCA (BBCA) Buyback Saham, Dimulai 19 hingga 21 Oktober 2026",
+      "url": "https://www.bloombergtechnoz.com/detail-news/124981/bank-bca-bbca-buyback-saham-dimulai-19-hingga-21-oktober-2026",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": [
+        "BBCA"
+      ]
+    },
+    "ihsg|pilihan|turun": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Pilihan Saham Saat IHSG Turun 5% Hari Ini",
+      "url": "https://www.bloombergtechnoz.com/detail-news/124975/pilihan-saham-saat-ihsg-turun-5-hari-ini",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "bren|buyback|disorot|penjatahan|umumkan": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "BREN Umumkan Buyback Rp1 T Usai Disorot OJK Soal Penjatahan IPO",
+      "url": "https://www.cnbcindonesia.com/market/20261019085330-17-777322/bren-umumkan-buyback-rp1-t-usai-disorot-ojk-soal-penjatahan-ipo",
+      "outlets": [
+        "CNBC Indonesia"
+      ],
+      "tickers": [
+        "BREN"
+      ]
+    },
+    "champion|igar|naik|pacific|suspensi|terus": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Harga Naik Terus, BEI Suspensi Champion Pacific (IGAR)",
+      "url": "https://www.cnbcindonesia.com/market/20261019092910-17-777344/harga-naik-terus-bei-suspensi-champion-pacific--igar-",
+      "outlets": [
+        "CNBC Indonesia"
+      ],
+      "tickers": [
+        "IGAR"
+      ]
+    },
+    "cabai|curah|daging|minyak|naik|pangan|turun": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Harga Pangan Hari Ini: Cabai & Daging Turun, Minyak Curah Naik",
+      "url": "https://www.bloombergtechnoz.com/detail-news/124982/harga-pangan-hari-ini-cabai-daging-turun-minyak-curah-naik",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "bank|bgtg|borong|ganesha|miliar|rp125": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Ada yang Borong 1,35 Miliar Saham Bank Ganesha (BGTG) di Harga Rp125",
+      "url": "https://www.cnbcindonesia.com/market/20261019090125-17-777327/ada-yang-borong-135-miliar-saham-bank-ganesha--bgtg--di-harga-rp125",
+      "outlets": [
+        "CNBC Indonesia"
+      ],
+      "tickers": [
+        "BGTG"
+      ]
+    },
+    "bakal|china|ekspor|lakukan|pembatasan": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "China Bakal Lakukan Pembatasan Ekspor AI",
+      "url": "https://www.bloombergtechnoz.com/detail-news/124986/china-bakal-lakukan-pembatasan-ekspor-ai",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "asing|bikin|caps|gimana|kabur|msci|nasib|perbankan|video": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Video: MSCI Bikin Asing Kabur, Gimana Nasib Saham Perbankan Big Caps?",
+      "url": "https://www.cnbcindonesia.com/market/20261019094957-19-777354/video-msci-bikin-asing-kabur-gimana-nasib-saham-perbankan-big-caps",
+      "outlets": [
+        "CNBC Indonesia"
+      ],
+      "tickers": []
+    },
+    "bbca|bbri|dinilai|hamka|jusuf|menarik|serok": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Jusuf Hamka Mau Serok Rp5 T, BBRI-BBCA Dinilai Menarik",
+      "url": "https://www.bloombergtechnoz.com/detail-news/124983/jusuf-hamka-mau-serok-rp5-t-bbri-bbca-dinilai-menarik",
+      "outlets": [
+        "Bloomberg Technoz",
+        "CNBC Indonesia"
+      ],
+      "tickers": [
+        "BBCA",
+        "BBRI"
+      ]
+    },
+    "arko|borong|pengendali": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Pengendali ARKO Borong Saham di Harga Rp2.148, Ada Apa?",
+      "url": "https://www.cnbcindonesia.com/market/20261019090738-17-777330/pengendali-arko-borong-saham-di-harga-rp2148-ada-apa",
+      "outlets": [
+        "CNBC Indonesia"
+      ],
+      "tickers": [
+        "ARKO"
+      ]
+    },
+    "ihsg|krismon|msci|pandemi|pasang|surut|tahun|tragedi": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Pasang Surut IHSG dari Krismon, Pandemi Hingga Tragedi MSCI Tahun Ini",
+      "url": "https://www.cnbcindonesia.com/market/20261019094038-17-777352/pasang-surut-ihsg-dari-krismon-pandemi-hingga-tragedi-msci-tahun-ini",
+      "outlets": [
+        "Bloomberg Technoz",
+        "CNBC Indonesia"
+      ],
+      "tickers": []
+    },
+    "berawan|bmkg|cerah|cuaca|hujan|jakarta|potensi|ringan": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "BMKG: Cuaca Jakarta Cerah Berawan, Potensi Hujan Ringan",
+      "url": "https://www.bloombergtechnoz.com/detail-news/124984/bmkg-cuaca-jakarta-cerah-berawan-potensi-hujan-ringan",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "baru|investor|jual|kompak|kuasai|mbss|pengendali": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "22 Investor Kompak Jual, Pengendali Baru MBSS Kuasai 90,09% Saham",
+      "url": "https://www.cnbcindonesia.com/market/20261019093057-17-777350/22-investor-kompak-jual-pengendali-baru-mbss-kuasai-9009-saham",
+      "outlets": [
+        "CNBC Indonesia"
+      ],
+      "tickers": [
+        "MBSS"
+      ]
+    },
+    "goto|indonesia|kapabilitas|open|perkuat|rilis|source": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "GoTo Rilis LLM Open-Source, Perkuat Kapabilitas AI Indonesia",
+      "url": "https://www.bloombergtechnoz.com/detail-news/124970/goto-rilis-llm-open-source-perkuat-kapabilitas-ai-indonesia",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": [
+        "GOTO"
+      ]
+    },
+    "naik|surat|tahun|tertinggi|utang|yield": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Yield Surat Utang 10 Tahun Naik, Tertinggi dalam 4 Tahun",
+      "url": "https://www.bloombergtechnoz.com/detail-news/124992/yield-surat-utang-10-tahun-naik-tertinggi-dalam-4-tahun",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "batas|desak|ekonom|kena|naikkan|pajak|pemerintah|penghasilan": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Ekonom Desak Pemerintah Naikkan Batas Penghasilan Tak Kena Pajak",
+      "url": "https://www.bloombergtechnoz.com/detail-news/124987/ekonom-desak-pemerintah-naikkan-batas-penghasilan-tak-kena-pajak",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "buyback|cuan|disorot|rp500|siapkan": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Saham ARB Usai Disorot OJK Soal IPO, CUAN Siapkan Rp500 M Buat Buyback",
+      "url": "https://www.cnbcindonesia.com/market/20261019101459-17-777373/saham-arb-usai-disorot-ojk-soal-ipo-cuan-siapkan-rp500-m-buat-buyback",
+      "outlets": [
+        "CNBC Indonesia"
+      ],
+      "tickers": [
+        "CUAN"
+      ]
+    },
+    "dunia|kegiatan|melambat|positif|survei|tapi|usaha": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Survei BI: Kegiatan Dunia Usaha Masih Positif, Tapi Melambat",
+      "url": "https://www.bloombergtechnoz.com/detail-news/124996/survei-bi-kegiatan-dunia-usaha-masih-positif-tapi-melambat",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "analis|bergantung|ekonomi|kondisi|pemerintah|respons|urus": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Analis: Kondisi Rupiah Bergantung Respons Pemerintah Urus Ekonomi",
+      "url": "https://www.bloombergtechnoz.com/detail-news/124994/analis-kondisi-rupiah-bergantung-respons-pemerintah-urus-ekonomi",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "buyback|dssa|kena|sanksi|siapkan|triliun": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Usai Kena Sanksi OJK, DSSA Siapkan Buyback Saham Hingga Rp1 Triliun",
+      "url": "https://www.cnbcindonesia.com/market/20261019111255-17-777414/usai-kena-sanksi-ojk-dssa-siapkan-buyback-saham-hingga-rp1-triliun",
+      "outlets": [
+        "CNBC Indonesia"
+      ],
+      "tickers": [
+        "DSSA"
+      ]
+    },
+    "bpom|ilegal|kosmetik|mojokerto|rp16|senilai|temukan": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "BPOM Temukan Kosmetik Ilegal Senilai Rp16 M di Mojokerto",
+      "url": "https://www.bloombergtechnoz.com/detail-news/124993/bpom-temukan-kosmetik-ilegal-senilai-rp16-m-di-mojokerto",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "antonio|guterres|hambalang|prabowo|sekjen|terima": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Prabowo Terima Sekjen PBB Antonio Guterres di Hambalang",
+      "url": "https://www.bloombergtechnoz.com/detail-news/124980/prabowo-terima-sekjen-pbb-antonio-guterres-di-hambalang",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "depak|goldman|msci|outflow|proyeksi|rp100|setara": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "MSCI Depak RI, Goldman Proyeksi Outflow Setara Lebih dari Rp100 T",
+      "url": "https://www.bloombergtechnoz.com/detail-news/124990/msci-depak-ri-goldman-proyeksi-outflow-setara-lebih-dari-rp100-t",
+      "outlets": [
+        "Bloomberg Technoz",
+        "CNBC Indonesia"
+      ],
+      "tickers": []
+    },
+    "ekspansif|kuartal|manufaktur|nanjak": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Manufaktur RI Ekspansif di Kuartal III, Kuartal IV Lebih Nanjak",
+      "url": "https://www.bloombergtechnoz.com/detail-news/124999/manufaktur-ri-ekspansif-di-kuartal-iii-kuartal-iv-lebih-nanjak",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "dana|danantara|hanya|kuat|kurang|masuk": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Masuk ke Saham, Dana Danantara Hanya Kuat Kurang Dari 2 Hari",
+      "url": "https://www.bloombergtechnoz.com/detail-news/124998/masuk-ke-saham-dana-danantara-hanya-kuat-kurang-dari-2-hari",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "bren|buyback|cuan|dssa|kena|sanksi|total": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Usai Kena Sanksi OJK, BREN, CUAN, dan DSSA Buyback Saham Total Rp2,5 T",
+      "url": "https://www.cnbcindonesia.com/market/20261019112852-17-777420/usai-kena-sanksi-ojk-bren-cuan-dan-dssa-buyback-saham-total-rp25-t",
+      "outlets": [
+        "Bloomberg Technoz",
+        "CNBC Indonesia"
+      ],
+      "tickers": [
+        "BREN",
+        "CUAN",
+        "DSSA",
+        "TPIA"
+      ]
+    },
+    "apple|bulan|iphone|lama|lipat|menunggu|perdana": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "3 Bulan Menunggu Lebih Lama untuk iPhone Lipat Perdana Apple",
+      "url": "https://www.bloombergtechnoz.com/detail-news/125000/3-bulan-menunggu-lebih-lama-untuk-iphone-lipat-perdana-apple",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "akhir|anjlok|ihsg|level|sesi|tinggalkan": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "IHSG Tinggalkan Level 5.000, Akhir Sesi I Anjlok 5,05%",
+      "url": "https://www.cnbcindonesia.com/market/20261019120758-17-777434/ihsg-tinggalkan-level-5000-akhir-sesi-i-anjlok-505",
+      "outlets": [
+        "CNBC Indonesia"
+      ],
+      "tickers": []
+    },
+    "ayam|berselimut|bulan|gulung|lagi|peternak|tekanan|tikar": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Peternak Ayam Berselimut Tekanan: Dua Bulan Lagi Gulung Tikar",
+      "url": "https://www.bloombergtechnoz.com/detail-news/125002/peternak-ayam-berselimut-tekanan-dua-bulan-lagi-gulung-tikar",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "akibat|biaya|eropa|hidup|kewaspadaan|prancis|rusuh|tingkatkan": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Prancis Rusuh Akibat Biaya Hidup, Eropa Tingkatkan Kewaspadaan",
+      "url": "https://www.bloombergtechnoz.com/detail-news/125003/prancis-rusuh-akibat-biaya-hidup-eropa-tingkatkan-kewaspadaan",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "bantu|berkembang|garut|rahmat|usaha": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "KUR BRI Bantu Usaha Rahmat Berkembang di Garut",
+      "url": "https://www.bloombergtechnoz.com/detail-news/125008/kur-bri-bantu-usaha-rahmat-berkembang-di-garut",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": [
+        "BBRI"
+      ]
+    },
+    "bahan|ilegal|kosmetik|mengandung|mojokerto|obat|risikonya": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Kosmetik Ilegal di Mojokerto Mengandung Bahan Obat, Ini Risikonya",
+      "url": "https://www.bloombergtechnoz.com/detail-news/125005/kosmetik-ilegal-di-mojokerto-mengandung-bahan-obat-ini-risikonya",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "internet|kecam|kecepatan|lemot|negaranya|starlink|zelenskyy": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Zelenskyy Kecam Kecepatan Internet Starlink di Negaranya Lemot",
+      "url": "https://www.bloombergtechnoz.com/detail-news/125011/zelenskyy-kecam-kecepatan-internet-starlink-di-negaranya-lemot",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "awal|bitcoin|kembali|mampu|pekan|rebound|ribu|zona": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Bitcoin Awal Pekan Mampu Rebound, Kembali ke Zona US$82 Ribu",
+      "url": "https://www.bloombergtechnoz.com/detail-news/125012/bitcoin-awal-pekan-mampu-rebound-kembali-ke-zona-us-82-ribu",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "beban|bunga|ekonom|fiskal|kian|rp450t|ruang|sempit|tembus|utang": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Ekonom: Beban Bunga Utang Tembus Rp450T, Ruang Fiskal kian Sempit",
+      "url": "https://www.bloombergtechnoz.com/detail-news/125009/ekonom-beban-bunga-utang-tembus-rp450t-ruang-fiskal-kian-sempit",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "amran|bagi|baru|cetak|dapat|impor|sawah|tekan|tugas|wamen": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Dapat Wamen Baru, Amran Bagi Tugas Cetak Sawah dan Tekan Impor",
+      "url": "https://www.bloombergtechnoz.com/detail-news/125015/dapat-wamen-baru-amran-bagi-tugas-cetak-sawah-dan-tekan-impor",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "efektif|investor|kepanikan|redam|sebut": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "BEI Sebut ARB 7% Efektif Redam Kepanikan Investor Saham",
+      "url": "https://www.cnbcindonesia.com/market/20261019133433-17-777467/bei-sebut-arb-7-efektif-redam-kepanikan-investor-saham",
+      "outlets": [
+        "Bloomberg Technoz",
+        "CNBC Indonesia"
+      ],
+      "tickers": []
+    },
+    "alat|berbahaya|fitur|justru|pencegah|peretasan|sembunyikan": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Alat Pencegah Peretasan Justru Sembunyikan Fitur Berbahaya",
+      "url": "https://www.bloombergtechnoz.com/detail-news/125013/alat-pencegah-peretasan-justru-sembunyikan-fitur-berbahaya",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "dikabarkan|rombak|samsung|segera|total": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Samsung Dikabarkan Segera Rombak Total One UI 10",
+      "url": "https://www.bloombergtechnoz.com/detail-news/125019/samsung-dikabarkan-segera-rombak-total-one-ui-10",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "beras|buka|ekspor|luar|malaysia|negeri|setelah|sinyal": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "RI Buka Sinyal Ekspor Beras ke Luar Negeri Setelah Malaysia",
+      "url": "https://www.bloombergtechnoz.com/detail-news/125022/ri-buka-sinyal-ekspor-beras-ke-luar-negeri-setelah-malaysia",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "agunan|bank|buka|jarr|mandiri|pgun|suara": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Bank Mandiri Buka Suara Soal Agunan Saham JARR dan PGUN",
+      "url": "https://www.cnbcindonesia.com/market/20261019142017-17-777494/bank-mandiri-buka-suara-soal-agunan-saham-jarr-dan-pgun",
+      "outlets": [
+        "CNBC Indonesia"
+      ],
+      "tickers": [
+        "BMRI",
+        "JARR",
+        "PGUN"
+      ]
+    },
+    "2027|denera|groundbreaking|mulai|pltsa|siapkan|tahap|target": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Denera Mulai Siapkan Groundbreaking PLTSa Tahap 2, Target 2027",
+      "url": "https://www.bloombergtechnoz.com/detail-news/125024/denera-mulai-siapkan-groundbreaking-pltsa-tahap-2-target-2027",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "asing|banyak|bbca|dilego|paling|sell|sesi": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Asing Net Sell Rp1,05 T di Sesi I, Saham BBCA Paling Banyak Dilego",
+      "url": "https://www.cnbcindonesia.com/market/20261019131616-17-777461/asing-net-sell-rp105-t-di-sesi-i-saham-bbca-paling-banyak-dilego",
+      "outlets": [
+        "CNBC Indonesia"
+      ],
+      "tickers": [
+        "BBCA"
+      ]
+    },
+    "airlangga|beber|maju|malaysia|penyebab|vietnam": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Airlangga Beber Penyebab KEK Vietnam-Malaysia Lebih Maju dari RI",
+      "url": "https://www.bloombergtechnoz.com/detail-news/125026/airlangga-beber-penyebab-kek-vietnam-malaysia-lebih-maju-dari-ri",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "bbni|bbri|bmri|borong|breaking|tiba": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Breaking! Tiba-Tiba Ada yang Borong Saham BBRI, BBNI, dan BMRI",
+      "url": "https://www.cnbcindonesia.com/market/20261019144159-17-777503/breaking-tiba-tiba-ada-yang-borong-saham-bbri-bbni-dan-bmri",
+      "outlets": [
+        "CNBC Indonesia"
+      ],
+      "tickers": [
+        "BBNI",
+        "BBRI",
+        "BMRI"
+      ]
+    },
+    "beri|maksimal|penjaminan|perlindungan|polis|program": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Bos LPS: Program Penjaminan Polis Beri Perlindungan Maksimal",
+      "url": "https://www.cnbcindonesia.com/market/20261019131950-17-777463/bos-lps-program-penjaminan-polis-beri-perlindungan-maksimal",
+      "outlets": [
+        "CNBC Indonesia"
+      ],
+      "tickers": []
+    },
+    "bukan|ekonom|rate|rp18|sebut|solusi|tembus": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Rupiah Tembus Rp18.000/US$, Ekonom Sebut BI Rate Bukan Solusi",
+      "url": "https://www.bloombergtechnoz.com/detail-news/125021/rupiah-tembus-rp18-000-us-ekonom-sebut-bi-rate-bukan-solusi",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "bertenaga|breaking|ihsg|koreksi|sesi|terpangkas": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Breaking! IHSG Bertenaga di Sesi II, Koreksi Terpangkas Jadi 3,5%",
+      "url": "https://www.cnbcindonesia.com/market/20261019150119-17-777507/breaking-ihsg-bertenaga-di-sesi-ii-koreksi-terpangkas-jadi-35",
+      "outlets": [
+        "CNBC Indonesia"
+      ],
+      "tickers": []
+    },
+    "bahlil|bali|pertalite|stok|tambah|titahkan": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Stok Pertalite Bali 11 Hari, Bahlil Titahkan Tambah Jadi 15 Hari",
+      "url": "https://www.bloombergtechnoz.com/detail-news/125028/stok-pertalite-bali-11-hari-bahlil-titahkan-tambah-jadi-15-hari",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "besar|brunei|dolar|mumpung|tukar|untung|warga": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Aji Mumpung! Warga RI Ini Untung Besar Tukar Dolar Brunei ke Rupiah",
+      "url": "https://www.cnbcindonesia.com/market/20261019143642-17-777498/aji-mumpung-warga-ri-ini-untung-besar-tukar-dolar-brunei-ke-rupiah",
+      "outlets": [
+        "CNBC Indonesia"
+      ],
+      "tickers": []
+    },
+    "apei|berharap|efeknya|market|masuk|standalone|video": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Video: APEI Berharap RI Tak Masuk Standalone Market, Apa Efeknya?",
+      "url": "https://www.cnbcindonesia.com/market/20261019150309-19-777509/video-apei-berharap-ri-tak-masuk-standalone-market-apa-efeknya",
+      "outlets": [
+        "Bloomberg Technoz",
+        "CNBC Indonesia"
+      ],
+      "tickers": []
+    },
+    "denera|gandeng|institusi|keuangan|mitra|pembiayaan|pltsa": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Denera Gandeng 34 Institusi Keuangan Jadi Mitra Pembiayaan PLTSa",
+      "url": "https://www.bloombergtechnoz.com/detail-news/125029/denera-gandeng-34-institusi-keuangan-jadi-mitra-pembiayaan-pltsa",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "2026|aplikator|aturan|banyak|baru|bebas|kerja|ojol|pengemudi": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Aturan Baru Ojol 2026: Pengemudi Bebas Kerja di Banyak Aplikator",
+      "url": "https://www.bloombergtechnoz.com/detail-news/125032/aturan-baru-ojol-2026-pengemudi-bebas-kerja-di-banyak-aplikator",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "achmad|angkat|baiquni|direktur|fast|food|indonesia": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Fast Food Indonesia (KFC) Angkat Achmad Baiquni Jadi Direktur",
+      "url": "https://www.cnbcindonesia.com/market/20261019160025-17-777554/fast-food-indonesia--kfc--angkat-achmad-baiquni-jadi-direktur",
+      "outlets": [
+        "CNBC Indonesia"
+      ],
+      "tickers": [
+        "FAST"
+      ]
+    },
+    "denda|dssa|kena|sanksi|surati|triliun": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Kena Sanksi Denda Rp 1,5 Triliun, DSSA Surati OJK",
+      "url": "https://www.cnbcindonesia.com/market/20261019155010-17-777547/kena-sanksi-denda-rp-15-triliun-dssa-surati-ojk",
+      "outlets": [
+        "CNBC Indonesia"
+      ],
+      "tickers": [
+        "DSSA"
+      ]
+    },
+    "danantara|dony|istana|kepresidenan|merapat|rosan|susul": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Bos Danantara Rosan-Dony Merapat ke Istana Kepresidenan, Susul Bos OJK",
+      "url": "https://www.cnbcindonesia.com/market/20261019162122-17-777563/bos-danantara-rosan-dony-merapat-ke-istana-kepresidenan-susul-bos-ojk",
+      "outlets": [
+        "CNBC Indonesia"
+      ],
+      "tickers": []
+    },
+    "hasil|komdigi|konten|label|mengkaji|regulasi": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Komdigi Mengkaji Regulasi Label Konten Hasil AI",
+      "url": "https://www.bloombergtechnoz.com/detail-news/125037/komdigi-mengkaji-regulasi-label-konten-hasil-ai",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "buyback|kompak|konglomerat|lagi|murah|sahamnya": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Emiten Para Konglomerat Kompak Buyback Sahamnya yang Lagi Murah",
+      "url": "https://www.cnbcindonesia.com/market/20261019163753-17-777571/emiten-para-konglomerat-kompak-buyback-sahamnya-yang-lagi-murah",
+      "outlets": [
+        "CNBC Indonesia"
+      ],
+      "tickers": []
+    },
+    "ahmad|bawah|raffi|rans": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Saham Emiten Raffi Ahmad (RANS) ARB, Harga di Bawah IPO",
+      "url": "https://www.bloombergtechnoz.com/detail-news/125041/saham-emiten-raffi-ahmad-rans-arb-harga-di-bawah-ipo",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": [
+        "RANS"
+      ]
+    },
+    "2026|astra|binaan|bukukan|potensi|rp104|transaksi|umkm": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "UMKM Binaan Astra Bukukan Potensi Transaksi Rp104,9 M di TEI 2026",
+      "url": "https://www.bloombergtechnoz.com/detail-news/125042/umkm-binaan-astra-bukukan-potensi-transaksi-rp104-9-m-di-tei-2026",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": [
+        "ASII"
+      ]
+    },
+    "analis|bbri|murah|saatnya|ungkap|valuasi": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Analis Ungkap Valuasi Saham BBRI Sudah Murah, Saatnya Buy?",
+      "url": "https://www.cnbcindonesia.com/market/20261019164239-17-777577/analis-ungkap-valuasi-saham-bbri-sudah-murah-saatnya-buy",
+      "outlets": [
+        "CNBC Indonesia"
+      ],
+      "tickers": [
+        "BBRI"
+      ]
+    },
+    "halmahera|listrik|pasok|pltn|rosatom|terapung": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Rosatom Akan Pasok Listrik dari PLTN Terapung 200 MW ke Halmahera",
+      "url": "https://www.bloombergtechnoz.com/detail-news/125038/rosatom-akan-pasok-listrik-dari-pltn-terapung-200-mw-ke-halmahera",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "dipertanyakan|keadilan|kelas|menengah|pajak|perluasan|sasar": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Perluasan Pajak Sasar Kelas Menengah, Keadilan Dipertanyakan",
+      "url": "https://www.bloombergtechnoz.com/detail-news/125040/perluasan-pajak-sasar-kelas-menengah-keadilan-dipertanyakan",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "gelar|jasa|komisaris|lanjuti|marga|november|permintaan|rupslb": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Lanjuti Permintaan Komisaris, Jasa Marga Gelar RUPSLB 25 November",
+      "url": "https://www.cnbcindonesia.com/market/20261019172703-17-777609/lanjuti-permintaan-komisaris-jasa-marga-gelar-rupslb-25-november",
+      "outlets": [
+        "CNBC Indonesia"
+      ],
+      "tickers": [
+        "JSMR"
+      ]
+    },
+    "batalkan|byan|haji|isam|kontroversi|transaksi": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Jadi Kontroversi, BEI Tak Bisa Batalkan Transaksi Haji Isam-BYAN",
+      "url": "https://www.bloombergtechnoz.com/detail-news/125045/jadi-kontroversi-bei-tak-bisa-batalkan-transaksi-haji-isam-byan",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": [
+        "BYAN"
+      ]
+    },
+    "guyur|juta|keuangan|reformasi|siap": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "ADB Siap Guyur US$650 Juta Buat Reformasi Pasar Keuangan RI",
+      "url": "https://www.cnbcindonesia.com/market/20261019174516-17-777617/adb-siap-guyur-us-650-juta-buat-reformasi-pasar-keuangan-ri",
+      "outlets": [
+        "CNBC Indonesia"
+      ],
+      "tickers": []
+    },
+    "efektivitas|kelangkaan|listrik|motor|pembelian|tengah": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Efektivitas Pembelian Motor Listrik di Tengah Kelangkaan BBM",
+      "url": "https://www.bloombergtechnoz.com/detail-news/125046/efektivitas-pembelian-motor-listrik-di-tengah-kelangkaan-bbm",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "bubarkan|entitas|likuidasi|presisi|usaha": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "PP Presisi Bubarkan dan Likuidasi Entitas Usaha",
+      "url": "https://www.cnbcindonesia.com/market/20261019180236-17-777621/pp-presisi-bubarkan-dan-likuidasi-entitas-usaha",
+      "outlets": [
+        "CNBC Indonesia"
+      ],
+      "tickers": [
+        "PPRE"
+      ]
+    },
+    "asing|karhutla|laporan|naik|penyidikan|pihak|update": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Update Karhutla: 98 Laporan Naik Penyidikan, Ada Pihak Asing",
+      "url": "https://www.bloombergtechnoz.com/detail-news/125055/update-karhutla-98-laporan-naik-penyidikan-ada-pihak-asing",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "baru|percepatan|sppg|targetkan|wilayah|zulhas": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Zulhas Targetkan Percepatan 1.460 SPPG Baru di Wilayah 3T",
+      "url": "https://www.bloombergtechnoz.com/detail-news/125051/zulhas-targetkan-percepatan-1-460-sppg-baru-di-wilayah-3t",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "afiliasi|data|pemegang|status|tambah": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "BEI Tambah Status Afiliasi di Data Pemegang Saham 1%",
+      "url": "https://www.bloombergtechnoz.com/detail-news/125059/bei-tambah-status-afiliasi-di-data-pemegang-saham-1",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "denera|kali|klaim|oversubscribed|pembiayaan|proyek|psel": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Denera Klaim Pembiayaan 8 Proyek PSEL 3,6 Kali Oversubscribed",
+      "url": "https://www.bloombergtechnoz.com/detail-news/125054/denera-klaim-pembiayaan-8-proyek-psel-3-6-kali-oversubscribed",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "bara|batu|china|dingin|drop|musim|pasokan|produksi|waswas": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Waswas Pasokan Musim Dingin, Produksi Batu Bara China Drop 6,8%",
+      "url": "https://www.bloombergtechnoz.com/detail-news/125052/waswas-pasokan-musim-dingin-produksi-batu-bara-china-drop-6-8",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "gibran|ihsg|kepemimpinan|kinerja|menilik|pemerintahan|prabowo|tahun": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Menilik Kinerja IHSG Dalam Dua Tahun Kepemimpinan Pemerintahan Prabowo-Gibran",
+      "url": "https://investasi.kontan.co.id/news/menilik-kinerja-ihsg-dalam-dua-tahun-kepemimpinan-pemerintahan-prabowo-gibran",
+      "outlets": [
+        "Kontan"
+      ],
+      "tickers": []
+    },
+    "setara|terancam|video|zimbabwe": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Video: Bursa Saham RI Terancam Jadi Setara Zimbabwe",
+      "url": "https://www.cnbcindonesia.com/market/20261019130134-19-777455/video-bursa-saham-ri-terancam-jadi-setara-zimbabwe",
+      "outlets": [
+        "CNBC Indonesia"
+      ],
+      "tickers": []
+    },
+    "destry|jaga|lapor|prabowo|stabilitas": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Destry Lapor Prabowo: BI Bisa Jaga Stabilitas Rupiah Dua Hari Ini",
+      "url": "https://www.cnbcindonesia.com/market/20261019192805-17-777638/destry-lapor-prabowo-bi-bisa-jaga-stabilitas-rupiah-dua-hari-ini",
+      "outlets": [
+        "CNBC Indonesia"
+      ],
+      "tickers": []
+    },
+    "coordinated|khusus|pesan|prabowo|tegas|tindak|trading|ungkap": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Bos OJK Ungkap Pesan Khusus Prabowo: Tindak Tegas Coordinated Trading!",
+      "url": "https://www.cnbcindonesia.com/market/20261019194001-17-777639/bos-ojk-ungkap-pesan-khusus-prabowo-tindak-tegas-coordinated-trading",
+      "outlets": [
+        "CNBC Indonesia"
+      ],
+      "tickers": []
+    },
+    "aplikator|cairkan|driver|ojol|pendapatan|perpres|real|time|wajib": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Perpres Ojol: Aplikator Wajib Cairkan Pendapatan Driver Real-time",
+      "url": "https://www.bloombergtechnoz.com/detail-news/125058/perpres-ojol-aplikator-wajib-cairkan-pendapatan-driver-real-time",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "penjualan|rincian|sbr015|serapan|tembus|tenor|tiap|triliun": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Penjualan SBR015 Tembus Rp 12,1 Triliun, Ini Rincian Serapan Tiap Tenor",
+      "url": "https://investasi.kontan.co.id/news/penjualan-sbr015-tembus-rp-121-triliun-ini-rincian-serapan-tiap-tenor",
+      "outlets": [
+        "Kontan"
+      ],
+      "tickers": []
+    },
+    "2026|apbn|belanja|efisiensi|menkeu|meski|tinggi": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Menkeu: Belanja APBN Q4-2026 Akan Lebih Tinggi Meski Efisiensi",
+      "url": "https://www.bloombergtechnoz.com/detail-news/125063/menkeu-belanja-apbn-q4-2026-akan-lebih-tinggi-meski-efisiensi",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "beragam|dibuka|jelang|kinerja|rebound|rilis|street|wall": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Wall Street Dibuka Beragam (19/10), Saham AI Rebound Jelang Rilis Kinerja Emiten",
+      "url": "https://investasi.kontan.co.id/news/wall-street-dibuka-beragam-1910-saham-ai-rebound-jelang-rilis-kinerja-emiten",
+      "outlets": [
+        "Kontan"
+      ],
+      "tickers": []
+    },
+    "2026|investasi|kuartal|realisasi|rosan|rp528": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Rosan: Realisasi Investasi Kuartal III-2026 Capai Rp528 T",
+      "url": "https://www.bloombergtechnoz.com/detail-news/125064/rosan-realisasi-investasi-kuartal-iii-2026-capai-rp528-t",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "ambruk|asing|banyak|diborong|ihsg|senin": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Cek Saham yang Banyak Diborong Asing Saat IHSG Ambruk 3,63%, Senin (19/10)",
+      "url": "https://investasi.kontan.co.id/news/cek-saham-yang-banyak-diborong-asing-saat-ihsg-ambruk-363-senin-1910",
+      "outlets": [
+        "Kontan"
+      ],
+      "tickers": []
+    },
+    "2026|januari|kripto|nilai|september|tokocrypto|transaksi|triliun": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Januari-September 2026, Nilai Transaksi Kripto di Tokocrypto Capai Rp 41,6 Triliun",
+      "url": "https://investasi.kontan.co.id/news/januari-september-2026-nilai-transaksi-kripto-di-tokocrypto-capai-rp-416-triliun",
+      "outlets": [
+        "Kontan"
+      ],
+      "tickers": []
+    },
+    "adelle|desain|gekrafs|gugatan|industri|jewellery|kawal|sidang": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "GEKRAFS Kawal Sidang Gugatan Desain Industri Adelle Jewellery",
+      "url": "https://www.bloombergtechnoz.com/detail-news/125074/gekrafs-kawal-sidang-gugatan-desain-industri-adelle-jewellery",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "brpt|cermati|isat|mapa|rekomendasi|teknikal": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Cermati Rekomendasi Saham Teknikal MAPA, BRPT dan ISAT untuk Hari Ini (20/10)",
+      "url": "https://investasi.kontan.co.id/news/cermati-rekomendasi-saham-teknikal-mapa-brpt-dan-isat-untuk-hari-ini-2010",
+      "outlets": [
+        "Kontan"
+      ],
+      "tickers": [
+        "BRPT",
+        "ISAT",
+        "MAPA"
+      ]
+    },
+    "dipahami|indonesia|market|msci|mudah|standalone|status|turunkan|wacana": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Mudah Dipahami, FAQ: Wacana MSCI Turunkan Status Saham Indonesia ke Standalone Market",
+      "url": "https://investasi.kontan.co.id/news/mudah-dipahami-faq-wacana-msci-turunkan-status-saham-indonesia-ke-standalone-market",
+      "outlets": [
+        "Kontan"
+      ],
+      "tickers": []
+    },
+    "belum|dunia|minyak|naik|pasokan|stabil|turun": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Pasokan Belum Stabil, Harga Minyak Dunia Masih Naik Turun",
+      "url": "https://www.bloombergtechnoz.com/detail-news/125067/pasokan-belum-stabil-harga-minyak-dunia-masih-naik-turun",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "antisipasi|demo|lalu|lintas|polisi|rekayasa|siapkan": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Polisi Siapkan Rekayasa Lalu Lintas Antisipasi Demo Hari Ini",
+      "url": "https://www.bloombergtechnoz.com/detail-news/125068/polisi-siapkan-rekayasa-lalu-lintas-antisipasi-demo-hari-ini",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "anjlok|apakah|bbca|beli|bren|brpt|buyback|cuan|dssa|ihsg|layak|tpia": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "7 Saham Buyback saat IHSG Anjlok, BREN BBCA CUAN BRPT DSSA TPIA, Apakah Layak Beli?",
+      "url": "https://investasi.kontan.co.id/news/7-saham-buyback-saat-ihsg-anjlok-bren-bbca-cuan-brpt-dssa-tpia-apakah-layak-beli",
+      "outlets": [
+        "Kontan"
+      ],
+      "tickers": [
+        "BBCA",
+        "BREN",
+        "BRPT",
+        "CUAN",
+        "DSSA",
+        "TPIA"
+      ]
+    },
+    "anjlok|cium|cuan|danantara|ihsg|murah|peluang": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "IHSG Anjlok, Danantara Cium Peluang Cuan di Saham Murah",
+      "url": "https://www.cnbcindonesia.com/market/20261020061239-17-777671/ihsg-anjlok-danantara-cium-peluang-cuan-di-saham-murah",
+      "outlets": [
+        "CNBC Indonesia"
+      ],
+      "tickers": []
+    },
+    "cegah|kabur|kantor|openai|penyandap|tahan": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Cegah Kabur, AS Tahan Penyandap Kantor OpenAI",
+      "url": "https://www.bloombergtechnoz.com/detail-news/125065/cegah-kabur-as-tahan-penyandap-kantor-openai",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "berlanjut|berpotensi|ihsg|tekanan": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Tekanan IHSG Masih Berpotensi Berlanjut",
+      "url": "https://investasi.kontan.co.id/news/tekanan-ihsg-masih-berpotensi-berlanjut",
+      "outlets": [
+        "Bloomberg Technoz",
+        "Kontan"
+      ],
+      "tickers": []
+    },
+    "bagi|citra|dividen|interim|jadwalnya|media|miliar|scma|surya": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Surya Citra Media (SCMA) Bagi Dividen Interim Rp 533,43 Miliar, Cek Jadwalnya",
+      "url": "https://investasi.kontan.co.id/news/surya-citra-media-scma-bagi-dividen-interim-rp-53343-miliar-cek-jadwalnya",
+      "outlets": [
+        "Kontan"
+      ],
+      "tickers": [
+        "SCMA"
+      ]
+    },
+    "bali|berangsur|distribusi|kapal|pertamina|pulih|tambah": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Pertamina Tambah Kapal, Distribusi BBM Bali Berangsur Pulih",
+      "url": "https://www.bloombergtechnoz.com/detail-news/125075/pertamina-tambah-kapal-distribusi-bbm-bali-berangsur-pulih",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "anjlok|bahkan|bank|bbca|dibanding|ihsg|meroket|tinggi": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Harga Dua Saham Bank Ini Meroket Saat IHSG Anjlok, Bahkan Lebih Tinggi Dibanding BBCA",
+      "url": "https://investasi.kontan.co.id/news/harga-dua-saham-bank-ini-meroket-saat-ihsg-anjlok-bahkan-lebih-tinggi-dibanding-bbca",
+      "outlets": [
+        "Kontan"
+      ],
+      "tickers": [
+        "BBCA"
+      ]
+    },
+    "kanada|kebakaran|markas|militer|sebelum|sempat|sita|sumur": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Kanada Sempat Sita Sumur Gas Sebelum Kebakaran di Markas Militer",
+      "url": "https://www.bloombergtechnoz.com/detail-news/125066/kanada-sempat-sita-sumur-gas-sebelum-kebakaran-di-markas-militer",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "alami|beli|daya|ekonom|faktanya|halusinasi|ungkap": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "RI Alami Halusinasi Daya Beli, Ekonom Ungkap Faktanya!",
+      "url": "https://www.cnbcindonesia.com/market/20261019213554-17-777666/ri-alami-halusinasi-daya-beli-ekonom-ungkap-faktanya",
+      "outlets": [
+        "CNBC Indonesia"
+      ],
+      "tickers": []
+    },
+    "aturan|lagi|rp11|rp14|turun|ubah": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "BEI Ubah Lagi Aturan ARB Saham, Harga Rp11-Rp14 Kini Bisa Turun Rp1",
+      "url": "https://www.cnbcindonesia.com/market/20261020071245-17-777677/bei-ubah-lagi-aturan-arb-saham-harga-rp11-rp14-kini-bisa-turun-rp1",
+      "outlets": [
+        "CNBC Indonesia",
+        "Kontan"
+      ],
+      "tickers": []
+    },
+    "asap|karhutla|lagi|panggil|singapura|terkait": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Singapura Panggil Lagi 3 Perusahaan RI Terkait Asap Karhutla",
+      "url": "https://www.bloombergtechnoz.com/detail-news/125073/singapura-panggil-lagi-3-perusahaan-ri-terkait-asap-karhutla",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "diproyeksi|ihsg|lanjut|melemah|pilihan|rekomendasi": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Simak Rekomendasi Saham Pilihan Hari Ini (20/10), IHSG Diproyeksi Lanjut Melemah",
+      "url": "https://investasi.kontan.co.id/news/simak-rekomendasi-saham-pilihan-hari-ini-2010-ihsg-diproyeksi-lanjut-melemah",
+      "outlets": [
+        "Kontan"
+      ],
+      "tickers": []
+    },
+    "ihsg|institusi|investor|lokal|minta|msci|terpukul|topang": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Terpukul Isu MSCI, BEI Minta Investor Institusi Lokal Topang IHSG",
+      "url": "https://www.cnbcindonesia.com/market/20261019180906-17-777628/terpukul-isu-msci-bei-minta-investor-institusi-lokal-topang-ihsg",
+      "outlets": [
+        "CNBC Indonesia"
+      ],
+      "tickers": []
+    },
+    "bayar|dividen|interim|melorot|terendah|titik|yield": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Harga Melorot Ke Titik Terendah, Saham Ini Akan Bayar Dividen Interim Yield 6%",
+      "url": "https://investasi.kontan.co.id/news/harga-melorot-ke-titik-terendah-saham-ini-akan-bayar-dividen-interim-yield-6",
+      "outlets": [
+        "Kontan"
+      ],
+      "tickers": []
+    },
+    "beli|emas|jual|mending|sedang|turun": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Harga Emas Sedang Turun, Mending Jual atau Beli?",
+      "url": "https://www.bloombergtechnoz.com/detail-news/125078/harga-emas-sedang-turun-mending-jual-atau-beli",
+      "outlets": [
+        "Bloomberg Technoz"
+      ],
+      "tickers": []
+    },
+    "arab|bandara|batasi|diserang|houthi|penerbangan|riyadh|saudi": {
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "seen_dates": [
+        "2026-10-20"
+      ],
+      "title": "Diserang Houthi, Arab Saudi Batasi Penerbangan di Bandara Riyadh",
+      "url": "https://www.bloombergtechnoz.com/detail-news/125076/diserang-houthi-arab-saudi-batasi-penerbangan-di-bandara-riyadh",
+      "outlets": [
+        "Bloomberg Technoz"
       ],
       "tickers": []
     }
