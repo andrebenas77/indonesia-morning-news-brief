@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-10-20",
+    "date_display": "Tuesday, 20 October 2026",
+    "generated_at": "08:10 WIB",
+    "top_headline": "IHSG Sinks Below 5,000; IDX Makes 'Historic' Call to Strip High-Concentration Stocks From the Index",
+    "counts": {
+      "top": 10,
+      "corporate": 7,
+      "bank_indonesia": 6,
+      "global": 5,
+      "merged": 115,
+      "cross_outlet_max": 7
+    }
+  },
+  {
     "date": "2026-10-19",
     "date_display": "Monday, 19 October 2026",
     "generated_at": "08:15 WIB",
