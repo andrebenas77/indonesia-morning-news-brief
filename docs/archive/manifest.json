@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-10-21",
+    "date_display": "Wednesday, 21 October 2026",
+    "generated_at": "08:30 WIB",
+    "top_headline": "IHSG Rebounds 5.65% as Banks and SOE Stocks Rally, Foreign Investors Still Net Sell ~Rp2.2tn",
+    "counts": {
+      "top": 10,
+      "corporate": 8,
+      "bank_indonesia": 5,
+      "global": 3,
+      "merged": 68,
+      "cross_outlet_max": 5
+    }
+  },
+  {
     "date": "2026-10-20",
     "date_display": "Tuesday, 20 October 2026",
     "generated_at": "08:10 WIB",
