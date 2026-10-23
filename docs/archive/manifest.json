@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-10-23",
+    "date_display": "Friday, 23 October 2026",
+    "generated_at": "08:40 WIB",
+    "top_headline": "Bank Indonesia Cuts Reserve Requirement by 200bp, Holds Rate at 5.75%, Boosts Hedging Incentives to Defend Rupiah",
+    "counts": {
+      "top": 10,
+      "corporate": 7,
+      "bank_indonesia": 6,
+      "global": 5,
+      "merged": 76,
+      "cross_outlet_max": 5
+    }
+  },
+  {
     "date": "2026-10-22",
     "date_display": "Thursday, 22 October 2026",
     "generated_at": "08:30 WIB",
