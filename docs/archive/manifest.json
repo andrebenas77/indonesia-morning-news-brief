@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-10-28",
+    "date_display": "Wednesday, 28 October 2026",
+    "generated_at": "08:10 WIB",
+    "top_headline": "IHSG closes down 1.99% to 5,266 as MSCI reclassification worries and weak rupiah weigh on market",
+    "counts": {
+      "top": 10,
+      "corporate": 8,
+      "bank_indonesia": 4,
+      "global": 4,
+      "merged": 94,
+      "cross_outlet_max": 5
+    }
+  },
+  {
     "date": "2026-10-27",
     "date_display": "Tuesday, 27 October 2026",
     "generated_at": "08:10 WIB",
