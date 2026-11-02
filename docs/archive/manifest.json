@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-11-02",
+    "date_display": "Monday, 2 November 2026",
+    "generated_at": "08:30 WIB",
+    "top_headline": "OJK reviews returning funds to investors hit by DSSA, BREN, CUAN share cases",
+    "counts": {
+      "top": 10,
+      "corporate": 8,
+      "bank_indonesia": 6,
+      "global": 4,
+      "merged": 39,
+      "cross_outlet_max": 6
+    }
+  },
+  {
     "date": "2026-10-30",
     "date_display": "Friday, 30 October 2026",
     "generated_at": "08:30 WIB",
