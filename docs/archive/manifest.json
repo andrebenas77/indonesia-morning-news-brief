@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-11-04",
+    "date_display": "Wednesday, 4 November 2026",
+    "generated_at": "07:53 WIB",
+    "top_headline": "OJK Prepares Stabilization Measures After 16.7% IHSG Correction in October",
+    "counts": {
+      "top": 10,
+      "corporate": 6,
+      "bank_indonesia": 6,
+      "global": 4,
+      "merged": 86,
+      "cross_outlet_max": 7
+    }
+  },
+  {
     "date": "2026-11-03",
     "date_display": "Tuesday, 3 November 2026",
     "generated_at": "08:15 WIB",
