@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Indonesia Market Morning Brief — Thursday, 12 November 2026</title>
+<!-- Machine-readable run date. The visible date is human-formatted ("Sunday, 16 August
+     2026") and the only ISO date elsewhere on the page belongs to the FLOW BOARD, which
+     is keyed to the trading session and legitimately lags the run date. Both the in-run
+     check in run_brief.sh and the remote watchdog in check_published.py read THIS tag —
+     without it they compare against the radar's date and cry wolf every single day. -->
+<meta name="brief-date" content="2026-11-12">
+<meta name="description" content="Daily ranked morning news brief for the Jakarta Stock Exchange (IHSG/JCI): top Indonesia market stories, corporate/emiten news, Bank Indonesia, and global markets.">
+<style>
+  :root{
+    --bg:#0d1117; --panel:#161b22; --panel-2:#1c2129; --border:#2a313c;
+    --text:#e6edf3; --muted:#9aa4b2; --faint:#6b7481;
+    --accent:#f2a900;        /* amber brand */
+    --accent-2:#4ea1ff;      /* link/interactive blue */
+    --danger:#f2545b; --ok:#3fb950;
+    --radius:12px; --maxw:1080px;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme: light){
+    :root{
+      --bg:#f5f6f8; --panel:#ffffff; --panel-2:#f0f2f5; --border:#e2e6eb;
+      --text:#12161c; --muted:#59616d; --faint:#8a929d;
+      --accent:#b8790a; --accent-2:#1565d8;
+    }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.5;
+    -webkit-font-smoothing:antialiased;font-size:15px}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+
+  /* Top bar */
+  header.topbar{position:sticky;top:0;z-index:20;background:rgba(13,17,23,.86);
+    backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--border)}
+  @media (prefers-color-scheme: light){header.topbar{background:rgba(245,246,248,.9)}}
+  .topbar .wrap{display:flex;align-items:center;gap:14px;height:56px}
+  .brand{display:flex;align-items:center;gap:9px;font-weight:700;letter-spacing:.2px}
+  .brand .dot{width:11px;height:11px;border-radius:50%;background:var(--accent);
+    box-shadow:0 0 0 3px rgba(242,169,0,.18)}
+  .brand small{font-weight:500;color:var(--muted)}
+  .nav{margin-left:auto;display:flex;gap:6px}
+  .nav a{padding:7px 12px;border-radius:8px;color:var(--muted);font-size:13.5px;font-weight:600}
+  .nav a:hover{background:var(--panel-2);color:var(--text)}
+
+  /* Masthead */
+  .masthead{padding:30px 0 8px}
+  .masthead h1{margin:0;font-size:27px;letter-spacing:-.4px;font-weight:800}
+  .masthead .sub{color:var(--muted);margin-top:6px;font-size:14px}
+  .meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .chip{font-size:12px;padding:4px 10px;border:1px solid var(--border);border-radius:999px;
+    color:var(--muted);background:var(--panel);display:inline-flex;align-items:center;gap:6px}
+  .chip .s-ok{color:var(--ok)} .chip .s-failed{color:var(--danger)}
+  .chip.dim{opacity:.75}
+
+  /* Sections */
+  main{padding:22px 0 8px}
+  section.block{margin:26px 0}
+  .block > h2{display:flex;align-items:center;gap:10px;margin:0 0 14px;font-size:13px;
+    text-transform:uppercase;letter-spacing:1.4px;color:var(--accent);font-weight:800}
+  .block > h2::after{content:"";flex:1;height:1px;background:var(--border)}
+  .block > h2 .count{color:var(--faint);font-weight:700;letter-spacing:.5px}
+
+  /* Story list */
+  .stories{display:flex;flex-direction:column;gap:1px;background:var(--border);
+    border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+  .story{display:flex;gap:14px;padding:14px 16px;background:var(--panel);transition:background .12s}
+  .story:hover{background:var(--panel-2)}
+  .rank{flex:0 0 auto;width:26px;height:26px;border-radius:7px;background:var(--panel-2);
+    border:1px solid var(--border);color:var(--accent);font-weight:800;font-size:13px;
+    display:flex;align-items:center;justify-content:center;margin-top:1px}
+  .story .body{min-width:0;flex:1}
+  .story .hl{font-weight:650;font-size:15.5px;line-height:1.35}
+  .story .hl a:hover{color:var(--accent-2);text-decoration:underline}
+  .story .sum{color:var(--muted);font-size:13.5px;margin-top:3px}
+  .story .foot{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:8px;font-size:12px;color:var(--faint)}
+  .story .outlet{color:var(--text);font-weight:650}
+  .tag{font-size:11px;padding:2px 7px;border-radius:6px;background:var(--panel-2);
+    border:1px solid var(--border);color:var(--muted);text-transform:lowercase}
+  /* Dedup chips. Accent = a signal that lifted the story's rank; faint = one that
+     lowered it. Same geometry as .tag so the meta line stays visually even. */
+  .xo{font-size:11px;padding:2px 7px;border-radius:6px;background:var(--panel-2);
+    border:1px solid var(--border);color:var(--accent);font-weight:650}
+  .pop{font-size:11px;padding:2px 7px;border-radius:6px;background:var(--panel-2);
+    border:1px solid var(--border);color:var(--accent)}
+  .rep{font-size:11px;padding:2px 7px;border-radius:6px;background:var(--panel-2);
+    border:1px solid var(--border);color:var(--faint)}
+  .empty{padding:16px;background:var(--panel);border:1px dashed var(--border);border-radius:var(--radius);
+    color:var(--faint);font-size:13.5px}
+
+  /* Two-column on wide screens for the lower sections */
+  .cols{display:grid;grid-template-columns:1fr;gap:26px}
+  @media (min-width:820px){.cols{grid-template-columns:1fr 1fr}}
+
+  /* Where to Look Today — bucket cards */
+  .buckets{display:grid;grid-template-columns:1fr;gap:14px}
+  @media (min-width:820px){.buckets{grid-template-columns:1fr 1fr}}
+  .bucket{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px}
+  .bucket .bk-title{font-weight:750;font-size:14.5px;display:flex;align-items:center;gap:8px}
+  .bucket .bk-title .n{font-size:11px;color:var(--faint);font-weight:700}
+  .bucket .bk-desc{color:var(--muted);font-size:12.5px;margin-top:3px}
+  .bk-rows{margin-top:10px;display:flex;flex-direction:column;gap:1px;background:var(--border);
+    border:1px solid var(--border);border-radius:9px;overflow:hidden}
+  .bk-row{display:flex;align-items:baseline;gap:10px;padding:8px 10px;background:var(--panel-2);font-size:13px}
+  .bk-row .tk{font-weight:800;letter-spacing:.4px;min-width:54px}
+  .bk-row .val{font-variant-numeric:tabular-nums;font-weight:700;min-width:80px;text-align:right}
+  .val.pos{color:var(--ok)} .val.neg{color:var(--danger)}
+  .bk-row .why{color:var(--muted);font-size:12px;min-width:0}
+  .bk-empty{margin-top:10px;color:var(--faint);font-size:12.5px;padding:8px 10px;
+    border:1px dashed var(--border);border-radius:9px}
+
+  /* Net foreign flow board */
+  .flowgrid{display:grid;grid-template-columns:1fr;gap:14px}
+  @media (min-width:820px){.flowgrid{grid-template-columns:1fr 1fr}}
+  .flowcol{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+  .flowcol .fh{padding:10px 14px;font-size:12px;font-weight:800;text-transform:uppercase;
+    letter-spacing:1px;border-bottom:1px solid var(--border)}
+  .flowcol .fh.in{color:var(--ok)} .flowcol .fh.out{color:var(--danger)}
+  table.flow{width:100%;border-collapse:collapse;font-size:13px}
+  table.flow td{padding:7px 14px;border-top:1px solid var(--border);vertical-align:baseline}
+  table.flow tr:first-child td{border-top:none}
+  table.flow .tk{font-weight:800;letter-spacing:.4px;width:64px}
+  table.flow .num{text-align:right;font-variant-numeric:tabular-nums;font-weight:700;width:92px}
+  table.flow .meta{color:var(--faint);font-size:11.5px}
+  .method{margin-top:12px;color:var(--faint);font-size:12px;line-height:1.55;
+    border-left:2px solid var(--border);padding-left:10px}
+  .warn{margin-top:10px;padding:9px 12px;border:1px solid var(--border);
+    border-left:3px solid var(--accent);border-radius:8px;background:var(--panel);
+    color:var(--muted);font-size:12.5px}
+
+  footer{border-top:1px solid var(--border);margin-top:34px;padding:22px 0 44px;color:var(--faint);font-size:12.5px}
+  footer .disc{max-width:760px}
+  footer a{color:var(--accent-2)}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="../index.html"><span class="dot"></span>IDX Morning Brief <small>· Jakarta markets</small></a>
+    <nav class="nav">
+      <a href="../index.html">Today</a>
+      <a href="../archive.html">Archive</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="masthead">
+    <h1>Indonesia Market Morning Brief</h1>
+    <div class="sub">Thursday, 12 November 2026 · generated 07:50 WIB</div>
+    <div class="meta"><span class="chip"><span class="s-ok">&#9679;</span> Sectors API</span><span class="chip"><span class="s-ok">&#9679;</span> Kontan</span><span class="chip"><span class="s-ok">&#9679;</span> CNBC Indonesia</span><span class="chip"><span class="s-ok">&#9679;</span> Emitennews</span><span class="chip"><span class="s-ok">&#9679;</span> Bloomberg Technoz</span><span class="chip"><span class="s-ok">&#9679;</span> Bank Indonesia</span><span class="chip"><span class="s-ok">&#9679;</span> Global scan (Fed/DXY/Trump/UST)</span><span class="chip dim"><span class="s-failed">&#10005;</span> Foreign flow (Sectors /v2/foreign-flow/)</span></div>
+    <div class="meta">298 headlines merged into 204 stories; 94 duplicates collapsed; 5 carried over from earlier this week.</div>
+  </div>
+
+  <main>
+    <section class="block">
+      <h2>Where to Look Today <span class="count">0</span></h2>
+      <div class="empty">No flow data today. Run <code>scripts/fetch_flows.py</code> then <code>scripts/build_radar.py</code>.</div><div class="warn">Foreign-flow data unavailable — radar cannot be built. Run scripts/fetch_flows.py, or check SECTORS_API_KEY.</div>
+    </section>
+
+    <section class="block">
+      <h2>Net Foreign Flow <span class="count">2026-11-12</span></h2>
+      <div class="empty">No foreign-flow data for this session.</div>
+    </section>
+
+    <section class="block">
+      <h2>Top News <span class="count">10</span></h2>
+      <div class="stories"><article class="story"><div class="rank">1</div><div class="body"><div class="hl"><a href="https://emitennews.com/news/resmi-383-saham-hsc-didepak-dari-ihsg-efektif-mulai-13-november-2026" target="_blank" rel="noopener">IDX strips 383 &quot;high shareholding concentration&quot; stocks from IHSG weighting, effective Nov 13</a></div><div class="sum">Bursa Efek Indonesia (BEI/IDX) finalized the expanded High Shareholding Concentration (HSC) list at 383 stocks — up from 83 — covering mining and banking names; all will be excluded from IHSG index weighting starting Friday, 13 November, and OJK says the methodology change may extend to account freezes under investigation.</div><div class="foot"><span class="outlet">Emitennews</span> <span aria-hidden="true">·</span> unknown <span aria-hidden="true">·</span> <span class="xo">7 outlets</span> <span aria-hidden="true">·</span> <span class="pop">#1 most-read</span><span class="tag">ihsg</span><span class="tag">idx</span><span class="tag">hsc</span><span class="tag">ojk</span></div></div></article><article class="story"><div class="rank">2</div><div class="body"><div class="hl"><a href="https://www.cnbcindonesia.com/market/20261112055919-17-784465/kabar-wapres-gibran-mundur-danantara-ungkap-3-jurus-jaga-investor" target="_blank" rel="noopener">Vice President Gibran resigns amid credentials dispute; IDX and Danantara move to steady investors</a></div><div class="sum">Vice President Gibran Rakabuming Raka resigned and President Prabowo accepted it, after Constitutional and Supreme Court rulings found his education credentials did not meet election requirements; IDX&#x27;s chief and state holding company Danantara both issued statements aimed at reassuring investors as IHSG and the rupiah reacted to the political uncertainty.</div><div class="foot"><span class="outlet">CNBC Indonesia</span> <span aria-hidden="true">·</span> 07:00 <span aria-hidden="true">·</span> <span class="xo">3 outlets</span> <span aria-hidden="true">·</span> <span class="pop">#6 most-read</span><span class="tag">politics</span><span class="tag">ihsg</span><span class="tag">rupiah</span><span class="tag">danantara</span></div></div></article><article class="story"><div class="rank">3</div><div class="body"><div class="hl"><a href="https://investasi.kontan.co.id/news/hasil-review-msci-saham-brpt-brms-dicoret-dari-msci-global-standard-index" target="_blank" rel="noopener">MSCI November review drops BRPT, BRMS from Global Standard Index; foreign investors turn net sellers</a></div><div class="sum">MSCI&#x27;s November 2026 index review removed PT Barito Pacific (BRPT) and PT Bumi Resources Minerals (BRMS) from its Global Standard Index, alongside small-cap exclusions for AVIA, CTRA, MTEL, EMTK, JSMR, RAJA and WIFI; foreign investors were net sellers in the affected names as the rebalancing took effect.</div><div class="foot"><span class="outlet">Kontan</span> <span aria-hidden="true">·</span> 05:34 <span aria-hidden="true">·</span> <span class="xo">4 outlets</span><span class="tag">msci</span><span class="tag">brpt</span><span class="tag">brms</span><span class="tag">foreign-flow</span></div></div></article><article class="story"><div class="rank">4</div><div class="body"><div class="hl"><a href="https://investasi.kontan.co.id/news/garuda-indonesia-siapkan-rights-issue-rp-621-triliun-danantara-inbreng-saham-gmfi" target="_blank" rel="noopener">Garuda Indonesia launches Rp6.2 trillion rights issue, with Danantara injecting GMFI shares instead of cash</a></div><div class="sum">PT Garuda Indonesia (GIAA) will raise up to Rp6.2 trillion via a pre-emptive rights issue (PMHMETD III); majority holder Danantara Asset Management, which owns 91.11% of GIAA, will exercise its rights by contributing PT Garuda Maintenance Facility Aero Asia (GMFI) shares rather than cash.</div><div class="foot"><span class="outlet">Kontan</span> <span aria-hidden="true">·</span> 15:28 <span aria-hidden="true">·</span> <span class="xo">5 outlets</span><span class="tag">giaa</span><span class="tag">gmfi</span><span class="tag">rights-issue</span><span class="tag">danantara</span></div></div></article><article class="story"><div class="rank">5</div><div class="body"><div class="hl"><a href="https://www.bloombergtechnoz.com/detail-news/127385/itmg-intervensi-pasar-sudah-buyback-rp1-8-triliun" target="_blank" rel="noopener">Indo Tambangraya (ITMG) completes Rp1.8tn buyback, launches fresh Rp2.3tn round to defend share price</a></div><div class="sum">PT Indo Tambangraya Megah (ITMG) has bought back Rp1.83 trillion of its own shares (54.82 million shares, 4.9% of outstanding) since January to counter a stock price decline, and has approved a new Rp2.31 trillion buyback programme.</div><div class="foot"><span class="outlet">Bloomberg Technoz</span> <span aria-hidden="true">·</span> 12:10 <span aria-hidden="true">·</span> <span class="xo">4 outlets</span><span class="tag">itmg</span><span class="tag">buyback</span></div></div></article><article class="story"><div class="rank">6</div><div class="body"><div class="hl"><a href="https://www.cnbcindonesia.com/market/20261111134904-20-784264/konsisten-dukung-ekonomi-kerakyatan-bri-cetak-laba-rp482-triliun" target="_blank" rel="noopener">Bank Rakyat Indonesia (BBRI) reports Rp48.2 trillion profit, keeps UMKM focus</a></div><div class="sum">PT Bank Rakyat Indonesia (BBRI) reported Rp48.2 trillion in profit, with the bank saying its growth strategy remains anchored on the micro, small and medium enterprise (UMKM) segment.</div><div class="foot"><span class="outlet">CNBC Indonesia</span> <span aria-hidden="true">·</span> 14:16 <span aria-hidden="true">·</span> <span class="xo">2 outlets</span><span class="tag">bbri</span><span class="tag">earnings</span></div></div></article><article class="story"><div class="rank">7</div><div class="body"><div class="hl"><a href="https://emitennews.com/news/tuntaskan-aksi-jumbo-telisik-performa-saratoga-kuartal-iii" target="_blank" rel="noopener">Saratoga (SRTG) Q3 net profit jumps 242% to Rp3.46tn on back of Rp17.5tn AADI/ADRO ownership deal</a></div><div class="sum">PT Saratoga Investama Sedaya (SRTG) posted Q3 2026 net profit of Rp3.46 trillion, up 242% year-on-year from Rp2.43 trillion, while completing a Rp17.5 trillion transaction that strengthened its ownership stakes in Adaro Andalan Indonesia (AADI) and Alamtri Resources (ADRO).</div><div class="foot"><span class="outlet">Emitennews</span> <span aria-hidden="true">·</span> 06:00 <span aria-hidden="true">·</span> <span class="xo">2 outlets</span><span class="tag">srtg</span><span class="tag">aadi</span><span class="tag">adro</span><span class="tag">earnings</span></div></div></article><article class="story"><div class="rank">8</div><div class="body"><div class="hl"><a href="https://nasional.kontan.co.id/news/pemerintah-ri-terbitkan-panda-bond-rp-2715-t-pesanan-investor-tembus-rp-4687-t" target="_blank" rel="noopener">Indonesia&#x27;s Rp27.15tn Panda Bond sale in China draws Rp46.87tn in orders</a></div><div class="sum">The Indonesian government issued Panda Bonds (CNY-denominated) worth Rp27.15 trillion across three tenors in China to diversify state budget financing, with investor orders reaching Rp46.87 trillion — more than 1.7x oversubscribed.</div><div class="foot"><span class="outlet">Kontan</span> <span aria-hidden="true">·</span> unknown <span aria-hidden="true">·</span> <span class="xo">3 outlets</span> <span aria-hidden="true">·</span> <span class="pop">#4 most-read</span><span class="tag">sovereign-debt</span><span class="tag">panda-bond</span><span class="tag">china</span></div></div></article><article class="story"><div class="rank">9</div><div class="body"><div class="hl"><a href="https://www.cnbcindonesia.com/market/20261111130049-17-784249/masuk-daftar-hsc-tahir-lepas-3389-juta-saham-mpro-rp400-m" target="_blank" rel="noopener">Dato&#x27; Sri Tahir sells Rp400bn of Maha Properti (MPRO) shares as stock enters HSC list</a></div><div class="sum">Dato&#x27; Sri Tahir sold 33.89 million shares of PT Maha Properti Indonesia (MPRO) at Rp11,800 apiece for Rp400 billion on 9 November, trimming his stake from 10.40% to 10.06% while retaining control, as MPRO entered BEI&#x27;s expanded HSC list.</div><div class="foot"><span class="outlet">CNBC Indonesia</span> <span aria-hidden="true">·</span> 14:16 <span aria-hidden="true">·</span> <span class="xo">3 outlets</span><span class="tag">mpro</span><span class="tag">hsc</span><span class="tag">insider-sale</span></div></div></article><article class="story"><div class="rank">10</div><div class="body"><div class="hl"><a href="https://investasi.kontan.co.id/news/bei-rombak-indeks-lq45-dan-idx80-ini-daftar-saham-yang-masuk-dan-terdepak" target="_blank" rel="noopener">IDX reshuffles LQ45 and IDX80 indices</a></div><div class="sum">Bursa Efek Indonesia (BEI) updated the constituent lists of the LQ45 and IDX80 indices, with several stocks entering and others dropped, effective 18 November; three of the removals (MAPI, NCKL, PGEO) are tied to the HSC reclassification and will be replaced by ERAA, GGRM and PWON.</div><div class="foot"><span class="outlet">Kontan</span> <span aria-hidden="true">·</span> unknown <span aria-hidden="true">·</span> <span class="pop">#1 most-read</span><span class="tag">lq45</span><span class="tag">idx80</span><span class="tag">hsc</span></div></div></article></div>
+    </section>
+
+    <div class="cols">
+      <section class="block">
+        <h2>Corporate / Emiten <span class="count">7</span></h2>
+        <div class="stories"><article class="story"><div class="body"><div class="hl"><a href="https://investasi.kontan.co.id/news/rans-milik-raffi-ahmad-buka-suara-terkait-jasa-influencer-rp-147-miliar" target="_blank" rel="noopener">Rans Entertainment (RANS) clarifies Rp14.7bn government influencer-services contract</a></div><div class="sum">PT Rans Entertainment Indonesia (RANS), tied to Raffi Ahmad, addressed public scrutiny over a Rp14.7 billion contract with government ministries, saying the agreement — run through subsidiary Rans Animasi — covers content production, travel and logistics, not just social-media promotion.</div><div class="foot"><span class="outlet">Kontan</span> <span aria-hidden="true">·</span> 13:26<span class="tag">rans</span></div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://investor.id/market/461574/nasib-sido-muncul-kini" target="_blank" rel="noopener">Sido Muncul (SIDO) Q3 profit up 30.9% as distributor destocking eases, but FY2026 revenue seen lower</a></div><div class="sum">PT Industri Jamu dan Farmasi Sido Muncul (SIDO) posted Q3 2026 revenue of Rp1.03 trillion (+14.7% y/y) and net profit of Rp285.4 billion (+30.9% y/y) as distributor inventory normalization progresses, though analysts flag a weaker full-year revenue outlook.</div><div class="foot"><span class="outlet">Investor Daily</span> <span aria-hidden="true">·</span> 16:36<span class="tag">sido</span></div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://www.idnfinancials.com/id/news/71580/mitra-agro-dharma-unggul-lepas-sebanyak-626-87-juta-saham-nsss" target="_blank" rel="noopener">Mitra Agro Dharma Unggul sells Rp285bn of Nusantara Sawit Sejahtera (NSSS) shares</a></div><div class="sum">PT Mitra Agro Dharma Unggul sold 626.87 million NSSS shares on 5 November for about Rp285.23 billion at Rp455/share, cutting its stake from 5.58% to 2.75%.</div><div class="foot"><span class="outlet">IDN Financials</span> <span aria-hidden="true">·</span> 16:10<span class="tag">nsss</span></div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://www.cnbcindonesia.com/market/20261111231435-17-784455/masuk-hsc-disorot-bei-bos-dgwg-kurangi-kepemilikan-saham" target="_blank" rel="noopener">Delta Giri Wacana (DGWG) CEO trims stake as stock enters HSC list</a></div><div class="sum">David Yaory, president director of PT Delta Giri Wacana (DGWG), sold 5.27 million shares after the stock was flagged under BEI&#x27;s expanded High Shareholding Concentration category.</div><div class="foot"><span class="outlet">CNBC Indonesia</span> <span aria-hidden="true">·</span> unknown<span class="tag">dgwg</span><span class="tag">hsc</span></div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://www.cnbcindonesia.com/market/20261111160641-17-784344/bos-ojk-buka-suara-alasan-metodologi-hsc-diubah" target="_blank" rel="noopener">OJK chief explains why the HSC methodology was widened to 383 stocks</a></div><div class="sum">OJK chairwoman Friderica Widyasari Dewi explained the regulator&#x27;s rationale for broadening the High Shareholding Concentration methodology to cover 383 stocks, and flagged that affected brokerage accounts may face further scrutiny.</div><div class="foot"><span class="outlet">CNBC Indonesia</span> <span aria-hidden="true">·</span> 16:06<span class="tag">ojk</span><span class="tag">hsc</span></div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://emitennews.com/news/pengendali-gelontor-triliunan-rupiah-beli-584-saham-enrg-jelang-msci" target="_blank" rel="noopener">Energi Mega Persada (ENRG) controlling shareholder adds 5.84% stake ahead of MSCI rebalancing</a></div><div class="sum">PT Shima Global Kapital, the controlling shareholder of PT Energi Mega Persada (ENRG), acquired an additional 5.84% stake ahead of the MSCI Small Cap Index rebalancing.</div><div class="foot"><span class="outlet">Emitennews</span> <span aria-hidden="true">·</span> unknown<span class="tag">enrg</span><span class="tag">msci</span></div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://www.cnbcindonesia.com/market/20261111102844-17-784155/saham-happy-hapsoro--raja-ratu--tersengat-rumor-puan-wapres" target="_blank" rel="noopener">Happy Hapsoro-linked stocks RAJA, RATU spike on vice-presidential succession rumours</a></div><div class="sum">Shares of PT Rukun Raharja (RAJA) and PT Raharja Energi Cepu (RATU), both linked to Happy Hapsoro (Megawati&#x27;s son-in-law), jumped sharply amid rumours that Puan Maharani could be named vice president.</div><div class="foot"><span class="outlet">CNBC Indonesia</span> <span aria-hidden="true">·</span> 10:40<span class="tag">raja</span><span class="tag">ratu</span><span class="tag">politics</span></div></div></article></div>
+      </section>
+      <section class="block">
+        <h2>Bank Indonesia Watch <span class="count">5</span></h2>
+        <div class="stories"><article class="story"><div class="body"><div class="hl"><a href="https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/sp_2824526.aspx" target="_blank" rel="noopener">Consumer Survey October 2026: Consumer confidence rises to 119.9</a></div><div class="sum">Bank Indonesia&#x27;s Consumer Confidence Index rose to 119.9 in October 2026, up from 118.1 in September.</div><div class="foot">9 November 2026</div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/sp_2824426.aspx" target="_blank" rel="noopener">Residential Property Price Survey Q3 2026: Limited growth</a></div><div class="sum">Bank Indonesia&#x27;s Residential Property Price Survey for Q3 2026 showed limited price growth across Indonesia&#x27;s housing market.</div><div class="foot">6 November 2026</div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/sp_2824226.aspx" target="_blank" rel="noopener">Official reserve assets remain solid at USD146.8bn in October 2026</a></div><div class="sum">Bank Indonesia reported official reserve assets of USD146.8 billion at the end of October 2026.</div><div class="foot">6 November 2026</div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/sp_2824126.aspx" target="_blank" rel="noopener">Indonesia&#x27;s economy grows 5.47% in Q3 2026</a></div><div class="sum">Bank Indonesia reported Indonesia&#x27;s GDP grew 5.47% year-on-year in the third quarter of 2026.</div><div class="foot">5 November 2026</div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/sp_2823326.aspx" target="_blank" rel="noopener">BI-Rate held at 5.75%: strengthening stability, supporting growth</a></div><div class="sum">Bank Indonesia held its benchmark BI-Rate at 5.75% at its latest policy meeting, citing a focus on strengthening rupiah stability while supporting economic growth.</div><div class="foot">21 October 2026</div></div></article></div>
+      </section>
+    </div>
+
+    <section class="block">
+      <h2>Global Markets <span class="count">4</span></h2>
+      <div class="stories"><article class="story"><div class="body"><div class="hl"><a href="https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm" target="_blank" rel="noopener">Fed held rates at 3.75%-4% on Oct 28; market prices in 25bp hike for Dec 9 FOMC</a></div><div class="sum">The Federal Reserve kept its target range for the federal funds rate at 3.75%-4% at its October 28 meeting (two dissents favoured a hike); as of November 11, OIS pricing fully prices a 25bp hike at the next FOMC meeting on December 9.</div><div class="foot"><span class="outlet">Federal Reserve</span><span class="tag">fed</span><span class="tag">fomc</span></div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://tradingeconomics.com/dxy:cur" target="_blank" rel="noopener">Dollar index (DXY) near 18-month high around 102.9</a></div><div class="sum">The ICE US Dollar Index (DXY) traded near an 18-month high around 102.9-103, up roughly 3.4% over the past year, as markets repriced the Fed&#x27;s rate path.</div><div class="foot"><span class="outlet">Trading Economics</span><span class="tag">dxy</span><span class="tag">usd</span></div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://tradingeconomics.com/united-states/government-bond-yield" target="_blank" rel="noopener">US 10-year Treasury yield back near 5% after hot October inflation print</a></div><div class="sum">The US 10-year Treasury yield rose back toward 5% this week, with the move tied to stronger-than-expected October inflation data shifting expectations for Fed policy.</div><div class="foot"><span class="outlet">Trading Economics</span><span class="tag">ust10y</span><span class="tag">yields</span></div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://www.cnbc.com/2026/11/10/trump-tariffs-midterms-gary-cohn-inflation.html" target="_blank" rel="noopener">White House presses ahead with tariffs despite midterm losses</a></div><div class="sum">A week after Republicans lost Congress in the November 3 midterms, the White House signaled it will keep its tariff policy for the rest of Trump&#x27;s term; a Reuters/Ipsos poll found 62% of Americans support repealing the tariffs, as October consumer prices rose 0.4%.</div><div class="foot"><span class="outlet">CNBC</span><span class="tag">trump</span><span class="tag">tariffs</span></div></div></article></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="disc">Compiled from public sources for internal research use; not investment advice. Ranking is a transparent heuristic (most-read rails + cross-outlet coverage + Bank Indonesia priority), not view counts. Headlines link to the original publishers.</div>
+    <div style="margin-top:10px">IDX Morning Brief · Thursday, 12 November 2026 · <a href="../archive.html">browse the archive</a></div>
+  </footer>
+</div>
+</body>
+</html>
