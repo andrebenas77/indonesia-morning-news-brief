@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-11-13",
+    "date_display": "Friday, 13 November 2026",
+    "generated_at": "07:50 WIB",
+    "top_headline": "Vice President Gibran Resigns; IHSG Rallies 2.66% to Close at 5,250.89",
+    "counts": {
+      "top": 10,
+      "corporate": 7,
+      "bank_indonesia": 5,
+      "global": 4,
+      "merged": 107,
+      "cross_outlet_max": 7
+    }
+  },
+  {
     "date": "2026-11-12",
     "date_display": "Thursday, 12 November 2026",
     "generated_at": "07:50 WIB",
