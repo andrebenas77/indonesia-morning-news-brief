@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-11-19",
+    "date_display": "Thursday, 19 November 2026",
+    "generated_at": "08:15 WIB",
+    "top_headline": "Bank Indonesia Hikes Rate 25bps to 6%, Fourth Hike in Six Months",
+    "counts": {
+      "top": 10,
+      "corporate": 8,
+      "bank_indonesia": 6,
+      "global": 5,
+      "merged": 79,
+      "cross_outlet_max": 6
+    }
+  },
+  {
     "date": "2026-11-18",
     "date_display": "Wednesday, 18 November 2026",
     "generated_at": "08:10 WIB",
