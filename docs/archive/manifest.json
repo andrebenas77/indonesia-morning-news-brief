@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-11-20",
+    "date_display": "Friday, 20 November 2026",
+    "generated_at": "08:15 WIB",
+    "top_headline": "Bank Indonesia hikes BI-Rate 25bp to 6.00% to defend the rupiah",
+    "counts": {
+      "top": 10,
+      "corporate": 7,
+      "bank_indonesia": 5,
+      "global": 5,
+      "merged": 74,
+      "cross_outlet_max": 4
+    }
+  },
+  {
     "date": "2026-11-19",
     "date_display": "Thursday, 19 November 2026",
     "generated_at": "08:15 WIB",
