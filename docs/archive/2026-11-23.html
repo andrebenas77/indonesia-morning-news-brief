@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Indonesia Market Morning Brief — Monday, 23 November 2026</title>
+<!-- Machine-readable run date. The visible date is human-formatted ("Sunday, 16 August
+     2026") and the only ISO date elsewhere on the page belongs to the FLOW BOARD, which
+     is keyed to the trading session and legitimately lags the run date. Both the in-run
+     check in run_brief.sh and the remote watchdog in check_published.py read THIS tag —
+     without it they compare against the radar's date and cry wolf every single day. -->
+<meta name="brief-date" content="2026-11-23">
+<meta name="description" content="Daily ranked morning news brief for the Jakarta Stock Exchange (IHSG/JCI): top Indonesia market stories, corporate/emiten news, Bank Indonesia, and global markets.">
+<style>
+  :root{
+    --bg:#0d1117; --panel:#161b22; --panel-2:#1c2129; --border:#2a313c;
+    --text:#e6edf3; --muted:#9aa4b2; --faint:#6b7481;
+    --accent:#f2a900;        /* amber brand */
+    --accent-2:#4ea1ff;      /* link/interactive blue */
+    --danger:#f2545b; --ok:#3fb950;
+    --radius:12px; --maxw:1080px;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme: light){
+    :root{
+      --bg:#f5f6f8; --panel:#ffffff; --panel-2:#f0f2f5; --border:#e2e6eb;
+      --text:#12161c; --muted:#59616d; --faint:#8a929d;
+      --accent:#b8790a; --accent-2:#1565d8;
+    }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.5;
+    -webkit-font-smoothing:antialiased;font-size:15px}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+
+  /* Top bar */
+  header.topbar{position:sticky;top:0;z-index:20;background:rgba(13,17,23,.86);
+    backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--border)}
+  @media (prefers-color-scheme: light){header.topbar{background:rgba(245,246,248,.9)}}
+  .topbar .wrap{display:flex;align-items:center;gap:14px;height:56px}
+  .brand{display:flex;align-items:center;gap:9px;font-weight:700;letter-spacing:.2px}
+  .brand .dot{width:11px;height:11px;border-radius:50%;background:var(--accent);
+    box-shadow:0 0 0 3px rgba(242,169,0,.18)}
+  .brand small{font-weight:500;color:var(--muted)}
+  .nav{margin-left:auto;display:flex;gap:6px}
+  .nav a{padding:7px 12px;border-radius:8px;color:var(--muted);font-size:13.5px;font-weight:600}
+  .nav a:hover{background:var(--panel-2);color:var(--text)}
+
+  /* Masthead */
+  .masthead{padding:30px 0 8px}
+  .masthead h1{margin:0;font-size:27px;letter-spacing:-.4px;font-weight:800}
+  .masthead .sub{color:var(--muted);margin-top:6px;font-size:14px}
+  .meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .chip{font-size:12px;padding:4px 10px;border:1px solid var(--border);border-radius:999px;
+    color:var(--muted);background:var(--panel);display:inline-flex;align-items:center;gap:6px}
+  .chip .s-ok{color:var(--ok)} .chip .s-failed{color:var(--danger)}
+  .chip.dim{opacity:.75}
+
+  /* Sections */
+  main{padding:22px 0 8px}
+  section.block{margin:26px 0}
+  .block > h2{display:flex;align-items:center;gap:10px;margin:0 0 14px;font-size:13px;
+    text-transform:uppercase;letter-spacing:1.4px;color:var(--accent);font-weight:800}
+  .block > h2::after{content:"";flex:1;height:1px;background:var(--border)}
+  .block > h2 .count{color:var(--faint);font-weight:700;letter-spacing:.5px}
+
+  /* Story list */
+  .stories{display:flex;flex-direction:column;gap:1px;background:var(--border);
+    border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+  .story{display:flex;gap:14px;padding:14px 16px;background:var(--panel);transition:background .12s}
+  .story:hover{background:var(--panel-2)}
+  .rank{flex:0 0 auto;width:26px;height:26px;border-radius:7px;background:var(--panel-2);
+    border:1px solid var(--border);color:var(--accent);font-weight:800;font-size:13px;
+    display:flex;align-items:center;justify-content:center;margin-top:1px}
+  .story .body{min-width:0;flex:1}
+  .story .hl{font-weight:650;font-size:15.5px;line-height:1.35}
+  .story .hl a:hover{color:var(--accent-2);text-decoration:underline}
+  .story .sum{color:var(--muted);font-size:13.5px;margin-top:3px}
+  .story .foot{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:8px;font-size:12px;color:var(--faint)}
+  .story .outlet{color:var(--text);font-weight:650}
+  .tag{font-size:11px;padding:2px 7px;border-radius:6px;background:var(--panel-2);
+    border:1px solid var(--border);color:var(--muted);text-transform:lowercase}
+  /* Dedup chips. Accent = a signal that lifted the story's rank; faint = one that
+     lowered it. Same geometry as .tag so the meta line stays visually even. */
+  .xo{font-size:11px;padding:2px 7px;border-radius:6px;background:var(--panel-2);
+    border:1px solid var(--border);color:var(--accent);font-weight:650}
+  .pop{font-size:11px;padding:2px 7px;border-radius:6px;background:var(--panel-2);
+    border:1px solid var(--border);color:var(--accent)}
+  .rep{font-size:11px;padding:2px 7px;border-radius:6px;background:var(--panel-2);
+    border:1px solid var(--border);color:var(--faint)}
+  .empty{padding:16px;background:var(--panel);border:1px dashed var(--border);border-radius:var(--radius);
+    color:var(--faint);font-size:13.5px}
+
+  /* Two-column on wide screens for the lower sections */
+  .cols{display:grid;grid-template-columns:1fr;gap:26px}
+  @media (min-width:820px){.cols{grid-template-columns:1fr 1fr}}
+
+  /* Where to Look Today — bucket cards */
+  .buckets{display:grid;grid-template-columns:1fr;gap:14px}
+  @media (min-width:820px){.buckets{grid-template-columns:1fr 1fr}}
+  .bucket{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px}
+  .bucket .bk-title{font-weight:750;font-size:14.5px;display:flex;align-items:center;gap:8px}
+  .bucket .bk-title .n{font-size:11px;color:var(--faint);font-weight:700}
+  .bucket .bk-desc{color:var(--muted);font-size:12.5px;margin-top:3px}
+  .bk-rows{margin-top:10px;display:flex;flex-direction:column;gap:1px;background:var(--border);
+    border:1px solid var(--border);border-radius:9px;overflow:hidden}
+  .bk-row{display:flex;align-items:baseline;gap:10px;padding:8px 10px;background:var(--panel-2);font-size:13px}
+  .bk-row .tk{font-weight:800;letter-spacing:.4px;min-width:54px}
+  .bk-row .val{font-variant-numeric:tabular-nums;font-weight:700;min-width:80px;text-align:right}
+  .val.pos{color:var(--ok)} .val.neg{color:var(--danger)}
+  .bk-row .why{color:var(--muted);font-size:12px;min-width:0}
+  .bk-empty{margin-top:10px;color:var(--faint);font-size:12.5px;padding:8px 10px;
+    border:1px dashed var(--border);border-radius:9px}
+
+  /* Net foreign flow board */
+  .flowgrid{display:grid;grid-template-columns:1fr;gap:14px}
+  @media (min-width:820px){.flowgrid{grid-template-columns:1fr 1fr}}
+  .flowcol{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+  .flowcol .fh{padding:10px 14px;font-size:12px;font-weight:800;text-transform:uppercase;
+    letter-spacing:1px;border-bottom:1px solid var(--border)}
+  .flowcol .fh.in{color:var(--ok)} .flowcol .fh.out{color:var(--danger)}
+  table.flow{width:100%;border-collapse:collapse;font-size:13px}
+  table.flow td{padding:7px 14px;border-top:1px solid var(--border);vertical-align:baseline}
+  table.flow tr:first-child td{border-top:none}
+  table.flow .tk{font-weight:800;letter-spacing:.4px;width:64px}
+  table.flow .num{text-align:right;font-variant-numeric:tabular-nums;font-weight:700;width:92px}
+  table.flow .meta{color:var(--faint);font-size:11.5px}
+  .method{margin-top:12px;color:var(--faint);font-size:12px;line-height:1.55;
+    border-left:2px solid var(--border);padding-left:10px}
+  .warn{margin-top:10px;padding:9px 12px;border:1px solid var(--border);
+    border-left:3px solid var(--accent);border-radius:8px;background:var(--panel);
+    color:var(--muted);font-size:12.5px}
+
+  footer{border-top:1px solid var(--border);margin-top:34px;padding:22px 0 44px;color:var(--faint);font-size:12.5px}
+  footer .disc{max-width:760px}
+  footer a{color:var(--accent-2)}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="../index.html"><span class="dot"></span>IDX Morning Brief <small>· Jakarta markets</small></a>
+    <nav class="nav">
+      <a href="../index.html">Today</a>
+      <a href="../archive.html">Archive</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="masthead">
+    <h1>Indonesia Market Morning Brief</h1>
+    <div class="sub">Monday, 23 November 2026 · generated 11:40 WIB</div>
+    <div class="meta"><span class="chip"><span class="s-ok">&#9679;</span> Sectors API</span><span class="chip"><span class="s-ok">&#9679;</span> Kontan</span><span class="chip"><span class="s-ok">&#9679;</span> CNBC Indonesia</span><span class="chip"><span class="s-ok">&#9679;</span> Emitennews</span><span class="chip"><span class="s-ok">&#9679;</span> Bloomberg Technoz</span><span class="chip"><span class="s-ok">&#9679;</span> Bank Indonesia</span><span class="chip dim"><span class="s-failed">&#10005;</span> Foreign flow (Sectors /v2/foreign-flow/)</span><span class="chip"><span class="s-ok">&#9679;</span> Global scan (Fed/DXY/Trump/UST10Y)</span></div>
+    <div class="meta">166 headlines merged into 129 stories; 37 duplicates collapsed; 1 carried over from earlier this week.</div>
+  </div>
+
+  <main>
+    <section class="block">
+      <h2>Where to Look Today <span class="count">0</span></h2>
+      <div class="empty">No flow data today. Run <code>scripts/fetch_flows.py</code> then <code>scripts/build_radar.py</code>.</div><div class="warn">Foreign-flow data unavailable — radar cannot be built. Run scripts/fetch_flows.py, or check SECTORS_API_KEY.</div>
+    </section>
+
+    <section class="block">
+      <h2>Net Foreign Flow <span class="count">2026-11-23</span></h2>
+      <div class="empty">No foreign-flow data for this session.</div>
+    </section>
+
+    <section class="block">
+      <h2>Top News <span class="count">10</span></h2>
+      <div class="stories"><article class="story"><div class="rank">1</div><div class="body"><div class="hl"><a href="https://money.kompas.com/read/2026/11/22/193000226/ojk-kenakan-sanksi-atas-10-pelanggaran-pasar-modal-ada-manipulasi-saham-dan" target="_blank" rel="noopener">OJK sanctions 10 capital-market violations, including stock manipulation cases</a></div><div class="sum">OJK disclosed 10 capital-market violation cases including manipulation of HOMI and SAMF shares, ordering Rp23.77bn in unlawful gains returned plus Rp3.71bn in fines.</div><div class="foot"><span class="outlet">Kompas</span> <span aria-hidden="true">·</span> 19:30 <span aria-hidden="true">·</span> <span class="xo">4 outlets</span> <span aria-hidden="true">·</span> <span class="pop">#3 most-read</span><span class="tag">ojk</span><span class="tag">regulator</span><span class="tag">homi</span><span class="tag">samf</span></div></div></article><article class="story"><div class="rank">2</div><div class="body"><div class="hl"><a href="https://www.bloombergtechnoz.com/detail-news/128510/deretan-jurus-bi-perkuat-rupiah-intervensi-hingga-diskon-hedging" target="_blank" rel="noopener">Bank Indonesia deploys FX intervention and hedging discounts to defend the rupiah</a></div><div class="sum">Bank Indonesia is combining FX market intervention, hedging-cost discounts and local-currency settlement schemes to support the rupiah after this month&#x27;s rate hike.</div><div class="foot"><span class="outlet">Bloomberg Technoz</span> <span aria-hidden="true">·</span> 10:52 <span aria-hidden="true">·</span> <span class="xo">3 outlets</span> <span aria-hidden="true">·</span> <span class="pop">#4 most-read</span><span class="tag">bank-indonesia</span><span class="tag">rupiah</span><span class="tag">fx</span></div></div></article><article class="story"><div class="rank">3</div><div class="body"><div class="hl"><a href="https://investasi.kontan.co.id/news/rupiah-dibuka-melemah-ke-rp-18278-per-dolar-as-senin-2311-cetak-rekor-terendah" target="_blank" rel="noopener">Rupiah opens at record low of Rp18,278/USD, weakest in Asia this year</a></div><div class="sum">The rupiah opened Monday at a record-low Rp18,278 per US dollar, down 8.86% year-to-date and the worst-performing major Asian currency in 2026, despite this month&#x27;s BI rate hike.</div><div class="foot"><span class="outlet">Kontan</span> <span aria-hidden="true">·</span> 09:11 <span aria-hidden="true">·</span> <span class="xo">3 outlets</span><span class="tag">rupiah</span><span class="tag">fx</span><span class="tag">record-low</span></div></div></article><article class="story"><div class="rank">4</div><div class="body"><div class="hl"><a href="https://investasi.kontan.co.id/news/ihsg-turun-153-ke-5067-senin-2311-terancam-catat-pelemahan-enam-hari-beruntun" target="_blank" rel="noopener">IHSG falls to 5,067, extending a six-day losing streak amid global tech selloff</a></div><div class="sum">The Jakarta Composite Index (IHSG) fell 1.53% to 5,067 on Monday, on track for a sixth straight day of losses as regional markets tracked Wall Street&#x27;s AI-driven correction.</div><div class="foot"><span class="outlet">Kontan</span> <span aria-hidden="true">·</span> 10:37 <span aria-hidden="true">·</span> <span class="xo">3 outlets</span><span class="tag">ihsg</span><span class="tag">market</span></div></div></article><article class="story"><div class="rank">5</div><div class="body"><div class="hl"><a href="https://investor.id/market/462913/alasan-sig-gelar-buyback-saham-rp250-miliar" target="_blank" rel="noopener">Semen Indonesia (SMGR), XLSmart (EXCL) and Elnusa (ELSA) announce share buybacks</a></div><div class="sum">Semen Indonesia (SMGR) announced a buyback of up to Rp250bn under POJK 13/2023, alongside fresh buyback plans from XLSmart (EXCL) and Elnusa (ELSA) as issuers defend share prices during the market rout.</div><div class="foot"><span class="outlet">Investor Daily</span> <span aria-hidden="true">·</span> 08:40 <span aria-hidden="true">·</span> <span class="xo">2 outlets</span><span class="tag">smgr</span><span class="tag">excl</span><span class="tag">elsa</span><span class="tag">buyback</span></div></div></article><article class="story"><div class="rank">6</div><div class="body"><div class="hl"><a href="https://emitennews.com/news/bank-smbc-indonesia-btpn-siapkan-aksi-go-private-dan-delisting" target="_blank" rel="noopener">Bank SMBC Indonesia (BTPN) prepares go-private plan and IDX delisting</a></div><div class="sum">Bank SMBC Indonesia (BTPN) is preparing to go private and delist from the Indonesia Stock Exchange, and has filed plans to hold an EGM later this month.</div><div class="foot"><span class="outlet">Emitennews</span> <span aria-hidden="true">·</span> 10:13 <span aria-hidden="true">·</span> <span class="xo">2 outlets</span><span class="tag">btpn</span><span class="tag">delisting</span><span class="tag">go-private</span></div></div></article><article class="story"><div class="rank">7</div><div class="body"><div class="hl"><a href="https://emitennews.com/news/investigasi-manipulasi-saham-bei-gaet-nasdaq-ke-jakarta-per-desember" target="_blank" rel="noopener">IDX brings in Nasdaq to help build market-surveillance tech, representatives open Jakarta office in December</a></div><div class="sum">The Indonesia Stock Exchange (IDX) is partnering with Nasdaq to strengthen trading surveillance technology amid its stock-manipulation investigations; Nasdaq representatives will be based at IDX&#x27;s Jakarta office from next month.</div><div class="foot"><span class="outlet">Emitennews</span> <span aria-hidden="true">·</span> 08:00 <span aria-hidden="true">·</span> <span class="xo">2 outlets</span> <span aria-hidden="true">·</span> <span class="pop">#1 most-read</span><span class="tag">idx</span><span class="tag">nasdaq</span><span class="tag">surveillance</span></div></div></article><article class="story"><div class="rank">8</div><div class="body"><div class="hl"><a href="https://nasional.kontan.co.id/news/27-provinsi-tetapkan-ump-2027-bali-catat-kenaikan-tertinggi-4215" target="_blank" rel="noopener">Indonesia sets 2027 minimum wage hikes of up to 42% in some provinces</a></div><div class="sum">27 provinces have set their 2027 minimum wage (UMP), led by Bali at a 42.15% increase; business groups warn the hikes could pressure industry costs.</div><div class="foot"><span class="outlet">Kontan</span> <span aria-hidden="true">·</span> 07:30 <span aria-hidden="true">·</span> <span class="pop">#1 most-read</span><span class="tag">ump</span><span class="tag">wages</span><span class="tag">macro</span></div></div></article><article class="story"><div class="rank">9</div><div class="body"><div class="hl"><a href="https://keuangan.kontan.co.id/news/kenaikan-bi-rate-bayangi-kualitas-kredit-kpr-perbankan" target="_blank" rel="noopener">BI rate hike to 6% squeezes mortgage credit quality at BTN and BCA</a></div><div class="sum">Bank Indonesia&#x27;s rate hike to 6% is pressuring mortgage (KPR) loan quality for floating-rate debtors, with property-loan NPL at banks including BTN and BCA already at 3.38%.</div><div class="foot"><span class="outlet">Kontan</span><span class="tag">bi-rate</span><span class="tag">bbca</span><span class="tag">mortgage</span><span class="tag">npl</span></div></div></article><article class="story"><div class="rank">10</div><div class="body"><div class="hl"><a href="https://www.cnbcindonesia.com/market/20261123073208-17-787418/10-saham-paling-banyak-dilepas-asing-saat-ihsg-babak-belur" target="_blank" rel="noopener">Foreign investors dump IHSG&#x27;s 10 most-sold stocks as the index gets battered</a></div><div class="sum">CNBC Indonesia identifies the 10 stocks foreign investors sold most heavily as IHSG fell for a fifth straight week, down 3.71% last week.</div><div class="foot"><span class="outlet">CNBC Indonesia</span> <span aria-hidden="true">·</span> 07:32<span class="tag">foreign-flow</span><span class="tag">ihsg</span><span class="tag">outflow</span></div></div></article></div>
+    </section>
+
+    <div class="cols">
+      <section class="block">
+        <h2>Corporate / Emiten <span class="count">8</span></h2>
+        <div class="stories"><article class="story"><div class="body"><div class="hl"><a href="https://market.bisnis.com/read/20261122/7/2023404/jadwal-cum-dividen-pekan-depan-ada-bbca-hingga-emiten-boy-thohir-bfin" target="_blank" rel="noopener">12 companies including BCA (BBCA) and BFI Finance set interim dividend cum-dates next week</a></div><div class="sum">BCA (BBCA) leads 12 issuers paying interim dividends next week, distributing Rp35/share (Rp4.29tn total), the largest of the period.</div><div class="foot"><span class="outlet">Bisnis</span><span class="tag">bbca</span><span class="tag">bfin</span><span class="tag">dividend</span></div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://investor.id/market/462887/sambut-dividen-kakap-adrorasio-ditaksir-80yield-menggiurkan" target="_blank" rel="noopener">Alamtri Resources (ADRO) seen paying large dividend with ~80% yield estimate</a></div><div class="sum">Analysts expect Alamtri Resources (ADRO) to pay a large dividend on growing aluminium-business profit, making the stock attractive despite the broader market turmoil.</div><div class="foot"><span class="outlet">Investor Daily</span><span class="tag">adro</span><span class="tag">dividend</span></div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://investasi.kontan.co.id/news/kinerja-siloam-silo-tumbuh-solid-beban-bunga-akuisisi-first-reits-jadi-sorotan" target="_blank" rel="noopener">Siloam Hospitals (SILO) posts solid Q3 growth, but REITs acquisition cost draws scrutiny</a></div><div class="sum">Siloam International Hospitals (SILO) grew Q3-2026 revenue 11.3% YoY to Rp10.49tn and net profit 22% to Rp929bn, though its first REITs acquisition&#x27;s interest burden drew analyst attention.</div><div class="foot"><span class="outlet">Kontan</span><span class="tag">silo</span><span class="tag">earnings</span></div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://www.cnbcindonesia.com/market/20261122065401-17-787256/deretan-emiten-sinarmas-yang-ditinggal-keluarga-widjaja-tahun-ini" target="_blank" rel="noopener">Sinarmas Group issuers see Widjaja family step back from boards in 2026</a></div><div class="sum">Several Sinarmas Group-linked listed companies underwent management reshuffles in 2026 as members of the founding Widjaja family stepped down from their boards.</div><div class="foot"><span class="outlet">CNBC Indonesia</span><span class="tag">sinarmas</span><span class="tag">corporate-governance</span></div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://investasi.kontan.co.id/news/saham-asii-auto-dan-drma-punya-katalis-pertumbuhan-cek-rekomendasinya" target="_blank" rel="noopener">Analysts keep Buy on Astra International (ASII), Astra Otoparts (AUTO), Dharma Polimetal (DRMA)</a></div><div class="sum">Analysts maintained Buy ratings on automotive names ASII, AUTO and DRMA, citing a vehicle-production recovery and rising component demand.</div><div class="foot"><span class="outlet">Kontan</span><span class="tag">asii</span><span class="tag">auto</span><span class="tag">drma</span></div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://investor.id/market/462888/saham-antm-ptba-diteropong-potensi-cuan-57-dan-34" target="_blank" rel="noopener">Kiwoom Sekuritas picks Antam (ANTM) and Bukit Asam (PTBA) for 2027, flags up to 57% upside</a></div><div class="sum">Kiwoom Sekuritas named ANTM (target Rp4,100, +57% upside) and PTBA among its top 2027 stock picks in its Market Outlook 2027 report.</div><div class="foot"><span class="outlet">Investor Daily</span><span class="tag">antm</span><span class="tag">ptba</span></div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://market.bisnis.com/read/20261122/192/2023444/pengelola-jakarta-eye-hospitals-dan-clinics-jecx-siapkan-ekspansi-di-bali-dan-tangerang" target="_blank" rel="noopener">JEC Eye Hospitals operator (JECX) prepares expansion in Bali and Tangerang</a></div><div class="sum">Nitrasanata Dharma (JECX), operator of the JEC eye-hospital network, is preparing two new facilities in Sanur, Bali and Tangerang.</div><div class="foot"><span class="outlet">Bisnis</span><span class="tag">jecx</span><span class="tag">expansion</span></div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://investasi.kontan.co.id/news/meneropong-prospek-emiten-grup-merdeka-mdka-mbma-emas-mana-yang-paling-menarik" target="_blank" rel="noopener">Merdeka Group trio (MDKA, MBMA, EMAS) starting to show returns on recent capex</a></div><div class="sum">The three Merdeka Group issuers (MDKA, MBMA, EMAS) are beginning to show results from heavy recent investment, prompting a look at which is most attractive now.</div><div class="foot"><span class="outlet">Kontan</span><span class="tag">mdka</span><span class="tag">mbma</span><span class="tag">emas</span></div></div></article></div>
+      </section>
+      <section class="block">
+        <h2>Bank Indonesia Watch <span class="count">6</span></h2>
+        <div class="stories"><article class="story"><div class="body"><div class="hl"><a href="https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/sp_2825626.aspx" target="_blank" rel="noopener">Broad money growth accelerated in October 2026</a></div><div class="sum">M2 broad-money growth accelerated to 9.3% y/y in October 2026, up from 8.5% y/y in September.</div><div class="foot">23 November 2026</div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/sp_2825526.aspx" target="_blank" rel="noopener">Indonesia&#x27;s balance of payments records Q3 2026 surplus, external resilience maintained</a></div><div class="sum">Bank Indonesia reported a balance-of-payments surplus for Q3 2026, citing maintained external resilience.</div><div class="foot">20 November 2026</div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/sp_2825426.aspx" target="_blank" rel="noopener">BI-Rate raised 25bps to 6.00%, strengthening stability and supporting growth</a></div><div class="sum">Bank Indonesia raised its benchmark BI-Rate by 25bps to 6.00%, citing stability and growth support.</div><div class="foot">18 November 2026</div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/sp_2825126.aspx" target="_blank" rel="noopener">Indonesia&#x27;s external debt maintained in Q3 2026</a></div><div class="sum">Bank Indonesia reported Indonesia&#x27;s external debt remained at a manageable level in Q3 2026.</div><div class="foot">16 November 2026</div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/sp_2824226.aspx" target="_blank" rel="noopener">Official reserve assets remain solid in October 2026</a></div><div class="sum">Bank Indonesia reported official reserve assets remained solid in October 2026.</div><div class="foot">6 November 2026</div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/sp_2824526.aspx" target="_blank" rel="noopener">Consumer Survey October 2026: consumer confidence increasing</a></div><div class="sum">Bank Indonesia&#x27;s October 2026 Consumer Survey showed rising consumer confidence.</div><div class="foot">9 November 2026</div></div></article></div>
+      </section>
+    </div>
+
+    <section class="block">
+      <h2>Global Markets <span class="count">5</span></h2>
+      <div class="stories"><article class="story"><div class="body"><div class="hl"><a href="https://www.cnbc.com/2026/11/22/stock-market-today-live-updates.html" target="_blank" rel="noopener">Wall Street enters correction as AI-valuation fears spark worst weekly loss in 6+ years</a></div><div class="sum">The S&amp;P 500, Dow and Nasdaq all closed in correction territory on 22 November as doubts over AI-spending sustainability hit Nvidia and other AI names, marking Wall Street&#x27;s worst week in more than six years before futures rebounded Monday.</div><div class="foot"><span class="outlet">CNBC</span><span class="tag">wall-street</span><span class="tag">ai</span><span class="tag">correction</span></div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://admiralmarkets.com/analytics/traders-blog/fomc-minutes-november-2026" target="_blank" rel="noopener">FOMC minutes show most officials still see further rate hikes as likely needed</a></div><div class="sum">Minutes from the Fed&#x27;s October meeting, released 18 November, showed most officials view inflation as still too high and current policy as not yet restrictive enough; the next FOMC decision is 9 December.</div><div class="foot"><span class="outlet">Federal Reserve / market commentary</span><span class="tag">fed</span><span class="tag">fomc</span><span class="tag">rates</span></div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://tradingeconomics.com/dxy:cur" target="_blank" rel="noopener">Dollar index (DXY) holds below 104 after pulling back from a 19-month high</a></div><div class="sum">The DXY traded near 103.8 on 23 November, easing after touching a roughly 19-month high of 103.97 the prior week.</div><div class="foot"><span class="outlet">Trading Economics</span><span class="tag">dxy</span><span class="tag">dollar</span></div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://www.forbes.com/advisor/investing/treasury-rates/" target="_blank" rel="noopener">US 10-year Treasury yield near cycle highs around 4.9-5%</a></div><div class="sum">The US 10-year Treasury yield stood near 4.9-5.07% in mid/late November, close to its 2026 high of 5.31% reached in early October.</div><div class="foot"><span class="outlet">Forbes Advisor</span><span class="tag">ust10y</span><span class="tag">yields</span></div></div></article><article class="story"><div class="body"><div class="hl"><a href="https://www.cnbc.com/2026/11/10/trump-tariffs-midterms-gary-cohn-inflation.html" target="_blank" rel="noopener">White House presses ahead with tariffs despite midterm backlash over prices</a></div><div class="sum">The Trump administration said it will continue its tariff program despite political backlash over cost-of-living pressure, while granting a 14 November executive order exempting agricultural imports from reciprocal tariffs.</div><div class="foot"><span class="outlet">CNBC</span><span class="tag">trump</span><span class="tag">tariffs</span></div></div></article></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="disc">Compiled from public sources for internal research use; not investment advice. Ranking is a transparent heuristic (most-read rails + cross-outlet coverage + Bank Indonesia priority), not view counts. Headlines link to the original publishers.</div>
+    <div style="margin-top:10px">IDX Morning Brief · Monday, 23 November 2026 · <a href="../archive.html">browse the archive</a></div>
+  </footer>
+</div>
+</body>
+</html>
