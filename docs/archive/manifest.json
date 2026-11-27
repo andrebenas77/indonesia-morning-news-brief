@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-11-27",
+    "date_display": "Friday, 27 November 2026",
+    "generated_at": "07:50 WIB",
+    "top_headline": "Rupiah Hits All-Time Low Near Rp18,400; BI Blames Global Sentiment, Economists See Rp18,700-19,100 Ahead",
+    "counts": {
+      "top": 10,
+      "corporate": 5,
+      "bank_indonesia": 6,
+      "global": 4,
+      "merged": 79,
+      "cross_outlet_max": 7
+    }
+  },
+  {
     "date": "2026-11-26",
     "date_display": "Thursday, 26 November 2026",
     "generated_at": "08:15 WIB",
